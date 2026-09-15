@@ -15,6 +15,12 @@ The manifest records the private source commit, every exported file hash, explic
 redactions, and public-copy presentation changes. This is privacy minimization, not
 anonymous publication: the project owner and public repository identity are visible.
 
+Frozen build reports retain selected private source commit IDs and PR/CI URLs as
+textual provenance. Those links may not resolve for public visitors; they disclose
+no private Git objects or PR contents, and the committed evidence remains the public
+review surface. No current README, quickstart, demo, or verification path depends on
+access to the private repository.
+
 Publication used zero provider/catalog/chat calls and did not rerun the frozen live
 experiment. Review [PUBLIC_PROVENANCE.md](../PUBLIC_PROVENANCE.md) for the release
 checkpoint and limitations.
