@@ -1,0 +1,137 @@
+PYTHONPATH=src python3 -m compileall -q src tests
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+test_existing_private_target_is_reused_without_creation (test_bootstrap.BootstrapTests.test_existing_private_target_is_reused_without_creation) ... ok
+test_existing_public_target_is_never_pushed_or_changed (test_bootstrap.BootstrapTests.test_existing_public_target_is_never_pushed_or_changed) ... ok
+test_later_uncommitted_changes_are_not_swept_into_a_commit (test_bootstrap.BootstrapTests.test_later_uncommitted_changes_are_not_swept_into_a_commit) ... ok
+test_new_target_is_created_private_before_nonforce_push (test_bootstrap.BootstrapTests.test_new_target_is_created_private_before_nonforce_push) ... ok
+test_nonmain_branch_is_not_renamed (test_bootstrap.BootstrapTests.test_nonmain_branch_is_not_renamed) ... ok
+test_unrelated_remote_is_refused (test_bootstrap.BootstrapTests.test_unrelated_remote_is_refused) ... ok
+test_wrong_authenticated_account_is_refused (test_bootstrap.BootstrapTests.test_wrong_authenticated_account_is_refused) ... ok
+test_canonical_digest_ignores_mapping_insertion_order (test_determinism.DeterminismTests.test_canonical_digest_ignores_mapping_insertion_order) ... ok
+test_coordinate_types_are_not_conflated (test_determinism.DeterminismTests.test_coordinate_types_are_not_conflated) ... ok
+test_demo_is_repeatable_and_explicitly_simulated (test_determinism.DeterminismTests.test_demo_is_repeatable_and_explicitly_simulated) ... ok
+test_hash_seed_does_not_change_results (test_determinism.DeterminismTests.test_hash_seed_does_not_change_results) ... ok
+test_invalid_probability_and_seed_are_rejected (test_determinism.DeterminismTests.test_invalid_probability_and_seed_are_rejected) ... ok
+test_nonfinite_numbers_are_not_valid_artifacts (test_determinism.DeterminismTests.test_nonfinite_numbers_are_not_valid_artifacts) ... ok
+test_order_of_calls_does_not_change_semantic_draws (test_determinism.DeterminismTests.test_order_of_calls_does_not_change_semantic_draws) ... ok
+test_probability_endpoints (test_determinism.DeterminismTests.test_probability_endpoints) ... ok
+test_agent_cannot_fund_settle_approve_admin_or_read_evaluator_state (test_gateway.GatewayTests.test_agent_cannot_fund_settle_approve_admin_or_read_evaluator_state) ... ok
+test_authenticated_passive_execution_idempotency_and_owner_isolation (test_gateway.GatewayTests.test_authenticated_passive_execution_idempotency_and_owner_isolation) ... ok
+test_conflicting_bid_does_not_cancel_existing_authority (test_gateway.GatewayTests.test_conflicting_bid_does_not_cancel_existing_authority) ... ok
+test_cross_origin_and_oversized_payload_fail_closed (test_gateway.GatewayTests.test_cross_origin_and_oversized_payload_fail_closed) ... ok
+test_dashboard_serves_real_backend_trace (test_gateway.GatewayTests.test_dashboard_serves_real_backend_trace) ... ok
+test_economic_native_bid_clear_execute_and_resource_binding (test_gateway.GatewayTests.test_economic_native_bid_clear_execute_and_resource_binding) ... ok
+test_interrupted_bid_fee_reservation_expires_after_recovery (test_gateway.GatewayTests.test_interrupted_bid_fee_reservation_expires_after_recovery) ... ok
+test_mandatory_task_class_cannot_be_downgraded (test_gateway.GatewayTests.test_mandatory_task_class_cannot_be_downgraded) ... ok
+test_missing_empty_and_wrong_credentials_are_rejected (test_gateway.GatewayTests.test_missing_empty_and_wrong_credentials_are_rejected) ... ok
+test_openai_http_surface_enforces_task_and_preserves_receipt (test_gateway.GatewayTests.test_openai_http_surface_enforces_task_and_preserves_receipt) ... /usr/lib/python3.14/tempfile.py:484: ResourceWarning: Implicitly cleaning up <HTTPError 403: 'Forbidden'>
+  _warnings.warn(self.warn_message, ResourceWarning)
+ok
+test_operator_created_identity_persists_without_minting_root_authority (test_gateway.GatewayTests.test_operator_created_identity_persists_without_minting_root_authority) ... ok
+test_pending_gateway_requests_expire_and_can_be_cancelled (test_gateway.GatewayTests.test_pending_gateway_requests_expire_and_can_be_cancelled) ... ok
+test_account_creation_is_idempotent_not_a_top_up (test_ledger.LedgerTests.test_account_creation_is_idempotent_not_a_top_up) ... ok
+test_bound_violation_is_not_hidden (test_ledger.LedgerTests.test_bound_violation_is_not_hidden) ... ok
+test_conflicting_account_creation (test_ledger.LedgerTests.test_conflicting_account_creation) ... ok
+test_dispatch_claim_cannot_be_repeated (test_ledger.LedgerTests.test_dispatch_claim_cannot_be_repeated) ... ok
+test_duplicate_dispatch_race_has_one_winner (test_ledger.LedgerTests.test_duplicate_dispatch_race_has_one_winner) ... ok
+test_duplicate_reservation_does_not_reserve_twice (test_ledger.LedgerTests.test_duplicate_reservation_does_not_reserve_twice) ... ok
+test_excess_is_rejected_and_audited (test_ledger.LedgerTests.test_excess_is_rejected_and_audited) ... ok
+test_failed_transition_leaves_no_partial_changes (test_ledger.LedgerTests.test_failed_transition_leaves_no_partial_changes) ... ok
+test_frozen_account_cannot_dispatch_old_reservations (test_ledger.LedgerTests.test_frozen_account_cannot_dispatch_old_reservations) ... ok
+test_funding_is_integer_and_unit_explicit (test_ledger.LedgerTests.test_funding_is_integer_and_unit_explicit) ... ok
+test_invalid_identifiers_rejected (test_ledger.LedgerTests.test_invalid_identifiers_rejected) ... ok
+test_memory_database_is_refused (test_ledger.LedgerTests.test_memory_database_is_refused) ... ok
+test_missing_account_does_not_create_money (test_ledger.LedgerTests.test_missing_account_does_not_create_money) ... ok
+test_model_cost_and_market_credits_are_separate_units (test_ledger.LedgerTests.test_model_cost_and_market_credits_are_separate_units) ... ok
+test_negative_float_bool_and_out_of_range_rejected (test_ledger.LedgerTests.test_negative_float_bool_and_out_of_range_rejected) ... ok
+test_no_timeout_refund_for_dispatched (test_ledger.LedgerTests.test_no_timeout_refund_for_dispatched) ... ok
+test_normal_settlement_releases_only_unused_cap (test_ledger.LedgerTests.test_normal_settlement_releases_only_unused_cap) ... ok
+test_predispatch_cancellation_is_idempotent (test_ledger.LedgerTests.test_predispatch_cancellation_is_idempotent) ... ok
+test_processes_share_transactional_admission (test_ledger.LedgerTests.test_processes_share_transactional_admission) ... ok
+test_projection_corruption_is_detected (test_ledger.LedgerTests.test_projection_corruption_is_detected) ... ok
+test_randomized_lifecycle_sequences_preserve_invariants (test_ledger.LedgerTests.test_randomized_lifecycle_sequences_preserve_invariants) ... ok
+test_request_hash_is_bound_to_idempotency (test_ledger.LedgerTests.test_request_hash_is_bound_to_idempotency) ... ok
+test_reservation_counts_before_dispatch (test_ledger.LedgerTests.test_reservation_counts_before_dispatch) ... ok
+test_restart_does_not_erase_uncertain_liability (test_ledger.LedgerTests.test_restart_does_not_erase_uncertain_liability) ... ok
+test_retries_have_independent_liabilities (test_ledger.LedgerTests.test_retries_have_independent_liabilities) ... ok
+test_settlement_idempotency_and_conflict (test_ledger.LedgerTests.test_settlement_idempotency_and_conflict) ... ok
+test_settlement_requires_dispatch (test_ledger.LedgerTests.test_settlement_requires_dispatch) ... ok
+test_threaded_reservation_has_one_spendable_balance (test_ledger.LedgerTests.test_threaded_reservation_has_one_spendable_balance) ... ok
+test_trusted_no_charge_reconciliation_requires_evidence (test_ledger.LedgerTests.test_trusted_no_charge_reconciliation_requires_evidence) ... ok
+test_unresolved_keeps_full_reservation (test_ledger.LedgerTests.test_unresolved_keeps_full_reservation) ... ok
+test_upper_bound_is_bound_to_idempotency (test_ledger.LedgerTests.test_upper_bound_is_bound_to_idempotency) ... ok
+test_zero_charge_is_a_valid_settlement (test_ledger.LedgerTests.test_zero_charge_is_a_valid_settlement) ... ok
+test_endpoint_and_live_opt_in_fail_closed (test_nim.NimTests.test_endpoint_and_live_opt_in_fail_closed) ... ok
+test_injected_document_cannot_grant_authority_even_if_model_complies (test_nim.NimTests.test_injected_document_cannot_grant_authority_even_if_model_complies) ... ok
+test_malformed_choices_cannot_hide_known_usage_or_bound_breach (test_nim.NimTests.test_malformed_choices_cannot_hide_known_usage_or_bound_breach) ... ok
+test_malformed_model_output_is_paid_but_not_verified (test_nim.NimTests.test_malformed_model_output_is_paid_but_not_verified) ... ok
+test_missing_usage_preserves_unknown_liability (test_nim.NimTests.test_missing_usage_preserves_unknown_liability) ... ok
+test_model_configuration_change_after_quote_denies_dispatch (test_nim.NimTests.test_model_configuration_change_after_quote_denies_dispatch) ... ok
+test_non_scalar_resolution_is_rejected_without_losing_usage (test_nim.NimTests.test_non_scalar_resolution_is_rejected_without_losing_usage) ... ok
+test_provider_receipt_reconciles_usage_but_not_reasoning (test_nim.NimTests.test_provider_receipt_reconciles_usage_but_not_reasoning) ... ok
+test_reported_output_above_bound_is_not_clipped (test_nim.NimTests.test_reported_output_above_bound_is_not_clipped) ... ok
+test_response_saved_before_failure_recovers_without_provider (test_nim.NimTests.test_response_saved_before_failure_recovers_without_provider) ... ok
+test_timeout_rate_limit_and_server_errors_never_retry_or_refund (test_nim.NimTests.test_timeout_rate_limit_and_server_errors_never_retry_or_refund) ... ok
+test_tools_streaming_unbounded_input_and_extra_parameters_are_rejected (test_nim.NimTests.test_tools_streaming_unbounded_input_and_extra_parameters_are_rejected) ... ok
+test_transport_disables_ambient_proxy_and_redirects (test_nim.NimTests.test_transport_disables_ambient_proxy_and_redirects) ... ok
+test_unknown_task_protected_task_and_model_switch_never_dispatch (test_nim.NimTests.test_unknown_task_protected_task_and_model_switch_never_dispatch) ... ok
+test_bids_cannot_buy_mandatory_review_eligibility (test_study.StudyTests.test_bids_cannot_buy_mandatory_review_eligibility) ... ok
+test_no_information_ablation_equalizes_central_views (test_study.StudyTests.test_no_information_ablation_equalizes_central_views) ... ok
+test_oracle_dominates_and_all_allocators_obey_mandatory_capacity (test_study.StudyTests.test_oracle_dominates_and_all_allocators_obey_mandatory_capacity) ... ok
+test_oracle_matches_independent_exhaustive_two_round_search (test_study.StudyTests.test_oracle_matches_independent_exhaustive_two_round_search) ... ok
+test_private_signal_is_imperfect_and_quality_changes_information_not_workload (test_study.StudyTests.test_private_signal_is_imperfect_and_quality_changes_information_not_workload) ... ok
+test_public_interface_has_no_private_signal_or_evaluator_fields (test_study.StudyTests.test_public_interface_has_no_private_signal_or_evaluator_fields) ... ok
+test_strategies_do_not_create_credits (test_study.StudyTests.test_strategies_do_not_create_credits) ... ok
+test_approval_absence_and_self_approval_cannot_be_bought (test_system.ControlTests.test_approval_absence_and_self_approval_cannot_be_bought) ... ok
+test_crash_after_persisted_result_settles_without_reexecution (test_system.ControlTests.test_crash_after_persisted_result_settles_without_reexecution) ... ok
+test_exact_approval_cannot_authorize_changed_or_retried_operation (test_system.ControlTests.test_exact_approval_cannot_authorize_changed_or_retried_operation) ... ok
+test_local_cost_is_allocated_not_cash_and_rounds_up (test_system.ControlTests.test_local_cost_is_allocated_not_cash_and_rounds_up) ... ok
+test_market_credits_cannot_pay_simulated_execution (test_system.ControlTests.test_market_credits_cannot_pay_simulated_execution) ... ok
+test_process_crash_after_dispatch_keeps_liability_without_reexecution (test_system.ControlTests.test_process_crash_after_dispatch_keeps_liability_without_reexecution) ... ok
+test_provider_exception_remains_an_unresolved_liability (test_system.ControlTests.test_provider_exception_remains_an_unresolved_liability) ... ok
+test_quote_change_requires_new_authorization_before_dispatch (test_system.ControlTests.test_quote_change_requires_new_authorization_before_dispatch) ... ok
+test_request_fingerprint_prevents_changed_duplicate (test_system.ControlTests.test_request_fingerprint_prevents_changed_duplicate) ... ok
+test_trusted_receipt_releases_unused_quote_and_records_breaches (test_system.ControlTests.test_trusted_receipt_releases_unused_quote_and_records_breaches) ... ok
+test_unknown_task_and_wrong_operation_fail_at_trusted_primitive (test_system.ControlTests.test_unknown_task_and_wrong_operation_fail_at_trusted_primitive) ... ok
+test_all_baselines_share_corpus_and_respect_funding (test_system.EconomyTests.test_all_baselines_share_corpus_and_respect_funding) ... ok
+test_central_plans_mandatory_capacity_before_execution (test_system.EconomyTests.test_central_plans_mandatory_capacity_before_execution) ... ok
+test_economic_digest_ignores_run_identity (test_system.EconomyTests.test_economic_digest_ignores_run_identity) ... ok
+test_hidden_truth_is_absent_from_observations (test_system.EconomyTests.test_hidden_truth_is_absent_from_observations) ... ok
+test_observed_feedback_changes_adaptive_action (test_system.EconomyTests.test_observed_feedback_changes_adaptive_action) ... ok
+test_observed_provider_unavailability_changes_resource_choice (test_system.EconomyTests.test_observed_provider_unavailability_changes_resource_choice) ... ok
+test_process_death_inside_tick_recovers_durable_phases (test_system.EconomyTests.test_process_death_inside_tick_recovers_durable_phases) ... ok
+test_resume_in_separate_process_matches_uninterrupted (test_system.EconomyTests.test_resume_in_separate_process_matches_uninterrupted) ... ok
+test_review_collapse_blocks_exact_mandatory_cases (test_system.EconomyTests.test_review_collapse_blocks_exact_mandatory_cases) ... ok
+test_cumulative_bound_breach_beyond_sqlite_integer_is_recorded_exactly (test_system.HierarchyTests.test_cumulative_bound_breach_beyond_sqlite_integer_is_recorded_exactly) ... ok
+test_descendant_cannot_mint_and_units_cannot_cross (test_system.HierarchyTests.test_descendant_cannot_mint_and_units_cannot_cross) ... ok
+test_expired_dispatch_is_denied_before_sweep (test_system.HierarchyTests.test_expired_dispatch_is_denied_before_sweep) ... ok
+test_expiry_only_releases_predispatch (test_system.HierarchyTests.test_expiry_only_releases_predispatch) ... ok
+test_independent_logical_clocks_do_not_expire_other_runs (test_system.HierarchyTests.test_independent_logical_clocks_do_not_expire_other_runs) ... ok
+test_legacy_schema_migrates_without_losing_holds (test_system.HierarchyTests.test_legacy_schema_migrates_without_losing_holds) ... ok
+test_parent_breach_blocks_sibling_dispatch_and_records_full_cost (test_system.HierarchyTests.test_parent_breach_blocks_sibling_dispatch_and_records_full_cost) ... ok
+test_siblings_race_one_parent_cap (test_system.HierarchyTests.test_siblings_race_one_parent_cap) ... ok
+test_winding_down_blocks_creation_and_dispatch_but_allows_settlement (test_system.HierarchyTests.test_winding_down_blocks_creation_and_dispatch_but_allows_settlement) ... ok
+test_ambiguous_delivery_retains_escrow_after_expiry (test_system.MarketTests.test_ambiguous_delivery_retains_escrow_after_expiry) ... ok
+test_cancel_requires_owner_and_refunds (test_system.MarketTests.test_cancel_requires_owner_and_refunds) ... ok
+test_escrow_cannot_be_reused_across_auctions (test_system.MarketTests.test_escrow_cannot_be_reused_across_auctions) ... ok
+test_escrow_wallets_cannot_be_transferred_by_generic_api (test_system.MarketTests.test_escrow_wallets_cannot_be_transferred_by_generic_api) ... ok
+test_first_price_ties_and_conservation (test_system.MarketTests.test_first_price_ties_and_conservation) ... ok
+test_hoarding_expires_and_refunds_once (test_system.MarketTests.test_hoarding_expires_and_refunds_once) ... ok
+test_operating_reservation_is_required_and_owned (test_system.MarketTests.test_operating_reservation_is_required_and_owned) ... ok
+
+----------------------------------------------------------------------
+Ran 116 tests in 14.952s
+
+OK
+uv run --locked ruff check .
+All checks passed!
+PYTHONPATH=src uv run --locked python -m unittest discover -s tests/property -v
+runTest (hypothesis.stateful.SpendingMachine.TestCase.runTest) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 4.262s
+
+OK
+
+> aecp-browser-validation@0.1.0 check
+> node --check src/aecp/static/app.js && node --check scripts/browser_smoke.cjs && node --check scripts/provider_browser.cjs

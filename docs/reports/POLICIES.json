@@ -1,0 +1,222 @@
+{
+  "budget": 450,
+  "created_at": "2026-09-08T08:11:53.251178+00:00",
+  "mode": "deterministic_reproduction",
+  "results": [
+    {
+      "beliefs": {
+        "conservative/agent-0": {},
+        "conservative/agent-1": {},
+        "conservative/agent-2": {}
+      },
+      "digest": "752e38dc81eb89c0c5398eeec42e0c81bbf7736244263ef98e8ff10af70b204b",
+      "metrics": {
+        "abandoned_tasks": 10,
+        "access_by_agent": [
+          11,
+          9,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 100,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 0,
+          "verification": 52
+        },
+        "deadline_misses": 10,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9467787114845938,
+        "jain_premium_access_index": 0,
+        "jain_verified_outcome_index": 0.9467787114845938,
+        "modeled_cost": 204,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          0,
+          0,
+          0
+        ],
+        "premium_utilization": 0.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 4329,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 26,
+        "verified_value": 2941,
+        "waiting_tasks": 0
+      },
+      "style": "conservative"
+    },
+    {
+      "beliefs": {
+        "value/agent-0": {},
+        "value/agent-1": {},
+        "value/agent-2": {}
+      },
+      "digest": "374749537eefd1d6586d3cf0a69cd60c4627eea549ff127aa03040380d545942",
+      "metrics": {
+        "abandoned_tasks": 1,
+        "access_by_agent": [
+          12,
+          12,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 136,
+        "cost_categories": {
+          "bidding": 18,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 126,
+          "verification": 70
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9983700081499592,
+        "jain_premium_access_index": 0.7714285714285715,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 366,
+        "planning_bidding_cost": 54,
+        "premium_access_by_agent": [
+          1,
+          3,
+          5
+        ],
+        "premium_utilization": 0.375,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 4329,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 4307,
+        "waiting_tasks": 0
+      },
+      "style": "value"
+    },
+    {
+      "beliefs": {
+        "adaptive/agent-0": {
+          "cheap:complete": [
+            20,
+            1
+          ],
+          "delivery:cheap": [
+            20,
+            1
+          ],
+          "delivery:premium": [
+            10,
+            1
+          ],
+          "premium:partial": [
+            10,
+            1
+          ]
+        },
+        "adaptive/agent-1": {
+          "cheap:complete": [
+            18,
+            1
+          ],
+          "delivery:cheap": [
+            18,
+            1
+          ],
+          "delivery:premium": [
+            12,
+            1
+          ],
+          "premium:partial": [
+            12,
+            1
+          ]
+        },
+        "adaptive/agent-2": {
+          "cheap:complete": [
+            15,
+            1
+          ],
+          "delivery:cheap": [
+            15,
+            1
+          ],
+          "delivery:premium": [
+            15,
+            1
+          ],
+          "premium:partial": [
+            15,
+            1
+          ]
+        }
+      },
+      "digest": "3db7d61873397660cb9a05316599f40e2f3dece0649a5716d7b53094fe73ab5c",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 140,
+        "cost_categories": {
+          "bidding": 20,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 140,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.7246376811594203,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 384,
+        "planning_bidding_cost": 56,
+        "premium_access_by_agent": [
+          1,
+          3,
+          6
+        ],
+        "premium_utilization": 0.4166666666666667,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 4329,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 4329,
+        "waiting_tasks": 0
+      },
+      "style": "adaptive"
+    }
+  ],
+  "seed": 7,
+  "source_revision": "3f43161644e75e079996a33a72451cf59106c5a6"
+}

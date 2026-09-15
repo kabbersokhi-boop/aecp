@@ -1,0 +1,170 @@
+[
+  {
+    "request_id": "gateway/live-first/chat/live-first-live-case-001",
+    "agent": "gateway/live-first",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 180,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "gateway/live-first/chat/live-first-live-case-002",
+    "agent": "gateway/live-first",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": false,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 22,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "gateway/live-first/chat/live-first-live-case-003",
+    "agent": "gateway/live-first",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 53,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "gateway/live-first/chat/live-first-live-case-004",
+    "agent": "gateway/live-first",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 116,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "gateway/live-first/chat/live-first-live-case-005",
+    "agent": "gateway/live-first",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": false,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 93,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "gateway/live-first/chat/live-first-live-case-006",
+    "agent": "gateway/live-first",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 138,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "live-repeat-live-case-001",
+    "agent": "gateway/live-repeat",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": true,
+      "total_task_value": 180,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": true,
+      "verified_value": 180
+    }
+  },
+  {
+    "request_id": "gateway/live-repeat/chat/live-repeat-live-case-002",
+    "agent": "gateway/live-repeat",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": false,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 22,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "live-repeat-live-case-003",
+    "agent": "gateway/live-repeat",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": true,
+      "total_task_value": 53,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": true,
+      "verified_value": 53
+    }
+  },
+  {
+    "request_id": "live-repeat-live-case-004",
+    "agent": "gateway/live-repeat",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": true,
+      "total_task_value": 116,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": true,
+      "verified_value": 116
+    }
+  },
+  {
+    "request_id": "gateway/live-repeat/chat/live-repeat-live-case-005",
+    "agent": "gateway/live-repeat",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": false,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": false,
+      "total_task_value": 93,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": false,
+      "verified_value": 0
+    }
+  },
+  {
+    "request_id": "live-repeat-live-case-006",
+    "agent": "gateway/live-repeat",
+    "outcome": {
+      "decision": "independent consumer selected governed inference for permitted evidence",
+      "deterministic_same_observation_correct": true,
+      "evaluator": "hidden-bank-exact.v1",
+      "schema_valid": true,
+      "total_task_value": 138,
+      "verification_mode": "offline evaluation; unmetered host CPU, not purchased execution",
+      "verified": true,
+      "verified_value": 138
+    }
+  }
+]

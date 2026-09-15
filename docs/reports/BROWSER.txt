@@ -1,0 +1,6 @@
+npm run test:browser
+
+> aecp-browser-validation@0.1.0 test:browser
+> node scripts/browser_smoke.cjs
+
+{"browser":"Chromium","run_id":"outage-market-1788855058712","digest":"5a22b12db5bd0cd02f8ca7ff7b521dd1611c019193761b0b842c4cfeb3811dd8","cases":36,"unresolved_exposure":28,"console_errors":[],"mobile_overflow":false,"views_checked":4,"refresh_preserved_state":true}

@@ -1,0 +1,21 @@
+name: Reproducible defect
+description: Report a correctness, recovery, authorization, or interface defect.
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Include source revision, commands, scenario, and seed. Never include credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Sanitized evidence
+      description: Relevant events, accounting state, and failing test output.

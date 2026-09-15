@@ -1,0 +1,24 @@
+{
+  "audit": {
+    "bound_breach_count": 0,
+    "consistency_errors": [],
+    "consistent": true,
+    "funding_breaches": [],
+    "within_funding": true
+  },
+  "concurrent_descendants": {
+    "admitted": 14,
+    "denied": 26,
+    "funded": 100,
+    "prevented_unfunded_exposure": 182,
+    "requests": 40,
+    "reserved": 98
+  },
+  "hoarding_expired": true,
+  "malicious_requests_denied": 5,
+  "market_conserved": true,
+  "restart_preserved_liability": 7,
+  "retry_pressure_exposure": 97,
+  "suspended_spawn_denied": true,
+  "timeout_refund_prevented": true
+}

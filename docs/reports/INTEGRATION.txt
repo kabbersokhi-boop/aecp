@@ -1,0 +1,4 @@
+PYTHONPATH=src python3 scripts/integration_smoke.py
+{"passive_example": "SETTLED", "economic_native_example": "BID -> ALLOCATED -> SETTLED", "real_provider_spend": 0}
+PYTHONPATH=src python3 scripts/integration_smoke.py
+{"passive_example": "SETTLED", "economic_native_example": "BID -> ALLOCATED -> SETTLED", "real_provider_spend": 0}

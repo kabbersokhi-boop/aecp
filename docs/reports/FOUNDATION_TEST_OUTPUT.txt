@@ -1,0 +1,57 @@
+test_existing_private_target_is_reused_without_creation (test_bootstrap.BootstrapTests.test_existing_private_target_is_reused_without_creation) ... ok
+test_existing_public_target_is_never_pushed_or_changed (test_bootstrap.BootstrapTests.test_existing_public_target_is_never_pushed_or_changed) ... ok
+test_later_uncommitted_changes_are_not_swept_into_a_commit (test_bootstrap.BootstrapTests.test_later_uncommitted_changes_are_not_swept_into_a_commit) ... ok
+test_new_target_is_created_private_before_nonforce_push (test_bootstrap.BootstrapTests.test_new_target_is_created_private_before_nonforce_push) ... ok
+test_nonmain_branch_is_not_renamed (test_bootstrap.BootstrapTests.test_nonmain_branch_is_not_renamed) ... ok
+test_unrelated_remote_is_refused (test_bootstrap.BootstrapTests.test_unrelated_remote_is_refused) ... ok
+test_wrong_authenticated_account_is_refused (test_bootstrap.BootstrapTests.test_wrong_authenticated_account_is_refused) ... ok
+test_canonical_digest_ignores_mapping_insertion_order (test_determinism.DeterminismTests.test_canonical_digest_ignores_mapping_insertion_order) ... ok
+test_coordinate_types_are_not_conflated (test_determinism.DeterminismTests.test_coordinate_types_are_not_conflated) ... ok
+test_demo_is_repeatable_and_explicitly_simulated (test_determinism.DeterminismTests.test_demo_is_repeatable_and_explicitly_simulated) ... ok
+test_hash_seed_does_not_change_results (test_determinism.DeterminismTests.test_hash_seed_does_not_change_results) ... ok
+test_invalid_probability_and_seed_are_rejected (test_determinism.DeterminismTests.test_invalid_probability_and_seed_are_rejected) ... ok
+test_nonfinite_numbers_are_not_valid_artifacts (test_determinism.DeterminismTests.test_nonfinite_numbers_are_not_valid_artifacts) ... ok
+test_order_of_calls_does_not_change_semantic_draws (test_determinism.DeterminismTests.test_order_of_calls_does_not_change_semantic_draws) ... ok
+test_probability_endpoints (test_determinism.DeterminismTests.test_probability_endpoints) ... ok
+test_account_creation_is_idempotent_not_a_top_up (test_ledger.LedgerTests.test_account_creation_is_idempotent_not_a_top_up) ... ok
+test_bound_violation_is_not_hidden (test_ledger.LedgerTests.test_bound_violation_is_not_hidden) ... ok
+test_conflicting_account_creation (test_ledger.LedgerTests.test_conflicting_account_creation) ... ok
+test_dispatch_claim_cannot_be_repeated (test_ledger.LedgerTests.test_dispatch_claim_cannot_be_repeated) ... ok
+test_duplicate_dispatch_race_has_one_winner (test_ledger.LedgerTests.test_duplicate_dispatch_race_has_one_winner) ... ok
+test_duplicate_reservation_does_not_reserve_twice (test_ledger.LedgerTests.test_duplicate_reservation_does_not_reserve_twice) ... ok
+test_excess_is_rejected_and_audited (test_ledger.LedgerTests.test_excess_is_rejected_and_audited) ... ok
+test_failed_transition_leaves_no_partial_changes (test_ledger.LedgerTests.test_failed_transition_leaves_no_partial_changes) ... ok
+test_frozen_account_cannot_dispatch_old_reservations (test_ledger.LedgerTests.test_frozen_account_cannot_dispatch_old_reservations) ... ok
+test_funding_is_integer_and_unit_explicit (test_ledger.LedgerTests.test_funding_is_integer_and_unit_explicit) ... ok
+test_invalid_identifiers_rejected (test_ledger.LedgerTests.test_invalid_identifiers_rejected) ... ok
+test_memory_database_is_refused (test_ledger.LedgerTests.test_memory_database_is_refused) ... ok
+test_missing_account_does_not_create_money (test_ledger.LedgerTests.test_missing_account_does_not_create_money) ... ok
+test_model_cost_and_market_credits_are_separate_units (test_ledger.LedgerTests.test_model_cost_and_market_credits_are_separate_units) ... ok
+test_negative_float_bool_and_out_of_range_rejected (test_ledger.LedgerTests.test_negative_float_bool_and_out_of_range_rejected) ... ok
+test_no_timeout_refund_for_dispatched (test_ledger.LedgerTests.test_no_timeout_refund_for_dispatched) ... ok
+test_normal_settlement_releases_only_unused_cap (test_ledger.LedgerTests.test_normal_settlement_releases_only_unused_cap) ... ok
+test_predispatch_cancellation_is_idempotent (test_ledger.LedgerTests.test_predispatch_cancellation_is_idempotent) ... ok
+test_processes_share_transactional_admission (test_ledger.LedgerTests.test_processes_share_transactional_admission) ... /usr/lib/python3.13/multiprocessing/popen_fork.py:67: DeprecationWarning: This process (pid=1111) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  self.pid = os.fork()
+ok
+test_projection_corruption_is_detected (test_ledger.LedgerTests.test_projection_corruption_is_detected) ... ok
+test_randomized_lifecycle_sequences_preserve_invariants (test_ledger.LedgerTests.test_randomized_lifecycle_sequences_preserve_invariants) ... ok
+test_request_hash_is_bound_to_idempotency (test_ledger.LedgerTests.test_request_hash_is_bound_to_idempotency) ... ok
+test_reservation_counts_before_dispatch (test_ledger.LedgerTests.test_reservation_counts_before_dispatch) ... ok
+test_restart_does_not_erase_uncertain_liability (test_ledger.LedgerTests.test_restart_does_not_erase_uncertain_liability) ... ok
+test_retries_have_independent_liabilities (test_ledger.LedgerTests.test_retries_have_independent_liabilities) ... ok
+test_settlement_idempotency_and_conflict (test_ledger.LedgerTests.test_settlement_idempotency_and_conflict) ... ok
+test_settlement_requires_dispatch (test_ledger.LedgerTests.test_settlement_requires_dispatch) ... ok
+test_threaded_reservation_has_one_spendable_balance (test_ledger.LedgerTests.test_threaded_reservation_has_one_spendable_balance) ... /usr/lib/python3.13/threading.py:303: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fa2ee0fe200>
+  def __enter__(self):
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_trusted_no_charge_reconciliation_requires_evidence (test_ledger.LedgerTests.test_trusted_no_charge_reconciliation_requires_evidence) ... ok
+test_unresolved_keeps_full_reservation (test_ledger.LedgerTests.test_unresolved_keeps_full_reservation) ... ok
+test_upper_bound_is_bound_to_idempotency (test_ledger.LedgerTests.test_upper_bound_is_bound_to_idempotency) ... ok
+test_zero_charge_is_a_valid_settlement (test_ledger.LedgerTests.test_zero_charge_is_a_valid_settlement) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 1.953s
+
+OK

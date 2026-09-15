@@ -1,0 +1,153 @@
+{
+  "code_revision": "3d8842aa079676ee4acf466e908f8aecfa0192d9",
+  "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "resolution_probe_v21",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "properties": {
+          "resolution": {
+            "type": "string",
+            "enum": [
+              "matched"
+            ]
+          }
+        },
+        "required": [
+          "resolution"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "request": {
+    "id": "structured-probe",
+    "agent_id": "probe",
+    "task_id": "development-schema-probe",
+    "resource": "nim_chat",
+    "operation": "reconcile",
+    "parameters": "{\"max_tokens\":48,\"messages\":[{\"content\":\"Invoice 100, paid 100. Return JSON resolution matched and also an extra sum field of 100.\",\"role\":\"user\"}],\"model\":\"nvidia/nemotron-3.5-lightning-30b-a3b\",\"response_format\":{\"json_schema\":{\"name\":\"resolution_probe_v21\",\"schema\":{\"additionalProperties\":false,\"properties\":{\"resolution\":{\"enum\":[\"matched\"],\"type\":\"string\"}},\"required\":[\"resolution\"],\"type\":\"object\"},\"strict\":true},\"type\":\"json_schema\"},\"temperature\":0}",
+    "fingerprint": "331fb6a7e3ba6b1a8ce7b5a15afbf21a3fed835ffa9027f4ed05c42dd4cfa3ee",
+    "quote": 118,
+    "result": {
+      "actual_cash_spend": 0,
+      "adapter_version": "nim-chat.v2",
+      "cash_basis": "operator-declared free prototype access; no invoice",
+      "completion": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "{\n  \"resolution\": \"matched\" \n  }",
+              "role": "assistant"
+            }
+          }
+        ],
+        "created": 1788930179,
+        "id": "chatcmpl-a0d9cdca-3721-485e-9360-fa0801674193",
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 14,
+          "prompt_tokens": 44,
+          "total_tokens": 58
+        }
+      },
+      "cost_model": "request-bytes-output-allowance.v2",
+      "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "model_identity_status": "exact",
+      "modeled_cost": 50,
+      "provider": "nvidia-hosted-nim",
+      "provider_latency_ms": 1518.832,
+      "provider_reported_model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+      "provider_started_at": "2026-09-09T05:02:58.335667+00:00",
+      "provider_usage": {
+        "completion_tokens": 14,
+        "prompt_tokens": 44,
+        "total_tokens": 58
+      },
+      "response_shape_valid": true,
+      "schema_id": "712f9e7e4f43d2764eeb492c397866741370af64968dcb8f59f7b8aa5d18f124",
+      "schema_valid": true,
+      "settlement_basis": "ceil((canonical_message_bytes + response_format_bytes)/16) + 2 * output_tokens",
+      "usage_basis": "provider_reported"
+    },
+    "policy_version": "authorization.v1",
+    "reservation": {
+      "id": "structured-probe",
+      "account_id": "probe",
+      "task_id": "development-schema-probe",
+      "operation_id": "reconcile",
+      "request_hash": "331fb6a7e3ba6b1a8ce7b5a15afbf21a3fed835ffa9027f4ed05c42dd4cfa3ee",
+      "upper_bound": 118,
+      "state": "SETTLED",
+      "actual": 50,
+      "expires_at": 100,
+      "resource": "nim_chat"
+    },
+    "quote_metadata": {
+      "details": {
+        "actual_cash_spend": 0,
+        "base_url": "https://integrate.api.nvidia.com/v1",
+        "bound_assumption": "provider completion_tokens <= authorized max_tokens",
+        "cash_basis": "operator-declared free prototype access; no invoice",
+        "cost_model": "request-bytes-output-allowance.v2",
+        "formula": "ceil((canonical_message_bytes + response_format_bytes)/16) + 2 * output_tokens",
+        "input_allocation": 22,
+        "input_basis": "canonical messages plus response_format bytes",
+        "input_bytes": 348,
+        "max_output_tokens": 48,
+        "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+        "per_output_token": 2,
+        "provider": "nvidia-hosted-nim",
+        "response_format": {
+          "json_schema": {
+            "name": "resolution_probe_v21",
+            "schema": {
+              "additionalProperties": false,
+              "properties": {
+                "resolution": {
+                  "enum": [
+                    "matched"
+                  ],
+                  "type": "string"
+                }
+              },
+              "required": [
+                "resolution"
+              ],
+              "type": "object"
+            },
+            "strict": true
+          },
+          "type": "json_schema"
+        },
+        "schema_id": "712f9e7e4f43d2764eeb492c397866741370af64968dcb8f59f7b8aa5d18f124",
+        "thinking_enabled": false,
+        "usage_is_not_a_dollar_bound": true
+      },
+      "mode": "live_provider_modeled_cost",
+      "unit": "SIM_COST_MICRO",
+      "upper_bound": 118,
+      "version": "nim-chat.v2"
+    },
+    "receipt": {
+      "request_id": "structured-probe",
+      "actual_units": 50,
+      "unit": "SIM_COST_MICRO",
+      "source": "nim-chat.v2"
+    },
+    "mode": "live_provider_modeled_cost",
+    "unit": "SIM_COST_MICRO"
+  },
+  "schema_supported_observed": true,
+  "chat_attempts": 1,
+  "catalog_attempts": 0,
+  "actual_cash_spend": 0,
+  "cash_basis": "operator-declared free prototype; no invoice",
+  "interpretation": "one compatibility observation, not proof of semantic correctness"
+}

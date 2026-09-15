@@ -1,0 +1,8 @@
+{
+  "workload_version": "semantic-finops.v3.frozen-1",
+  "split": "heldout",
+  "cases": 36,
+  "public_hash": "83345ec7e84d9025862ea56c3277c727d1427d118df26e8ff95663222ae14f37",
+  "full_corpus_hash": "7325b43b0dffd0d82c1a8a4f0c48c007ad4648d6de0b8c2158396767da6c6cd7",
+  "protocol": "new V3 corpus; freeze before policy tuning; no quality-based held-out reruns"
+}

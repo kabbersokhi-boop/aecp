@@ -1,0 +1,75 @@
+{
+  "audit": {
+    "bound_breach_count": 0,
+    "consistency_errors": [],
+    "consistent": true,
+    "funding_breaches": [],
+    "within_funding": true
+  },
+  "costs_are_simulated": true,
+  "events": [
+    {
+      "account_id": "investigator",
+      "hold_id": null,
+      "kind": "account_funded",
+      "payload": "{\"funded\":1000000,\"unit\":\"SIM_COST_MICRO\"}",
+      "seq": 1
+    },
+    {
+      "account_id": "investigator",
+      "hold_id": "attempt-1",
+      "kind": "reserved",
+      "payload": "{\"operation_id\":\"investigate-1\",\"request_hash\":\"63f7c4fb1a4c7dd06a2e772fcbf3cb0d5e23a60b6380713e4a98d4387bdd5871\",\"task_id\":\"case-1\",\"upper_bound\":400000}",
+      "seq": 2
+    },
+    {
+      "account_id": "investigator",
+      "hold_id": "attempt-1",
+      "kind": "dispatched",
+      "payload": "{}",
+      "seq": 3
+    },
+    {
+      "account_id": "investigator",
+      "hold_id": "attempt-1",
+      "kind": "unresolved",
+      "payload": "{}",
+      "seq": 4
+    },
+    {
+      "account_id": "investigator",
+      "hold_id": "attempt-1",
+      "kind": "settled",
+      "payload": "{\"actual\":250000,\"released\":150000}",
+      "seq": 5
+    },
+    {
+      "account_id": "investigator",
+      "hold_id": "attempt-2",
+      "kind": "reservation_denied",
+      "payload": "{\"reason\":\"insufficient uncommitted funding\",\"task_id\":\"case-2\",\"upper_bound\":800000}",
+      "seq": 6
+    }
+  ],
+  "mode": "deterministic-foundation-demo",
+  "real_provider_spend": 0,
+  "reconciled_snapshot": {
+    "funded": 1000000,
+    "headroom": 750000,
+    "id": "investigator",
+    "reserved": 0,
+    "spent": 250000,
+    "status": "ACTIVE",
+    "unit": "SIM_COST_MICRO"
+  },
+  "unfunded_request_denied": true,
+  "unresolved_snapshot": {
+    "funded": 1000000,
+    "headroom": 600000,
+    "id": "investigator",
+    "reserved": 400000,
+    "spent": 0,
+    "status": "ACTIVE",
+    "unit": "SIM_COST_MICRO"
+  }
+}

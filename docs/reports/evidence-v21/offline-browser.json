@@ -1,0 +1,12 @@
+{
+  "browser": "Chromium",
+  "run_id": "outage-market-1788978657734",
+  "digest": "5a22b12db5bd0cd02f8ca7ff7b521dd1611c019193761b0b842c4cfeb3811dd8",
+  "cases": 36,
+  "unresolved_exposure": 28,
+  "console_errors": [],
+  "mobile_overflow": false,
+  "views_checked": 5,
+  "semantic_cases": 12,
+  "refresh_preserved_state": true
+}

@@ -1,0 +1,6505 @@
+{
+  "actual_cash_spend": 0,
+  "aggregates": [
+    {
+      "budget": 180,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 18.6,
+          "n": 5,
+          "sd": 1.3416407864998738
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0605263157894738,
+          "n": 5,
+          "sd": 0.07667367310110039
+        },
+        "coordination_cost": {
+          "mean": 72.4,
+          "n": 5,
+          "sd": 4.09878030638384
+        },
+        "deadline_misses": {
+          "mean": 19,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "denied_tasks": {
+          "mean": 18.4,
+          "n": 5,
+          "sd": 1.140175425099138
+        },
+        "failed_tasks": {
+          "mean": 0.4,
+          "n": 5,
+          "sd": 0.5477225575051661
+        },
+        "jain_access_index": {
+          "mean": 0.9869773136580747,
+          "n": 5,
+          "sd": 0.0219722065275248
+        },
+        "jain_premium_access_index": {
+          "mean": 0.6888888888888889,
+          "n": 5,
+          "sd": 0.1845916413981794
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9796209631916094,
+          "n": 5,
+          "sd": 0.04255585502176068
+        },
+        "modeled_cost": {
+          "mean": 180,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 31.6,
+          "n": 5,
+          "sd": 6.06630035524124
+        },
+        "premium_utilization": {
+          "mean": 0.475,
+          "n": 5,
+          "sd": 0.05590169943749474
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 2,
+          "n": 5,
+          "sd": 0.0
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.0388888888888888,
+          "n": 5,
+          "sd": 0.04212708580028636
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 17,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "verified_value": {
+          "mean": 1817.4,
+          "n": 5,
+          "sd": 329.09770585648266
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 180,
+      "n": 5,
+      "paired_delta_sd": 39.68248984123854,
+      "paired_value_delta_vs_central_mean": -18.8,
+      "scheduler": "market",
+      "verified_value_mean": 1817.4,
+      "verified_value_sd": 329.09770585648266
+    },
+    {
+      "budget": 180,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 18.6,
+          "n": 5,
+          "sd": 2.073644135332772
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0546218487394958,
+          "n": 5,
+          "sd": 0.09281815980829627
+        },
+        "coordination_cost": {
+          "mean": 64.4,
+          "n": 5,
+          "sd": 2.1908902300206643
+        },
+        "deadline_misses": {
+          "mean": 18.6,
+          "n": 5,
+          "sd": 2.073644135332772
+        },
+        "denied_tasks": {
+          "mean": 18.2,
+          "n": 5,
+          "sd": 1.6431676725154984
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9698087058514866,
+          "n": 5,
+          "sd": 0.03234342611514092
+        },
+        "jain_premium_access_index": {
+          "mean": 0.7069281045751634,
+          "n": 5,
+          "sd": 0.17765614831959933
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9698087058514866,
+          "n": 5,
+          "sd": 0.03234342611514092
+        },
+        "modeled_cost": {
+          "mean": 180,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 23.6,
+          "n": 5,
+          "sd": 4.33589667773576
+        },
+        "premium_utilization": {
+          "mean": 0.575,
+          "n": 5,
+          "sd": 0.11180339887498948
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 2,
+          "n": 5,
+          "sd": 0.0
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.0555555555555556,
+          "n": 5,
+          "sd": 0.06514466333088097
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 17.4,
+          "n": 5,
+          "sd": 2.073644135332772
+        },
+        "verified_value": {
+          "mean": 1889,
+          "n": 5,
+          "sd": 312.1834396632851
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 180,
+      "n": 5,
+      "paired_delta_sd": 129.93152042518398,
+      "paired_value_delta_vs_central_mean": 52.8,
+      "scheduler": "equal",
+      "verified_value_mean": 1889,
+      "verified_value_sd": 312.1834396632851
+    },
+    {
+      "budget": 180,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 18.6,
+          "n": 5,
+          "sd": 2.3021728866442674
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0517857142857143,
+          "n": 5,
+          "sd": 0.0819290696211033
+        },
+        "coordination_cost": {
+          "mean": 64.4,
+          "n": 5,
+          "sd": 0.8944271909999159
+        },
+        "deadline_misses": {
+          "mean": 18.8,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "denied_tasks": {
+          "mean": 18.6,
+          "n": 5,
+          "sd": 2.3021728866442674
+        },
+        "failed_tasks": {
+          "mean": 0.2,
+          "n": 5,
+          "sd": 0.4472135954999579
+        },
+        "jain_access_index": {
+          "mean": 0.9818104939458006,
+          "n": 5,
+          "sd": 0.02711694486477257
+        },
+        "jain_premium_access_index": {
+          "mean": 0.7202614379084967,
+          "n": 5,
+          "sd": 0.16995977692424438
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9829124223204562,
+          "n": 5,
+          "sd": 0.02786271136901098
+        },
+        "modeled_cost": {
+          "mean": 180,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 22.4,
+          "n": 5,
+          "sd": 3.361547262794322
+        },
+        "premium_utilization": {
+          "mean": 0.575,
+          "n": 5,
+          "sd": 0.11180339887498948
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 2.4,
+          "n": 5,
+          "sd": 0.5477225575051661
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.0555555555555556,
+          "n": 5,
+          "sd": 0.06514466333088097
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 17.2,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "verified_value": {
+          "mean": 1901,
+          "n": 5,
+          "sd": 350.11712326020273
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 180,
+      "n": 5,
+      "paired_delta_sd": 71.90757957267091,
+      "paired_value_delta_vs_central_mean": 64.8,
+      "scheduler": "priority",
+      "verified_value_mean": 1901,
+      "verified_value_sd": 350.11712326020273
+    },
+    {
+      "budget": 180,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 17.2,
+          "n": 5,
+          "sd": 0.8366600265340756
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.011111111111111,
+          "n": 5,
+          "sd": 0.024845199749997673
+        },
+        "coordination_cost": {
+          "mean": 66.8,
+          "n": 5,
+          "sd": 2.6832815729997477
+        },
+        "deadline_misses": {
+          "mean": 17.2,
+          "n": 5,
+          "sd": 0.8366600265340756
+        },
+        "denied_tasks": {
+          "mean": 17.2,
+          "n": 5,
+          "sd": 0.8366600265340756
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9695551553854882,
+          "n": 5,
+          "sd": 0.028883657457522496
+        },
+        "jain_premium_access_index": {
+          "mean": 0.6888888888888889,
+          "n": 5,
+          "sd": 0.1845916413981794
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9695551553854882,
+          "n": 5,
+          "sd": 0.028883657457522496
+        },
+        "modeled_cost": {
+          "mean": 180,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 22,
+          "n": 5,
+          "sd": 2.5495097567963922
+        },
+        "premium_utilization": {
+          "mean": 0.475,
+          "n": 5,
+          "sd": 0.05590169943749474
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 2.4,
+          "n": 5,
+          "sd": 0.5477225575051661
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.0388888888888888,
+          "n": 5,
+          "sd": 0.04212708580028636
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 18.8,
+          "n": 5,
+          "sd": 0.8366600265340756
+        },
+        "verified_value": {
+          "mean": 2151.8,
+          "n": 5,
+          "sd": 225.27361141509672
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 180,
+      "n": 5,
+      "paired_delta_sd": 172.39576560925155,
+      "paired_value_delta_vs_central_mean": 315.6,
+      "scheduler": "evcost",
+      "verified_value_mean": 2151.8,
+      "verified_value_sd": 225.27361141509672
+    },
+    {
+      "budget": 180,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 18.4,
+          "n": 5,
+          "sd": 1.140175425099138
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "coordination_cost": {
+          "mean": 65.6,
+          "n": 5,
+          "sd": 6.841052550594828
+        },
+        "deadline_misses": {
+          "mean": 19,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "denied_tasks": {
+          "mean": 17,
+          "n": 5,
+          "sd": 2.449489742783178
+        },
+        "failed_tasks": {
+          "mean": 0.6,
+          "n": 5,
+          "sd": 0.8944271909999159
+        },
+        "jain_access_index": {
+          "mean": 0.9959731135817097,
+          "n": 5,
+          "sd": 0.003761838738707444
+        },
+        "jain_premium_access_index": {
+          "mean": 0.7022222222222222,
+          "n": 5,
+          "sd": 0.17256238807393046
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.988508461235734,
+          "n": 5,
+          "sd": 0.01341061975000959
+        },
+        "modeled_cost": {
+          "mean": 180,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 24.4,
+          "n": 5,
+          "sd": 4.560701700396552
+        },
+        "premium_utilization": {
+          "mean": 0.45,
+          "n": 5,
+          "sd": 0.06846531968814576
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 2,
+          "n": 5,
+          "sd": 0.0
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.1500000000000001,
+          "n": 5,
+          "sd": 0.09938079899999074
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 17,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "verified_value": {
+          "mean": 1836.2,
+          "n": 5,
+          "sd": 302.62881554802414
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 180,
+      "n": 5,
+      "paired_delta_sd": 0.0,
+      "paired_value_delta_vs_central_mean": 0,
+      "scheduler": "central",
+      "verified_value_mean": 1836.2,
+      "verified_value_sd": 302.62881554802414
+    },
+    {
+      "budget": 300,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 10,
+          "n": 5,
+          "sd": 2.8284271247461903
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.087906443603595,
+          "n": 5,
+          "sd": 0.07834541918715042
+        },
+        "coordination_cost": {
+          "mean": 122,
+          "n": 5,
+          "sd": 6.164414002968976
+        },
+        "deadline_misses": {
+          "mean": 10,
+          "n": 5,
+          "sd": 2.8284271247461903
+        },
+        "denied_tasks": {
+          "mean": 9.2,
+          "n": 5,
+          "sd": 1.9235384061671346
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9892478916562962,
+          "n": 5,
+          "sd": 0.009841086354437052
+        },
+        "jain_premium_access_index": {
+          "mean": 0.8827953745600805,
+          "n": 5,
+          "sd": 0.11357973713552841
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9892478916562962,
+          "n": 5,
+          "sd": 0.009841086354437052
+        },
+        "modeled_cost": {
+          "mean": 300,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 59.8,
+          "n": 5,
+          "sd": 11.211601134539169
+        },
+        "premium_utilization": {
+          "mean": 0.925,
+          "n": 5,
+          "sd": 0.06846531968814576
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 3.6,
+          "n": 5,
+          "sd": 0.8944271909999159
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.1222222222222222,
+          "n": 5,
+          "sd": 0.09337631285539792
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 26,
+          "n": 5,
+          "sd": 2.8284271247461903
+        },
+        "verified_value": {
+          "mean": 2810,
+          "n": 5,
+          "sd": 407.5046012010171
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 300,
+      "n": 5,
+      "paired_delta_sd": 182.62256158536383,
+      "paired_value_delta_vs_central_mean": -162,
+      "scheduler": "market",
+      "verified_value_mean": 2810,
+      "verified_value_sd": 407.5046012010171
+    },
+    {
+      "budget": 300,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 8.6,
+          "n": 5,
+          "sd": 2.1908902300206643
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0984827586206896,
+          "n": 5,
+          "sd": 0.07569637076483846
+        },
+        "coordination_cost": {
+          "mean": 105.8,
+          "n": 5,
+          "sd": 2.9495762407505253
+        },
+        "deadline_misses": {
+          "mean": 8.8,
+          "n": 5,
+          "sd": 2.4899799195977463
+        },
+        "denied_tasks": {
+          "mean": 8,
+          "n": 5,
+          "sd": 1.4142135623730951
+        },
+        "failed_tasks": {
+          "mean": 0.2,
+          "n": 5,
+          "sd": 0.4472135954999579
+        },
+        "jain_access_index": {
+          "mean": 0.9534838923356286,
+          "n": 5,
+          "sd": 0.03728675951630679
+        },
+        "jain_premium_access_index": {
+          "mean": 0.8895927601809954,
+          "n": 5,
+          "sd": 0.049602826696230014
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.956946939092793,
+          "n": 5,
+          "sd": 0.03683437528587504
+        },
+        "modeled_cost": {
+          "mean": 293.4,
+          "n": 5,
+          "sd": 6.5038450166036395
+        },
+        "planning_bidding_cost": {
+          "mean": 37.8,
+          "n": 5,
+          "sd": 6.3796551630946325
+        },
+        "premium_utilization": {
+          "mean": 0.86,
+          "n": 5,
+          "sd": 0.1341640786499874
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 4.6,
+          "n": 5,
+          "sd": 0.5477225575051661
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.1555555555555554,
+          "n": 5,
+          "sd": 0.1281997862134925
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 27.2,
+          "n": 5,
+          "sd": 2.4899799195977463
+        },
+        "verified_value": {
+          "mean": 2930.6,
+          "n": 5,
+          "sd": 390.0869133923875
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 293.4,
+      "n": 5,
+      "paired_delta_sd": 181.26168927823662,
+      "paired_value_delta_vs_central_mean": -41.4,
+      "scheduler": "equal",
+      "verified_value_mean": 2930.6,
+      "verified_value_sd": 390.0869133923875
+    },
+    {
+      "budget": 300,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 7.2,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.1267236467236468,
+          "n": 5,
+          "sd": 0.14666283695471727
+        },
+        "coordination_cost": {
+          "mean": 108.8,
+          "n": 5,
+          "sd": 4.08656334834051
+        },
+        "deadline_misses": {
+          "mean": 7.4,
+          "n": 5,
+          "sd": 2.4083189157584592
+        },
+        "denied_tasks": {
+          "mean": 7.2,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "failed_tasks": {
+          "mean": 0.2,
+          "n": 5,
+          "sd": 0.4472135954999579
+        },
+        "jain_access_index": {
+          "mean": 0.9822022877413829,
+          "n": 5,
+          "sd": 0.02005771197827647
+        },
+        "jain_premium_access_index": {
+          "mean": 0.8520261437908497,
+          "n": 5,
+          "sd": 0.17017931104217102
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9832449703011323,
+          "n": 5,
+          "sd": 0.020805333905780533
+        },
+        "modeled_cost": {
+          "mean": 296,
+          "n": 5,
+          "sd": 4.636809247747852
+        },
+        "planning_bidding_cost": {
+          "mean": 38.6,
+          "n": 5,
+          "sd": 3.0495901363953815
+        },
+        "premium_utilization": {
+          "mean": 0.8200000000000001,
+          "n": 5,
+          "sd": 0.05419870847169699
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 4.2,
+          "n": 5,
+          "sd": 0.8366600265340756
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.1444444444444444,
+          "n": 5,
+          "sd": 0.12329078345095634
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 28.6,
+          "n": 5,
+          "sd": 2.4083189157584592
+        },
+        "verified_value": {
+          "mean": 3056.8,
+          "n": 5,
+          "sd": 348.1144926601017
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 296,
+      "n": 5,
+      "paired_delta_sd": 113.82750107069909,
+      "paired_value_delta_vs_central_mean": 84.8,
+      "scheduler": "priority",
+      "verified_value_mean": 3056.8,
+      "verified_value_sd": 348.1144926601017
+    },
+    {
+      "budget": 300,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 6.2,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.021957671957672,
+          "n": 5,
+          "sd": 0.032984018346046744
+        },
+        "coordination_cost": {
+          "mean": 112,
+          "n": 5,
+          "sd": 2.5495097567963922
+        },
+        "deadline_misses": {
+          "mean": 6.2,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "denied_tasks": {
+          "mean": 5.8,
+          "n": 5,
+          "sd": 1.6431676725154984
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9762423732462288,
+          "n": 5,
+          "sd": 0.02457147544461355
+        },
+        "jain_premium_access_index": {
+          "mean": 0.8847374847374847,
+          "n": 5,
+          "sd": 0.06883025501190065
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9762423732462288,
+          "n": 5,
+          "sd": 0.02457147544461355
+        },
+        "modeled_cost": {
+          "mean": 299.2,
+          "n": 5,
+          "sd": 1.3038404810405297
+        },
+        "planning_bidding_cost": {
+          "mean": 39.2,
+          "n": 5,
+          "sd": 2.588435821108957
+        },
+        "premium_utilization": {
+          "mean": 0.85,
+          "n": 5,
+          "sd": 0.13693063937629152
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 4.4,
+          "n": 5,
+          "sd": 0.5477225575051661
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.1333333333333333,
+          "n": 5,
+          "sd": 0.10829771494232185
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 29.8,
+          "n": 5,
+          "sd": 2.16794833886788
+        },
+        "verified_value": {
+          "mean": 3447.6,
+          "n": 5,
+          "sd": 292.11436116699224
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 299.2,
+      "n": 5,
+      "paired_delta_sd": 190.4961941877055,
+      "paired_value_delta_vs_central_mean": 475.6,
+      "scheduler": "evcost",
+      "verified_value_mean": 3447.6,
+      "verified_value_sd": 292.11436116699224
+    },
+    {
+      "budget": 300,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 8.8,
+          "n": 5,
+          "sd": 2.04939015319192
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "coordination_cost": {
+          "mean": 97.2,
+          "n": 5,
+          "sd": 8.899438184514796
+        },
+        "deadline_misses": {
+          "mean": 9.6,
+          "n": 5,
+          "sd": 2.4083189157584592
+        },
+        "denied_tasks": {
+          "mean": 7.4,
+          "n": 5,
+          "sd": 2.6076809620810595
+        },
+        "failed_tasks": {
+          "mean": 0.8,
+          "n": 5,
+          "sd": 0.8366600265340756
+        },
+        "jain_access_index": {
+          "mean": 0.9969891526335742,
+          "n": 5,
+          "sd": 0.004248897688958834
+        },
+        "jain_premium_access_index": {
+          "mean": 0.7347985347985347,
+          "n": 5,
+          "sd": 0.17914297563281495
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9917108058457185,
+          "n": 5,
+          "sd": 0.010476487739435526
+        },
+        "modeled_cost": {
+          "mean": 300,
+          "n": 5,
+          "sd": 0.0
+        },
+        "planning_bidding_cost": {
+          "mean": 33.8,
+          "n": 5,
+          "sd": 5.403702434442518
+        },
+        "premium_utilization": {
+          "mean": 0.64,
+          "n": 5,
+          "sd": 0.108397416943394
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 3,
+          "n": 5,
+          "sd": 0.0
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.1444444444444444,
+          "n": 5,
+          "sd": 0.1009216784699164
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 26.4,
+          "n": 5,
+          "sd": 2.4083189157584592
+        },
+        "verified_value": {
+          "mean": 2972,
+          "n": 5,
+          "sd": 377.30889202349846
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 300,
+      "n": 5,
+      "paired_delta_sd": 0.0,
+      "paired_value_delta_vs_central_mean": 0,
+      "scheduler": "central",
+      "verified_value_mean": 2972,
+      "verified_value_sd": 377.30889202349846
+    },
+    {
+      "budget": 450,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 2.4,
+          "n": 5,
+          "sd": 2.5099800796022267
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.1332738095238095,
+          "n": 5,
+          "sd": 0.0831546766880976
+        },
+        "coordination_cost": {
+          "mean": 166,
+          "n": 5,
+          "sd": 19.748417658131498
+        },
+        "deadline_misses": {
+          "mean": 2.4,
+          "n": 5,
+          "sd": 2.5099800796022267
+        },
+        "denied_tasks": {
+          "mean": 0.4,
+          "n": 5,
+          "sd": 0.8944271909999159
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9953260047656811,
+          "n": 5,
+          "sd": 0.005519336955474269
+        },
+        "jain_premium_access_index": {
+          "mean": 0.9017552838844504,
+          "n": 5,
+          "sd": 0.060852657200043514
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9953260047656811,
+          "n": 5,
+          "sd": 0.005519336955474269
+        },
+        "modeled_cost": {
+          "mean": 398.4,
+          "n": 5,
+          "sd": 26.015380066414558
+        },
+        "planning_bidding_cost": {
+          "mean": 83.8,
+          "n": 5,
+          "sd": 21.77613372479146
+        },
+        "premium_utilization": {
+          "mean": 0.8733333333333333,
+          "n": 5,
+          "sd": 0.05348935511960401
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 5,
+          "n": 5,
+          "sd": 1.4142135623730951
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.261111111111111,
+          "n": 5,
+          "sd": 0.18592445034090568
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 33.6,
+          "n": 5,
+          "sd": 2.5099800796022267
+        },
+        "verified_value": {
+          "mean": 3667.4,
+          "n": 5,
+          "sd": 286.9839716778622
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 398.4,
+      "n": 5,
+      "paired_delta_sd": 158.70948301850146,
+      "paired_value_delta_vs_central_mean": -106.8,
+      "scheduler": "market",
+      "verified_value_mean": 3667.4,
+      "verified_value_sd": 286.9839716778622
+    },
+    {
+      "budget": 450,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 1.2,
+          "n": 5,
+          "sd": 1.6431676725154984
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.2287878787878788,
+          "n": 5,
+          "sd": 0.13532620710096713
+        },
+        "coordination_cost": {
+          "mean": 132.8,
+          "n": 5,
+          "sd": 6.760177512462228
+        },
+        "deadline_misses": {
+          "mean": 1.2,
+          "n": 5,
+          "sd": 1.6431676725154984
+        },
+        "denied_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9989041095890411,
+          "n": 5,
+          "sd": 0.00245048545479428
+        },
+        "jain_premium_access_index": {
+          "mean": 0.9282396446102972,
+          "n": 5,
+          "sd": 0.055702787672761586
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9989041095890411,
+          "n": 5,
+          "sd": 0.00245048545479428
+        },
+        "modeled_cost": {
+          "mean": 380,
+          "n": 5,
+          "sd": 13.435028842544403
+        },
+        "planning_bidding_cost": {
+          "mean": 46.4,
+          "n": 5,
+          "sd": 7.63544366752843
+        },
+        "premium_utilization": {
+          "mean": 0.93,
+          "n": 5,
+          "sd": 0.07110243002567179
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 5.6,
+          "n": 5,
+          "sd": 1.6733200530681511
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.288888888888889,
+          "n": 5,
+          "sd": 0.21209565743134523
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 34.8,
+          "n": 5,
+          "sd": 1.6431676725154984
+        },
+        "verified_value": {
+          "mean": 3721.4,
+          "n": 5,
+          "sd": 353.66693371023536
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 380,
+      "n": 5,
+      "paired_delta_sd": 115.44565821199167,
+      "paired_value_delta_vs_central_mean": -52.8,
+      "scheduler": "equal",
+      "verified_value_mean": 3721.4,
+      "verified_value_sd": 353.66693371023536
+    },
+    {
+      "budget": 450,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 0.2,
+          "n": 5,
+          "sd": 0.4472135954999579
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.3534920634920635,
+          "n": 5,
+          "sd": 0.3002484903520412
+        },
+        "coordination_cost": {
+          "mean": 137.4,
+          "n": 5,
+          "sd": 12.601587201618692
+        },
+        "deadline_misses": {
+          "mean": 0.2,
+          "n": 5,
+          "sd": 0.4472135954999579
+        },
+        "denied_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9996740016299919,
+          "n": 5,
+          "sd": 0.0007289545158923553
+        },
+        "jain_premium_access_index": {
+          "mean": 0.9316860115316166,
+          "n": 5,
+          "sd": 0.052582409925740266
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9996740016299919,
+          "n": 5,
+          "sd": 0.0007289545158923553
+        },
+        "modeled_cost": {
+          "mean": 398.6,
+          "n": 5,
+          "sd": 37.61382724477795
+        },
+        "planning_bidding_cost": {
+          "mean": 49.6,
+          "n": 5,
+          "sd": 11.92895636675732
+        },
+        "premium_utilization": {
+          "mean": 0.8925,
+          "n": 5,
+          "sd": 0.040225061287157214
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 5.4,
+          "n": 5,
+          "sd": 1.51657508881031
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.3777777777777778,
+          "n": 5,
+          "sd": 0.33135989907659225
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 35.8,
+          "n": 5,
+          "sd": 0.4472135954999579
+        },
+        "verified_value": {
+          "mean": 3829.4,
+          "n": 5,
+          "sd": 335.98184474759944
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 398.6,
+      "n": 5,
+      "paired_delta_sd": 75.0679692012512,
+      "paired_value_delta_vs_central_mean": 55.2,
+      "scheduler": "priority",
+      "verified_value_mean": 3829.4,
+      "verified_value_sd": 335.98184474759944
+    },
+    {
+      "budget": 450,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 2,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.1436904761904763,
+          "n": 5,
+          "sd": 0.09125152399870463
+        },
+        "coordination_cost": {
+          "mean": 129.2,
+          "n": 5,
+          "sd": 8.438009243891594
+        },
+        "deadline_misses": {
+          "mean": 2,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "denied_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "failed_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_access_index": {
+          "mean": 0.9951001204800402,
+          "n": 5,
+          "sd": 0.005640793370416642
+        },
+        "jain_premium_access_index": {
+          "mean": 0.9139135866180285,
+          "n": 5,
+          "sd": 0.06079126395803673
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9951001204800402,
+          "n": 5,
+          "sd": 0.005640793370416642
+        },
+        "modeled_cost": {
+          "mean": 365.2,
+          "n": 5,
+          "sd": 18.793615937333612
+        },
+        "planning_bidding_cost": {
+          "mean": 45.6,
+          "n": 5,
+          "sd": 6.985699678629192
+        },
+        "premium_utilization": {
+          "mean": 0.89,
+          "n": 5,
+          "sd": 0.05082650227325632
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 5.2,
+          "n": 5,
+          "sd": 1.7888543819998317
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.2666666666666666,
+          "n": 5,
+          "sd": 0.19404721329525532
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 34,
+          "n": 5,
+          "sd": 1.8708286933869707
+        },
+        "verified_value": {
+          "mean": 3708.8,
+          "n": 5,
+          "sd": 306.5831045573125
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 365.2,
+      "n": 5,
+      "paired_delta_sd": 94.32815062323654,
+      "paired_value_delta_vs_central_mean": -65.4,
+      "scheduler": "evcost",
+      "verified_value_mean": 3708.8,
+      "verified_value_sd": 306.5831045573125
+    },
+    {
+      "budget": 450,
+      "metric_summaries": {
+        "abandoned_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "actual_cash_spend": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "completion_latency_ticks": {
+          "mean": 1.0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "coordination_cost": {
+          "mean": 120,
+          "n": 5,
+          "sd": 0.0
+        },
+        "deadline_misses": {
+          "mean": 1,
+          "n": 5,
+          "sd": 1.0
+        },
+        "denied_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "failed_tasks": {
+          "mean": 1,
+          "n": 5,
+          "sd": 1.0
+        },
+        "jain_access_index": {
+          "mean": 1.0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "jain_premium_access_index": {
+          "mean": 0.8007410133725923,
+          "n": 5,
+          "sd": 0.16148142044348524
+        },
+        "jain_verified_outcome_index": {
+          "mean": 0.9979540080399059,
+          "n": 5,
+          "sd": 0.0028260168281683783
+        },
+        "modeled_cost": {
+          "mean": 398,
+          "n": 5,
+          "sd": 26.076809620810597
+        },
+        "planning_bidding_cost": {
+          "mean": 36,
+          "n": 5,
+          "sd": 0.0
+        },
+        "premium_utilization": {
+          "mean": 0.975,
+          "n": 5,
+          "sd": 0.05590169943749474
+        },
+        "reserved": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "retry_execution_cost": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "review_demand": {
+          "mean": 4,
+          "n": 5,
+          "sd": 0.0
+        },
+        "terminal_decision_latency_ticks": {
+          "mean": 1.0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "total_task_value": {
+          "mean": 3835.4,
+          "n": 5,
+          "sd": 325.70354618886176
+        },
+        "unresolved_exposure": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "unresolved_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        },
+        "verified_tasks": {
+          "mean": 35,
+          "n": 5,
+          "sd": 1.0
+        },
+        "verified_value": {
+          "mean": 3774.2,
+          "n": 5,
+          "sd": 311.47423649477014
+        },
+        "waiting_tasks": {
+          "mean": 0,
+          "n": 5,
+          "sd": 0.0
+        }
+      },
+      "modeled_cost_mean": 398,
+      "n": 5,
+      "paired_delta_sd": 0.0,
+      "paired_value_delta_vs_central_mean": 0,
+      "scheduler": "central",
+      "verified_value_mean": 3774.2,
+      "verified_value_sd": 311.47423649477014
+    }
+  ],
+  "budgets": [
+    180,
+    300,
+    450
+  ],
+  "code_revision": "3f43161644e75e079996a33a72451cf59106c5a6",
+  "cost_unit": "SIM_COST_MICRO",
+  "created_at": "2026-09-08T08:10:31.164504+00:00",
+  "method": "paired-seed deterministic reruns; sample SD, no significance claim",
+  "policy": "adaptive",
+  "rows": [
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "48b6451afe1caf19769a2e95bdb150945cb6af58410e2c1e40edec591603b5c9",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          6,
+          6,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 8,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 18,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 26,
+        "premium_access_by_agent": [
+          1,
+          2,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 2145,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "726b617b1d07082c38f0b3697eedc7eedcaee7821aefa70a81d10efe058355f8",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          6,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          1,
+          2,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 2176,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "5d1c248c9673549d87993da61a642d15525df3b9fe88bd2c587004115dec83d6",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          7,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          1,
+          2,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 2330,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "f4f2e899e8b6abc963c4601c08eeac8563339972817c52f636457b5f307f9b06",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          7,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          1,
+          2,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 2336,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "01ad0eb670fd3cb18e2aa9890c3c6cad4221193c116d50bf709fbfa0f39baccb",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          6,
+          6,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 26,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 26,
+        "premium_access_by_agent": [
+          1,
+          2,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.2222222222222223,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 2145,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "8ab888922820ce161137f00fb8d13d89a0ede79ba7a3af1f462810b642cc059f",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          6,
+          6,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 8,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 18,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 26,
+        "premium_access_by_agent": [
+          1,
+          1,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 1852,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "58e7f6bc1331dd2f70357893f2a2a5876f1a239f060bfaa2be7c58da92a75021",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          6,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          1,
+          1,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 1913,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "b8853a9f26c97e6af1459df619ab06c123ba9c82d228bd9359d542d998c98d94",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          7,
+          6,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 17,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          1,
+          1,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 1852,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "a11501b50dd77ae131359480b57f6ee785de7cbf2a7edc99e2c36a51d4333b65",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          6,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          1,
+          1,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 1987,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "845e1f2c79512f68331f3aceb90536672b1b890a9ace507af12425c010482ff0",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          6,
+          6,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 26,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 26,
+        "premium_access_by_agent": [
+          1,
+          1,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.2222222222222223,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 1852,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "e9e202130f12af685c09a9c101cdbb9ee8959b26d411204a6939a5fed3114ef5",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          7,
+          6,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0526315789473684,
+        "coordination_cost": 74,
+        "cost_categories": {
+          "bidding": 8,
+          "cheap": 64,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 22,
+          "premium": 42,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.6,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 30,
+        "premium_access_by_agent": [
+          0,
+          2,
+          1
+        ],
+        "premium_utilization": 0.375,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 2001,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "8f1c939995688903dacf246ce00206d90648081611791978813ede02995874ca",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          5,
+          6,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 26,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9818181818181818,
+        "jain_premium_access_index": 0.6666666666666666,
+        "jain_verified_outcome_index": 0.9818181818181818,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 26,
+        "premium_access_by_agent": [
+          0,
+          2,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 1943,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "242a05997e29c764c91e980467355a1d4b21f7d79a19b0338cb83c1ede6b050c",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          6,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 20,
+          "premium": 56,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 17,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.6666666666666666,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 20,
+        "premium_access_by_agent": [
+          0,
+          2,
+          2
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 2082,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "bb62dcb07249b980766095d6df05eb62cbe885158ef608a7f9ad5e20b66c625c",
+      "metrics": {
+        "abandoned_tasks": 16,
+        "access_by_agent": [
+          6,
+          8,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 70,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 68,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 21,
+          "premium": 42,
+          "verification": 40
+        },
+        "deadline_misses": 16,
+        "denied_tasks": 16,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9803921568627451,
+        "jain_premium_access_index": 0.6,
+        "jain_verified_outcome_index": 0.9803921568627451,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 21,
+        "premium_access_by_agent": [
+          0,
+          2,
+          1
+        ],
+        "premium_utilization": 0.375,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 20,
+        "verified_value": 2292,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "9e82e1c591a8cc59f9ea818835746e17fccc5f219609a0ca72664f8190de587a",
+      "metrics": {
+        "abandoned_tasks": 17,
+        "access_by_agent": [
+          6,
+          7,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 74,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 64,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 30,
+          "premium": 42,
+          "verification": 38
+        },
+        "deadline_misses": 17,
+        "denied_tasks": 14,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9944903581267218,
+        "jain_premium_access_index": 0.6,
+        "jain_verified_outcome_index": 0.9944903581267218,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 30,
+        "premium_access_by_agent": [
+          0,
+          2,
+          1
+        ],
+        "premium_utilization": 0.375,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.2222222222222223,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 19,
+        "verified_value": 2036,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "8d089ebf36e00acd9b05be9c6e9ef084a953b73e902207efd2b5d3a1f8f8fa35",
+      "metrics": {
+        "abandoned_tasks": 20,
+        "access_by_agent": [
+          7,
+          5,
+          4
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1875,
+        "coordination_cost": 76,
+        "cost_categories": {
+          "bidding": 14,
+          "cheap": 48,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 24,
+          "premium": 56,
+          "verification": 32
+        },
+        "deadline_misses": 21,
+        "denied_tasks": 20,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9481481481481482,
+        "jain_premium_access_index": 0.5333333333333333,
+        "jain_verified_outcome_index": 0.9036144578313253,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          0,
+          3,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 15,
+        "verified_value": 1278,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "2e4a6a1951a40f1dd4342e11a4adc97c196b3e5c78992c1defffeb3e6f3ac4a9",
+      "metrics": {
+        "abandoned_tasks": 22,
+        "access_by_agent": [
+          4,
+          6,
+          4
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.2142857142857142,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 32,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 30,
+          "premium": 84,
+          "verification": 28
+        },
+        "deadline_misses": 22,
+        "denied_tasks": 21,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9607843137254902,
+        "jain_premium_access_index": 0.6,
+        "jain_verified_outcome_index": 0.9607843137254902,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 30,
+        "premium_access_by_agent": [
+          0,
+          4,
+          2
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.1388888888888888,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 14,
+        "verified_value": 1362,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "c379b11dec42221dc497aca92eae03dc1b7762bd94bc3eee4dc9dbe64f9fb82d",
+      "metrics": {
+        "abandoned_tasks": 22,
+        "access_by_agent": [
+          3,
+          6,
+          5
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0714285714285714,
+        "coordination_cost": 64,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 32,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 27,
+          "premium": 84,
+          "verification": 28
+        },
+        "deadline_misses": 22,
+        "denied_tasks": 22,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9333333333333333,
+        "jain_premium_access_index": 0.6666666666666666,
+        "jain_verified_outcome_index": 0.9333333333333333,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 27,
+        "premium_access_by_agent": [
+          0,
+          3,
+          3
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.1388888888888888,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 14,
+        "verified_value": 1382,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "b9db78e9bb1b7f7dee05fdf7185658a86d6d820e1b1b54d6b94193bee249753d",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          7,
+          7,
+          4
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 23,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9473684210526315,
+        "jain_premium_access_index": 0.5333333333333333,
+        "jain_verified_outcome_index": 0.9473684210526315,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 23,
+        "premium_access_by_agent": [
+          0,
+          3,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 1838,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "67b499a2b8329148b4c5321d65747bcd1774d8cfdf59c1d408355e383084b005",
+      "metrics": {
+        "abandoned_tasks": 20,
+        "access_by_agent": [
+          6,
+          5,
+          5
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 56,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 44,
+          "consultation": 24,
+          "mandatory_review": 6,
+          "planning": 18,
+          "premium": 56,
+          "verification": 32
+        },
+        "deadline_misses": 21,
+        "denied_tasks": 20,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9922480620155039,
+        "jain_premium_access_index": 0.5333333333333333,
+        "jain_verified_outcome_index": 0.974025974025974,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 18,
+        "premium_access_by_agent": [
+          0,
+          3,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 15,
+        "verified_value": 1358,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "e6bdc340b05f6b6dd3c920eecb139881682b713ffa1df95f25ff99e875136d6d",
+      "metrics": {
+        "abandoned_tasks": 20,
+        "access_by_agent": [
+          6,
+          5,
+          5
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0625,
+        "coordination_cost": 76,
+        "cost_categories": {
+          "bidding": 14,
+          "cheap": 48,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 24,
+          "premium": 56,
+          "verification": 32
+        },
+        "deadline_misses": 21,
+        "denied_tasks": 19,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9922480620155039,
+        "jain_premium_access_index": 0.5333333333333333,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          0,
+          3,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 15,
+        "verified_value": 1811,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "0c5cff6005fbc9b2344f196d714fb1a66598b2ab0b85e0e9b7546838be2ed8de",
+      "metrics": {
+        "abandoned_tasks": 19,
+        "access_by_agent": [
+          4,
+          5,
+          8
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0588235294117647,
+        "coordination_cost": 62,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 48,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 22,
+          "premium": 70,
+          "verification": 34
+        },
+        "deadline_misses": 19,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9174603174603174,
+        "jain_premium_access_index": 0.49019607843137253,
+        "jain_verified_outcome_index": 0.9174603174603174,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 22,
+        "premium_access_by_agent": [
+          0,
+          4,
+          1
+        ],
+        "premium_utilization": 0.625,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.1111111111111112,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 17,
+        "verified_value": 2051,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "182a21505055074715b91ab3c5eae8431451aaa49ac07f76d45540d4ad676efc",
+      "metrics": {
+        "abandoned_tasks": 20,
+        "access_by_agent": [
+          5,
+          5,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1875,
+        "coordination_cost": 66,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 44,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 25,
+          "premium": 70,
+          "verification": 32
+        },
+        "deadline_misses": 20,
+        "denied_tasks": 20,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9922480620155039,
+        "jain_premium_access_index": 0.49019607843137253,
+        "jain_verified_outcome_index": 0.9922480620155039,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 25,
+        "premium_access_by_agent": [
+          0,
+          4,
+          1
+        ],
+        "premium_utilization": 0.625,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.1111111111111112,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 16,
+        "verified_value": 1859,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "1f0574e9f610602f55c588c33816bcf8c336b3ca5f011312a1a312e88e61bb81",
+      "metrics": {
+        "abandoned_tasks": 18,
+        "access_by_agent": [
+          6,
+          4,
+          8
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0555555555555556,
+        "coordination_cost": 68,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 56,
+          "consultation": 0,
+          "mandatory_review": 6,
+          "planning": 26,
+          "premium": 56,
+          "verification": 36
+        },
+        "deadline_misses": 18,
+        "denied_tasks": 18,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9310344827586207,
+        "jain_premium_access_index": 0.5333333333333333,
+        "jain_verified_outcome_index": 0.9310344827586207,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 26,
+        "premium_access_by_agent": [
+          0,
+          3,
+          1
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 18,
+        "verified_value": 2306,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 180,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "96525c0486fbd55783e2ac477b333aecda4cd497e8ddac3ea6c014ef48a9696d",
+      "metrics": {
+        "abandoned_tasks": 19,
+        "access_by_agent": [
+          6,
+          5,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 62,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 52,
+          "consultation": 24,
+          "mandatory_review": 6,
+          "planning": 22,
+          "premium": 42,
+          "verification": 34
+        },
+        "deadline_misses": 21,
+        "denied_tasks": 15,
+        "failed_tasks": 2,
+        "jain_access_index": 0.993127147766323,
+        "jain_premium_access_index": 0.6,
+        "jain_verified_outcome_index": 0.974025974025974,
+        "modeled_cost": 180,
+        "planning_bidding_cost": 22,
+        "premium_access_by_agent": [
+          0,
+          2,
+          1
+        ],
+        "premium_utilization": 0.375,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 2,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 15,
+        "verified_value": 1790,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "0357200ed4f5f1e63007dbeb2a1775907e9bd59d90d20018c571e265e8f3f58a",
+      "metrics": {
+        "abandoned_tasks": 7,
+        "access_by_agent": [
+          9,
+          10,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0344827586206897,
+        "coordination_cost": 114,
+        "cost_categories": {
+          "bidding": 16,
+          "cheap": 88,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 31,
+          "premium": 98,
+          "verification": 58
+        },
+        "deadline_misses": 7,
+        "denied_tasks": 7,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9976275207591934,
+        "jain_premium_access_index": 0.9607843137254902,
+        "jain_verified_outcome_index": 0.9976275207591934,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 47,
+        "premium_access_by_agent": [
+          2,
+          3,
+          2
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 29,
+        "verified_value": 3375,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "062d9c15c3e1966262013661630229e6f4f3eb140c079bc84baecb10b45395b6",
+      "metrics": {
+        "abandoned_tasks": 7,
+        "access_by_agent": [
+          12,
+          8,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 104,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 31,
+          "premium": 112,
+          "verification": 58
+        },
+        "deadline_misses": 7,
+        "denied_tasks": 7,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9700115340253749,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9700115340253749,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 31,
+        "premium_access_by_agent": [
+          4,
+          2,
+          2
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 29,
+        "verified_value": 3274,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "449a73591c3b27d6bce9e6b47d344879e3b18db43b720af7e52143bf20fee179",
+      "metrics": {
+        "abandoned_tasks": 5,
+        "access_by_agent": [
+          10,
+          9,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 114,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 37,
+          "premium": 84,
+          "verification": 62
+        },
+        "deadline_misses": 5,
+        "denied_tasks": 5,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9856410256410256,
+        "jain_premium_access_index": 1.0,
+        "jain_verified_outcome_index": 0.9856410256410256,
+        "modeled_cost": 298,
+        "planning_bidding_cost": 37,
+        "premium_access_by_agent": [
+          2,
+          2,
+          2
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 31,
+        "verified_value": 3388,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "60050d1f76f1781a9562bf1b6adad433d8d911be6b5a5577b9750bb1e5654731",
+      "metrics": {
+        "abandoned_tasks": 4,
+        "access_by_agent": [
+          10,
+          12,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 112,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 84,
+          "verification": 64
+        },
+        "deadline_misses": 4,
+        "denied_tasks": 4,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9922480620155039,
+        "jain_premium_access_index": 0.8571428571428571,
+        "jain_verified_outcome_index": 0.9922480620155039,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          2,
+          3,
+          1
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0277777777777777,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 32,
+        "verified_value": 3715,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "e6e06ceb1d2543f189ce2fc37fc7f841319636a5dea7b187baf77b806b699748",
+      "metrics": {
+        "abandoned_tasks": 7,
+        "access_by_agent": [
+          9,
+          10,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 104,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 88,
+          "consultation": 24,
+          "mandatory_review": 9,
+          "planning": 37,
+          "premium": 84,
+          "verification": 58
+        },
+        "deadline_misses": 7,
+        "denied_tasks": 6,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9976275207591934,
+        "jain_premium_access_index": 0.8571428571428571,
+        "jain_verified_outcome_index": 0.9976275207591934,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 37,
+        "premium_access_by_agent": [
+          2,
+          3,
+          1
+        ],
+        "premium_utilization": 0.6,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.1944444444444444,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 29,
+        "verified_value": 3440,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "da5f1a70d3f4a63f312739d6d7272ffa64e18805ad1a0dc77cf6812d0fc2725f",
+      "metrics": {
+        "abandoned_tasks": 9,
+        "access_by_agent": [
+          10,
+          8,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.037037037037037,
+        "coordination_cost": 122,
+        "cost_categories": {
+          "bidding": 18,
+          "cheap": 80,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 38,
+          "premium": 98,
+          "verification": 54
+        },
+        "deadline_misses": 9,
+        "denied_tasks": 9,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9918367346938776,
+        "jain_premium_access_index": 0.9607843137254902,
+        "jain_verified_outcome_index": 0.9918367346938776,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 56,
+        "premium_access_by_agent": [
+          3,
+          2,
+          2
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 27,
+        "verified_value": 2701,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "7be3ca66bd202f8e331ae4f6978b218b049d024a970eaf1f87c186de59470cac",
+      "metrics": {
+        "abandoned_tasks": 7,
+        "access_by_agent": [
+          12,
+          8,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0344827586206897,
+        "coordination_cost": 104,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 34,
+          "premium": 112,
+          "verification": 58
+        },
+        "deadline_misses": 7,
+        "denied_tasks": 7,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9700115340253749,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9700115340253749,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 34,
+        "premium_access_by_agent": [
+          4,
+          2,
+          2
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 29,
+        "verified_value": 2918,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "41114e2c79a0f2cd04dc5f9a4733bbaab846255a4544de4390f1892e80fe766c",
+      "metrics": {
+        "abandoned_tasks": 6,
+        "access_by_agent": [
+          11,
+          9,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 110,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 92,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 35,
+          "premium": 98,
+          "verification": 60
+        },
+        "deadline_misses": 6,
+        "denied_tasks": 6,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9933774834437086,
+        "jain_premium_access_index": 0.9607843137254902,
+        "jain_verified_outcome_index": 0.9933774834437086,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 35,
+        "premium_access_by_agent": [
+          3,
+          2,
+          2
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 30,
+        "verified_value": 3112,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "3c6f580cdcd1f8808edcaa08fe585354a50607a5b0985e8e91f5f01b60330791",
+      "metrics": {
+        "abandoned_tasks": 5,
+        "access_by_agent": [
+          11,
+          9,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 115,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 38,
+          "premium": 84,
+          "verification": 62
+        },
+        "deadline_misses": 5,
+        "denied_tasks": 5,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9917440660474717,
+        "jain_premium_access_index": 0.8571428571428571,
+        "jain_verified_outcome_index": 0.9917440660474717,
+        "modeled_cost": 299,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          3,
+          1,
+          2
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 31,
+        "verified_value": 3324,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "c90e72beeddf7c7395d99d776a732109dad86389d0e755f82d486b6a05a585fb",
+      "metrics": {
+        "abandoned_tasks": 7,
+        "access_by_agent": [
+          10,
+          9,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 104,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 88,
+          "consultation": 24,
+          "mandatory_review": 9,
+          "planning": 37,
+          "premium": 84,
+          "verification": 58
+        },
+        "deadline_misses": 8,
+        "denied_tasks": 6,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9976275207591934,
+        "jain_premium_access_index": 0.8571428571428571,
+        "jain_verified_outcome_index": 0.98989898989899,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 37,
+        "premium_access_by_agent": [
+          3,
+          1,
+          2
+        ],
+        "premium_utilization": 0.6,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.1944444444444444,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 28,
+        "verified_value": 3004,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "08832b331525bddefb0e612be6b6fc67e052a6887efab40f52d6f44917293ed5",
+      "metrics": {
+        "abandoned_tasks": 8,
+        "access_by_agent": [
+          9,
+          10,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1071428571428572,
+        "coordination_cost": 118,
+        "cost_categories": {
+          "bidding": 20,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 33,
+          "premium": 98,
+          "verification": 56
+        },
+        "deadline_misses": 8,
+        "denied_tasks": 8,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9974554707379135,
+        "jain_premium_access_index": 0.9607843137254902,
+        "jain_verified_outcome_index": 0.9974554707379135,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 53,
+        "premium_access_by_agent": [
+          2,
+          2,
+          3
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 28,
+        "verified_value": 3003,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "b53bee75cd708066e368df34fefa1310a68a4dd142b9049e4068175587f24377",
+      "metrics": {
+        "abandoned_tasks": 7,
+        "access_by_agent": [
+          11,
+          9,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1379310344827587,
+        "coordination_cost": 105,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 88,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 35,
+          "premium": 98,
+          "verification": 58
+        },
+        "deadline_misses": 7,
+        "denied_tasks": 7,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9905771495877503,
+        "jain_premium_access_index": 0.9607843137254902,
+        "jain_verified_outcome_index": 0.9905771495877503,
+        "modeled_cost": 291,
+        "planning_bidding_cost": 35,
+        "premium_access_by_agent": [
+          2,
+          2,
+          3
+        ],
+        "premium_utilization": 0.7,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.1111111111111112,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 29,
+        "verified_value": 3220,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "778a4604b45641b55adfdcc3fd23854bfda2833f7daf7afed5083aaccf49587c",
+      "metrics": {
+        "abandoned_tasks": 6,
+        "access_by_agent": [
+          9,
+          10,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0666666666666667,
+        "coordination_cost": 110,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 92,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 38,
+          "premium": 98,
+          "verification": 60
+        },
+        "deadline_misses": 6,
+        "denied_tasks": 6,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9933774834437086,
+        "jain_premium_access_index": 0.9607843137254902,
+        "jain_verified_outcome_index": 0.9933774834437086,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          2,
+          2,
+          3
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 30,
+        "verified_value": 3200,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "96881e2c001ad370b08649401fa060fce3e7059dd802c50faa675aaa7e19f80b",
+      "metrics": {
+        "abandoned_tasks": 5,
+        "access_by_agent": [
+          10,
+          11,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 113,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 39,
+          "premium": 84,
+          "verification": 62
+        },
+        "deadline_misses": 5,
+        "denied_tasks": 5,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9979231568016614,
+        "jain_premium_access_index": 1.0,
+        "jain_verified_outcome_index": 0.9979231568016614,
+        "modeled_cost": 297,
+        "planning_bidding_cost": 39,
+        "premium_access_by_agent": [
+          2,
+          2,
+          2
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 31,
+        "verified_value": 3667,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "f87febbd029f73bf1a7660cbed923a402d7da210c849fadbb3fc084f26813284",
+      "metrics": {
+        "abandoned_tasks": 9,
+        "access_by_agent": [
+          9,
+          9,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 102,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 80,
+          "consultation": 48,
+          "mandatory_review": 9,
+          "planning": 39,
+          "premium": 70,
+          "verification": 54
+        },
+        "deadline_misses": 9,
+        "denied_tasks": 6,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.6410256410256411,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 39,
+        "premium_access_by_agent": [
+          0,
+          2,
+          3
+        ],
+        "premium_utilization": 0.5,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.25,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 27,
+        "verified_value": 2942,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "de04e9e99512f8b63d391a075e5834bfb315b926b72871322548ed0232358359",
+      "metrics": {
+        "abandoned_tasks": 13,
+        "access_by_agent": [
+          9,
+          8,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0434782608695652,
+        "coordination_cost": 128,
+        "cost_categories": {
+          "bidding": 32,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 41,
+          "premium": 112,
+          "verification": 46
+        },
+        "deadline_misses": 13,
+        "denied_tasks": 10,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9742173112338858,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 0.9742173112338858,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 73,
+        "premium_access_by_agent": [
+          1,
+          4,
+          3
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.2222222222222223,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 23,
+        "verified_value": 2279,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "4aa0dbe72eafa742274a902a6bc15adc0b90079005629a69f69d2594aa900f82",
+      "metrics": {
+        "abandoned_tasks": 11,
+        "access_by_agent": [
+          12,
+          8,
+          5
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.16,
+        "coordination_cost": 105,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 68,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 43,
+          "premium": 112,
+          "verification": 50
+        },
+        "deadline_misses": 11,
+        "denied_tasks": 9,
+        "failed_tasks": 0,
+        "jain_access_index": 0.894134477825465,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.894134477825465,
+        "modeled_cost": 285,
+        "planning_bidding_cost": 43,
+        "premium_access_by_agent": [
+          2,
+          4,
+          2
+        ],
+        "premium_utilization": 0.8,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.3055555555555556,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 25,
+        "verified_value": 2293,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "42b851e0ec1c0a1b713f657482e7de4487f1362b7a485f767f51fd44d00910b9",
+      "metrics": {
+        "abandoned_tasks": 10,
+        "access_by_agent": [
+          9,
+          11,
+          6
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.3076923076923077,
+        "coordination_cost": 107,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 72,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 43,
+          "premium": 112,
+          "verification": 52
+        },
+        "deadline_misses": 10,
+        "denied_tasks": 10,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9467787114845938,
+        "jain_premium_access_index": 0.6274509803921569,
+        "jain_verified_outcome_index": 0.9467787114845938,
+        "modeled_cost": 291,
+        "planning_bidding_cost": 43,
+        "premium_access_by_agent": [
+          0,
+          5,
+          3
+        ],
+        "premium_utilization": 0.8,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.2777777777777777,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 26,
+        "verified_value": 2467,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "fa64efd964e6ed24352533abb41b0e06cbc93e0e2215b02f1685c58cdf1f2b58",
+      "metrics": {
+        "abandoned_tasks": 8,
+        "access_by_agent": [
+          12,
+          9,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0357142857142858,
+        "coordination_cost": 108,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 80,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 40,
+          "premium": 112,
+          "verification": 56
+        },
+        "deadline_misses": 8,
+        "denied_tasks": 7,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9537712895377128,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9537712895377128,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 40,
+        "premium_access_by_agent": [
+          2,
+          4,
+          2
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.25,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 28,
+        "verified_value": 3001,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "c9d2789a90dec9e6ee7eba2ad0509453e4ac7427be48c4c5583d833534ce72be",
+      "metrics": {
+        "abandoned_tasks": 12,
+        "access_by_agent": [
+          8,
+          9,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 84,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 60,
+          "consultation": 72,
+          "mandatory_review": 9,
+          "planning": 27,
+          "premium": 84,
+          "verification": 48
+        },
+        "deadline_misses": 13,
+        "denied_tasks": 12,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9896907216494846,
+        "jain_premium_access_index": 0.46153846153846156,
+        "jain_verified_outcome_index": 0.9742173112338858,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 27,
+        "premium_access_by_agent": [
+          1,
+          5,
+          0
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.0833333333333333,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 23,
+        "verified_value": 2392,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "a643ccc36af10b6547a9ae74995b35dc4e4b0e6baa96dacdb2f353eaa0527864",
+      "metrics": {
+        "abandoned_tasks": 13,
+        "access_by_agent": [
+          9,
+          7,
+          7
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.2173913043478262,
+        "coordination_cost": 128,
+        "cost_categories": {
+          "bidding": 32,
+          "cheap": 60,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 38,
+          "premium": 112,
+          "verification": 46
+        },
+        "deadline_misses": 13,
+        "denied_tasks": 12,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9851024208566108,
+        "jain_premium_access_index": 0.7111111111111111,
+        "jain_verified_outcome_index": 0.9851024208566108,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 70,
+        "premium_access_by_agent": [
+          2,
+          5,
+          1
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.2222222222222223,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 23,
+        "verified_value": 2692,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "586c831bf8f0a6a9a49b91aec22aad764ed3612b399c319bb3edee09d16fdc7e",
+      "metrics": {
+        "abandoned_tasks": 11,
+        "access_by_agent": [
+          11,
+          6,
+          8
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.16,
+        "coordination_cost": 111,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 68,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 46,
+          "premium": 112,
+          "verification": 50
+        },
+        "deadline_misses": 12,
+        "denied_tasks": 10,
+        "failed_tasks": 1,
+        "jain_access_index": 0.942684766214178,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 0.96,
+        "modeled_cost": 291,
+        "planning_bidding_cost": 46,
+        "premium_access_by_agent": [
+          3,
+          4,
+          1
+        ],
+        "premium_utilization": 0.8,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.2777777777777777,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 24,
+        "verified_value": 2948,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "50b599b43123227adb964c6fd2f26c5c0a8312b0588d62ffeba8f4b4243d3ffb",
+      "metrics": {
+        "abandoned_tasks": 9,
+        "access_by_agent": [
+          10,
+          8,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.2592592592592593,
+        "coordination_cost": 103,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 76,
+          "consultation": 0,
+          "mandatory_review": 9,
+          "planning": 40,
+          "premium": 112,
+          "verification": 54
+        },
+        "deadline_misses": 10,
+        "denied_tasks": 9,
+        "failed_tasks": 1,
+        "jain_access_index": 0.9918367346938776,
+        "jain_premium_access_index": 0.7111111111111111,
+        "jain_verified_outcome_index": 0.9970501474926253,
+        "modeled_cost": 291,
+        "planning_bidding_cost": 40,
+        "premium_access_by_agent": [
+          2,
+          5,
+          1
+        ],
+        "premium_utilization": 0.8,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.2777777777777777,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 26,
+        "verified_value": 3117,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "5d746559416134f1c55609698ef3789e627b50aa55ce171babd032cbded51121",
+      "metrics": {
+        "abandoned_tasks": 9,
+        "access_by_agent": [
+          8,
+          7,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0740740740740742,
+        "coordination_cost": 112,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 76,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 43,
+          "premium": 112,
+          "verification": 54
+        },
+        "deadline_misses": 9,
+        "denied_tasks": 8,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9455252918287937,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 0.9455252918287937,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 43,
+        "premium_access_by_agent": [
+          1,
+          4,
+          3
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.25,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 27,
+        "verified_value": 3531,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 300,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "06349069428f9719b806b20d19681396ab217bf6b782b24155529a13d65d4804",
+      "metrics": {
+        "abandoned_tasks": 9,
+        "access_by_agent": [
+          9,
+          9,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 92,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 76,
+          "consultation": 48,
+          "mandatory_review": 9,
+          "planning": 29,
+          "premium": 84,
+          "verification": 54
+        },
+        "deadline_misses": 11,
+        "denied_tasks": 7,
+        "failed_tasks": 2,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8571428571428571,
+        "jain_verified_outcome_index": 0.9968102073365231,
+        "modeled_cost": 300,
+        "planning_bidding_cost": 29,
+        "premium_access_by_agent": [
+          2,
+          3,
+          1
+        ],
+        "premium_utilization": 0.75,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 3,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 25,
+        "verified_value": 3082,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "b386f0149b0ffc60759538d27499d29f80f215fe41405e51ebb74a3bffe346d0",
+      "metrics": {
+        "abandoned_tasks": 1,
+        "access_by_agent": [
+          12,
+          12,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 140,
+        "cost_categories": {
+          "bidding": 20,
+          "cheap": 108,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 38,
+          "premium": 112,
+          "verification": 70
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9983700081499592,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 360,
+        "planning_bidding_cost": 58,
+        "premium_access_by_agent": [
+          4,
+          3,
+          1
+        ],
+        "premium_utilization": 0.8,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 3926,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "c8afe4e4e43acdf26d3ba18ed2f6b81c1149f907de85554e1ed99dcd948ce91a",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0555555555555556,
+        "coordination_cost": 128,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 108,
+          "consultation": 0,
+          "mandatory_review": 18,
+          "planning": 38,
+          "premium": 126,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.9310344827586207,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 362,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          4,
+          3,
+          2
+        ],
+        "premium_utilization": 0.9,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 6,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3948,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "bb430ad14452533b14566cd0f551e2dd0aab5af52b0152ccd6643bfbc1cccf91",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0555555555555556,
+        "coordination_cost": 125,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 108,
+          "consultation": 0,
+          "mandatory_review": 15,
+          "planning": 38,
+          "premium": 126,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.9310344827586207,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 359,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          4,
+          3,
+          2
+        ],
+        "premium_utilization": 0.9,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 5,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3948,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "3d5451cdd7f111dd1af6ec1a02cee93f23141cd5ccc692aac791c69c0f830386",
+      "metrics": {
+        "abandoned_tasks": 1,
+        "access_by_agent": [
+          12,
+          12,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 120,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 108,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 38,
+          "premium": 112,
+          "verification": 70
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9983700081499592,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 340,
+        "planning_bidding_cost": 38,
+        "premium_access_by_agent": [
+          4,
+          3,
+          1
+        ],
+        "premium_utilization": 0.8,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0555555555555556,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 3926,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "abcf1ecfe5e7cfc41140a4d14cfad039fe84609d9e746c3ebdd6f2879cf5a83e",
+      "credit_conservation": true,
+      "digest": "09301b922230fd60c903f2176311db698d8db80396aba162241f9d6de851b9e7",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 120,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 108,
+          "consultation": 24,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 112,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 364,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          4,
+          3,
+          1
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3948,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3948,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 1
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "685d22accda07ca61bdef8a8ad24217b626420209bc2faccd41b2a3bd3dcceeb",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1666666666666667,
+        "coordination_cost": 166,
+        "cost_categories": {
+          "bidding": 34,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 18,
+          "planning": 42,
+          "premium": 154,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.983739837398374,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 420,
+        "planning_bidding_cost": 76,
+        "premium_access_by_agent": [
+          4,
+          4,
+          3
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 6,
+        "terminal_decision_latency_ticks": 1.1666666666666667,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3624,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "9b7018b4052f7a4571be6a2047aed25677d8298d108326295d32cc6130bc0303",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1666666666666667,
+        "coordination_cost": 132,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 18,
+          "planning": 42,
+          "premium": 154,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.983739837398374,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 386,
+        "planning_bidding_cost": 42,
+        "premium_access_by_agent": [
+          4,
+          4,
+          3
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 6,
+        "terminal_decision_latency_ticks": 1.1666666666666667,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3624,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "91782692c3850cbef076441aff44a2382a079fc99a3fc777bb97886e8576fa85",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1666666666666667,
+        "coordination_cost": 135,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 21,
+          "planning": 42,
+          "premium": 154,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.983739837398374,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 389,
+        "planning_bidding_cost": 42,
+        "premium_access_by_agent": [
+          4,
+          4,
+          3
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 7,
+        "terminal_decision_latency_ticks": 1.1666666666666667,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3624,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "34863795b9f75f178cfb210a2831f230c15d71803ac2b2ea77bb4dd82f466bab",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1666666666666667,
+        "coordination_cost": 132,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 100,
+          "consultation": 0,
+          "mandatory_review": 18,
+          "planning": 42,
+          "premium": 154,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.983739837398374,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 386,
+        "planning_bidding_cost": 42,
+        "premium_access_by_agent": [
+          4,
+          4,
+          3
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 6,
+        "terminal_decision_latency_ticks": 1.1666666666666667,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3624,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "30dc2a1cb19253b18173ac0ce6871d6c1f2ec9e66b04d45e870306ef77908877",
+      "credit_conservation": true,
+      "digest": "51c60869a46200073a107c96906e81c68763e73ae96dfe6e9e24b1d732181d8a",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 120,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 48,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 112,
+          "verification": 72
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 1,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8205128205128205,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 384,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          4,
+          1,
+          3
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3624,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 3544,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 2
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "cda4a681b2e76927209e4c946e8e90443bdced319765d8611121111627a7bc4b",
+      "metrics": {
+        "abandoned_tasks": 1,
+        "access_by_agent": [
+          12,
+          12,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1142857142857143,
+        "coordination_cost": 154,
+        "cost_categories": {
+          "bidding": 30,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 42,
+          "premium": 126,
+          "verification": 70
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9983700081499592,
+        "jain_premium_access_index": 0.9310344827586207,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 384,
+        "planning_bidding_cost": 72,
+        "premium_access_by_agent": [
+          4,
+          3,
+          2
+        ],
+        "premium_utilization": 0.9,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.1666666666666667,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 3884,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "7ca746b244779f24e3a47116e423997ec72029cc387caa402b7960fc9ff55cf6",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1944444444444444,
+        "coordination_cost": 127,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 43,
+          "premium": 140,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.9803921568627451,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 371,
+        "planning_bidding_cost": 43,
+        "premium_access_by_agent": [
+          4,
+          3,
+          3
+        ],
+        "premium_utilization": 0.8333333333333334,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.1944444444444444,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3991,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "72139f8ef219c24bddb9c99a56427c47de06cb3a6c62adb94b15722288753837",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1944444444444444,
+        "coordination_cost": 127,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 43,
+          "premium": 140,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.9803921568627451,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 371,
+        "planning_bidding_cost": 43,
+        "premium_access_by_agent": [
+          4,
+          3,
+          3
+        ],
+        "premium_utilization": 0.8333333333333334,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.1944444444444444,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3991,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "5be0aadec61af7a5b8dc8bf175dce88e9595890de37e51fc680ed601001ca427",
+      "metrics": {
+        "abandoned_tasks": 1,
+        "access_by_agent": [
+          12,
+          12,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1142857142857143,
+        "coordination_cost": 124,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 42,
+          "premium": 126,
+          "verification": 70
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9983700081499592,
+        "jain_premium_access_index": 0.9310344827586207,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 354,
+        "planning_bidding_cost": 42,
+        "premium_access_by_agent": [
+          4,
+          3,
+          2
+        ],
+        "premium_utilization": 0.9,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.1666666666666667,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 3884,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "a0275165d900784ba20ad7c031e322c18e686755d0396abe051cdfa51488ec1c",
+      "credit_conservation": true,
+      "digest": "52e26485be686cdf2dc1e42d0bb3c56f524fa4ccafcf9d09b8756a14876e9990",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 120,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 104,
+          "consultation": 72,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 98,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8596491228070176,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 394,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          1,
+          3,
+          3
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3991,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 3991,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 3
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "dfb4b06bdb7c8a48fbd8f286be4c4ae9098b8f67af29680c58305e129a394580",
+      "metrics": {
+        "abandoned_tasks": 4,
+        "access_by_agent": [
+          12,
+          11,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.21875,
+        "coordination_cost": 182,
+        "cost_categories": {
+          "bidding": 54,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 52,
+          "premium": 154,
+          "verification": 64
+        },
+        "deadline_misses": 4,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9865125240847784,
+        "jain_premium_access_index": 0.8962962962962963,
+        "jain_verified_outcome_index": 0.9865125240847784,
+        "modeled_cost": 420,
+        "planning_bidding_cost": 106,
+        "premium_access_by_agent": [
+          2,
+          5,
+          4
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.4444444444444444,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 32,
+        "verified_value": 3206,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "1f111e2779291474a19cb7885fffbd3add9ad1d21d3a6d5e7ce4c2a3a39af07e",
+      "metrics": {
+        "abandoned_tasks": 3,
+        "access_by_agent": [
+          12,
+          11,
+          10
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.393939393939394,
+        "coordination_cost": 133,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 55,
+          "premium": 168,
+          "verification": 66
+        },
+        "deadline_misses": 3,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9945205479452055,
+        "jain_premium_access_index": 0.8888888888888888,
+        "jain_verified_outcome_index": 0.9945205479452055,
+        "modeled_cost": 385,
+        "planning_bidding_cost": 55,
+        "premium_access_by_agent": [
+          2,
+          5,
+          5
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.5277777777777777,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 33,
+        "verified_value": 3143,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "08035f1d5b7436516510967e5fc65da4673a4887887ad5fef0886931b52f7a80",
+      "metrics": {
+        "abandoned_tasks": 1,
+        "access_by_agent": [
+          12,
+          12,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.6285714285714286,
+        "coordination_cost": 145,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 63,
+          "premium": 196,
+          "verification": 70
+        },
+        "deadline_misses": 1,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9983700081499592,
+        "jain_premium_access_index": 0.8596491228070176,
+        "jain_verified_outcome_index": 0.9983700081499592,
+        "modeled_cost": 425,
+        "planning_bidding_cost": 63,
+        "premium_access_by_agent": [
+          2,
+          6,
+          6
+        ],
+        "premium_utilization": 0.875,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.75,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 35,
+        "verified_value": 3364,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "7b90b452735fa26724bb35200cf8dd1bec2a550a3fe858e7248825e949d07650",
+      "metrics": {
+        "abandoned_tasks": 4,
+        "access_by_agent": [
+          12,
+          11,
+          9
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.21875,
+        "coordination_cost": 128,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 12,
+          "planning": 52,
+          "premium": 154,
+          "verification": 64
+        },
+        "deadline_misses": 4,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9865125240847784,
+        "jain_premium_access_index": 0.8962962962962963,
+        "jain_verified_outcome_index": 0.9865125240847784,
+        "modeled_cost": 366,
+        "planning_bidding_cost": 52,
+        "premium_access_by_agent": [
+          2,
+          5,
+          4
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.4444444444444444,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 32,
+        "verified_value": 3206,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "6f56ff2d25b81a4842cdbfc0196ef1e4fef73dbdc895d2df4098a053e5d0a9eb",
+      "credit_conservation": true,
+      "digest": "f521456ab97631f4dbd94cd313a02cd2754dd6c51a0074b2d86c23a91ee0bd15",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 120,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 96,
+          "consultation": 96,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 112,
+          "verification": 72
+        },
+        "deadline_misses": 2,
+        "denied_tasks": 0,
+        "failed_tasks": 2,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.5333333333333333,
+        "jain_verified_outcome_index": 0.993127147766323,
+        "modeled_cost": 424,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          2,
+          6,
+          0
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 3394,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 34,
+        "verified_value": 3344,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 4
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "99916b197fc620d82ecfe1891fb789a0815c03bc1dc9e4aefd559dc4a69f6fa7",
+      "metrics": {
+        "abandoned_tasks": 6,
+        "access_by_agent": [
+          9,
+          10,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.1666666666666667,
+        "coordination_cost": 188,
+        "cost_categories": {
+          "bidding": 54,
+          "cheap": 80,
+          "consultation": 0,
+          "mandatory_review": 21,
+          "planning": 53,
+          "premium": 140,
+          "verification": 60
+        },
+        "deadline_misses": 6,
+        "denied_tasks": 2,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9933774834437086,
+        "jain_premium_access_index": 0.8771929824561403,
+        "jain_verified_outcome_index": 0.9933774834437086,
+        "modeled_cost": 408,
+        "planning_bidding_cost": 107,
+        "premium_access_by_agent": [
+          2,
+          5,
+          3
+        ],
+        "premium_utilization": 0.8333333333333334,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 7,
+        "terminal_decision_latency_ticks": 1.4722222222222223,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 30,
+        "verified_value": 3697,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "market",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "b9a4ac3cbd433fd1a0af842b550a2f2b4313106d4eec1fb66b5ab4754c2dc609",
+      "metrics": {
+        "abandoned_tasks": 3,
+        "access_by_agent": [
+          11,
+          11,
+          11
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.3333333333333333,
+        "coordination_cost": 144,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 24,
+          "planning": 54,
+          "premium": 168,
+          "verification": 66
+        },
+        "deadline_misses": 3,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.8571428571428571,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 396,
+        "planning_bidding_cost": 54,
+        "premium_access_by_agent": [
+          4,
+          6,
+          2
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 8,
+        "terminal_decision_latency_ticks": 1.5,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 33,
+        "verified_value": 3901,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "equal",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "6a4f7c5811b30a21aa43d75a3c8f74bb0d6567cca3bd2cfd4cc769bcd172496a",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.7222222222222223,
+        "coordination_cost": 155,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 21,
+          "planning": 62,
+          "premium": 210,
+          "verification": 72
+        },
+        "deadline_misses": 0,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.9036144578313253,
+        "jain_verified_outcome_index": 1.0,
+        "modeled_cost": 449,
+        "planning_bidding_cost": 62,
+        "premium_access_by_agent": [
+          5,
+          7,
+          3
+        ],
+        "premium_utilization": 0.9375,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 7,
+        "terminal_decision_latency_ticks": 1.7222222222222223,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 36,
+        "verified_value": 4220,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "priority",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "a22b0c3cff770e80092cfc49d233e52002c47c298533065333b6f5dade90e63c",
+      "metrics": {
+        "abandoned_tasks": 4,
+        "access_by_agent": [
+          10,
+          10,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.21875,
+        "coordination_cost": 142,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 84,
+          "consultation": 0,
+          "mandatory_review": 24,
+          "planning": 54,
+          "premium": 154,
+          "verification": 64
+        },
+        "deadline_misses": 4,
+        "denied_tasks": 0,
+        "failed_tasks": 0,
+        "jain_access_index": 0.9922480620155039,
+        "jain_premium_access_index": 0.937984496124031,
+        "jain_verified_outcome_index": 0.9922480620155039,
+        "modeled_cost": 380,
+        "planning_bidding_cost": 54,
+        "premium_access_by_agent": [
+          3,
+          5,
+          3
+        ],
+        "premium_utilization": 0.9166666666666666,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 8,
+        "terminal_decision_latency_ticks": 1.5,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 32,
+        "verified_value": 3904,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "evcost",
+      "seed": 5
+    },
+    {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": 450,
+      "corpus_hash": "019231d9c9256fe4a131ab542f510671c4ab42d9430a486a195d5c40a60e32c9",
+      "credit_conservation": true,
+      "digest": "6a32bb2f49ba0b85becad4692df3a037b1856b639575961de15a3071d414698e",
+      "metrics": {
+        "abandoned_tasks": 0,
+        "access_by_agent": [
+          12,
+          12,
+          12
+        ],
+        "actual_cash_spend": 0,
+        "completion_latency_ticks": 1.0,
+        "coordination_cost": 120,
+        "cost_categories": {
+          "bidding": 0,
+          "cheap": 96,
+          "consultation": 96,
+          "mandatory_review": 12,
+          "planning": 36,
+          "premium": 112,
+          "verification": 72
+        },
+        "deadline_misses": 2,
+        "denied_tasks": 0,
+        "failed_tasks": 2,
+        "jain_access_index": 1.0,
+        "jain_premium_access_index": 0.9696969696969697,
+        "jain_verified_outcome_index": 0.998272884283247,
+        "modeled_cost": 424,
+        "planning_bidding_cost": 36,
+        "premium_access_by_agent": [
+          3,
+          2,
+          3
+        ],
+        "premium_utilization": 1.0,
+        "reserved": 0,
+        "retry_execution_cost": 0,
+        "review_demand": 4,
+        "terminal_decision_latency_ticks": 1.0,
+        "total_task_value": 4220,
+        "unit": "SIM_COST_MICRO",
+        "unresolved_exposure": 0,
+        "unresolved_tasks": 0,
+        "verified_tasks": 34,
+        "verified_value": 4044,
+        "waiting_tasks": 0
+      },
+      "scenario": "burst",
+      "scheduler": "central",
+      "seed": 5
+    }
+  ],
+  "scenario": "burst",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ]
+}

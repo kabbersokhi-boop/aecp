@@ -1,0 +1,55 @@
+name: control-plane
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11', '3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile and test offline core
+        run: |
+          PYTHONPATH=src python -m compileall -q src tests
+          PYTHONPATH=src python -m unittest discover -s tests -v
+      - name: Run honest foundation demo
+        run: PYTHONPATH=src python -m aecp demo-ledger
+      - name: Static checks and package build
+        run: |
+          python -m pip install ruff==0.16.6 hypothesis==6.168.0 build
+          ruff check .
+          python -m build
+          PYTHONPATH=src python -m unittest discover -s tests/property -v
+      - name: Deterministic economy and stress
+        run: |
+          PYTHONPATH=src python -m aecp demo --scenario outage --artifact var/outage.json
+          PYTHONPATH=src python -m aecp stress
+          PYTHONPATH=src python -m aecp benchmark --seeds 1 2 --budgets 180 450
+          PYTHONPATH=src python -m aecp allocation-study --seeds 2
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Real gateway, clients and browser
+        run: |
+          npm run check
+          PYTHONPATH=src python -m aecp serve > /tmp/aecp-server.log 2>&1 &
+          for attempt in 1 2 3 4 5; do curl -fsS http://127.0.0.1:8765/health && break || sleep 1; done
+          PYTHONPATH=src python scripts/integration_smoke.py
+          npm run test:browser

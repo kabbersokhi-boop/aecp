@@ -1,0 +1,8 @@
+{
+  "workload_version": "semantic-finops.v2.1",
+  "split": "development",
+  "cases": 12,
+  "public_hash": "8b17b7d2382a145495e18fc861b1300b834ac4d6516ca03e7f0e7695aac7e541",
+  "full_corpus_hash": "6bbcc88f3755a19799000c9eda11ca6a11035d7c77cec7ccfeb1c74c71ed8b2a",
+  "protocol": "held-out manifest committed before final policy tuning; no live held-out retries for quality"
+}

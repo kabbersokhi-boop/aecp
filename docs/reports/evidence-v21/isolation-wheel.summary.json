@@ -1,0 +1,33 @@
+{
+  "checks": {
+    "provider_key_absent": true,
+    "host_home_absent": true,
+    "database_unreadable": true,
+    "capabilities_unreadable": true,
+    "external_network_blocked": true,
+    "provider_dns_unavailable": true,
+    "operator_denied": true,
+    "settlement_denied": true,
+    "self_approval_denied": true,
+    "identity_change_denied": true,
+    "economic_denial": true,
+    "reopened_uncertainty_visible": true,
+    "reopened_liability_retained": true
+  },
+  "cases": 12,
+  "verified": 8,
+  "audit": {
+    "consistent": true,
+    "within_funding": true,
+    "consistency_errors": [],
+    "funding_breaches": [],
+    "bound_breach_count": 0
+  },
+  "consumer_wall_seconds": 0.636,
+  "artifact_sha256": "c78b6bfa5018b19e806180e93961cfabd36e9975936e68e2b5deddef0e75c362",
+  "package_location": "/tmp/aecp-v21-wheel-env/lib/python3.12/site-packages/aecp",
+  "source_commit": "93b885383d2ad62f1f82e418048b2fa982ca42b0",
+  "provider_calls": 0,
+  "external_human_validation": false,
+  "scope": "development corpus; reopened fake ambiguous dispatch; not a live failure replication"
+}

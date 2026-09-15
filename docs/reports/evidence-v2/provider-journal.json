@@ -1,0 +1,713 @@
+[
+  {
+    "attempt": "5ec198427a4b40d79bfebf1914e52847",
+    "endpoint": "/models",
+    "model": null,
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:21:03.944338+00:00"
+  },
+  {
+    "attempt": "5ec198427a4b40d79bfebf1914e52847",
+    "category": "success",
+    "endpoint": "/models",
+    "latency_ms": 100.667,
+    "model": null,
+    "phase": "returned",
+    "started_at": "2026-09-08T20:21:03.944338+00:00",
+    "usage": {}
+  },
+  {
+    "attempt": "795feee7e3534ba4bee0e5ea389d22fc",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:21:04.046075+00:00"
+  },
+  {
+    "attempt": "795feee7e3534ba4bee0e5ea389d22fc",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 7049.43,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:21:04.046075+00:00",
+    "usage": {
+      "completion_tokens": 48,
+      "prompt_tokens": 38,
+      "total_tokens": 86
+    }
+  },
+  {
+    "attempt": "5602459bd50e46279df509445a29e427",
+    "endpoint": "/chat/completions",
+    "model": "openai/gpt-oss-20b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:21:11.103024+00:00"
+  },
+  {
+    "attempt": "5602459bd50e46279df509445a29e427",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 2142.737,
+    "model": "openai/gpt-oss-20b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:21:11.103024+00:00",
+    "usage": {
+      "completion_tokens": 48,
+      "prompt_tokens": 82,
+      "total_tokens": 130
+    }
+  },
+  {
+    "attempt": "fcedc7490bc541f786ac65c5c1d4a929",
+    "endpoint": "/models",
+    "model": null,
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:23:38.796231+00:00"
+  },
+  {
+    "attempt": "fcedc7490bc541f786ac65c5c1d4a929",
+    "category": "success",
+    "endpoint": "/models",
+    "latency_ms": 81.956,
+    "model": null,
+    "phase": "returned",
+    "started_at": "2026-09-08T20:23:38.796231+00:00",
+    "usage": {}
+  },
+  {
+    "attempt": "19558447f7204450af69fde91ecb9033",
+    "endpoint": "/chat/completions",
+    "model": "mistralai/mistral-7b-instruct-v0.3",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:23:38.879546+00:00"
+  },
+  {
+    "attempt": "19558447f7204450af69fde91ecb9033",
+    "category": "model_unavailable",
+    "endpoint": "/chat/completions",
+    "latency_ms": 123.753,
+    "model": "mistralai/mistral-7b-instruct-v0.3",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:23:38.879546+00:00",
+    "usage": {}
+  },
+  {
+    "attempt": "b6add07cf0eb4e488bdff201bb0efd32",
+    "endpoint": "/chat/completions",
+    "model": "nv-mistralai/mistral-nemo-12b-instruct",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:23:39.009973+00:00"
+  },
+  {
+    "attempt": "b6add07cf0eb4e488bdff201bb0efd32",
+    "category": "model_unavailable",
+    "endpoint": "/chat/completions",
+    "latency_ms": 114.374,
+    "model": "nv-mistralai/mistral-nemo-12b-instruct",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:23:39.009973+00:00",
+    "usage": {}
+  },
+  {
+    "attempt": "e076b07a1a6041cfb591cd0037bc98bd",
+    "endpoint": "/chat/completions",
+    "model": "writer/palmyra-fin-70b-32k",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:23:39.130668+00:00"
+  },
+  {
+    "attempt": "e076b07a1a6041cfb591cd0037bc98bd",
+    "category": "model_unavailable",
+    "endpoint": "/chat/completions",
+    "latency_ms": 95.069,
+    "model": "writer/palmyra-fin-70b-32k",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:23:39.130668+00:00",
+    "usage": {}
+  },
+  {
+    "attempt": "55a2d5a50f47497b9a620ae6b6580e63",
+    "endpoint": "/models",
+    "model": null,
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:26:19.950401+00:00"
+  },
+  {
+    "attempt": "55a2d5a50f47497b9a620ae6b6580e63",
+    "category": "success",
+    "endpoint": "/models",
+    "latency_ms": 201.875,
+    "model": null,
+    "phase": "returned",
+    "started_at": "2026-09-08T20:26:19.950401+00:00",
+    "usage": {}
+  },
+  {
+    "attempt": "02a52d9eb32f47eeafa2fd02b36ca22b",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:26:20.158485+00:00"
+  },
+  {
+    "attempt": "02a52d9eb32f47eeafa2fd02b36ca22b",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 441.795,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:26:20.158485+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 47,
+      "total_tokens": 54
+    }
+  },
+  {
+    "attempt": "07c198dafb8c45a6b6d312b60bad2461",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:26:20.602796+00:00"
+  },
+  {
+    "attempt": "07c198dafb8c45a6b6d312b60bad2461",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 725.7,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:26:20.602796+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 47,
+      "total_tokens": 54
+    }
+  },
+  {
+    "attempt": "3e1bd6e3b0d34b64a00018cccbd50a6d",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:26:21.335656+00:00"
+  },
+  {
+    "attempt": "3e1bd6e3b0d34b64a00018cccbd50a6d",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 837.151,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:26:21.335656+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 47,
+      "total_tokens": 54
+    }
+  },
+  {
+    "attempt": "208ce0cc1ff74bf09e4db271d66c2745",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:21.317295+00:00"
+  },
+  {
+    "attempt": "208ce0cc1ff74bf09e4db271d66c2745",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 6289.48,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:21.317295+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 132,
+      "total_tokens": 143
+    }
+  },
+  {
+    "attempt": "95f9dcbe6b6d452da422acd8a1f31655",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:27.648746+00:00"
+  },
+  {
+    "attempt": "95f9dcbe6b6d452da422acd8a1f31655",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 763.985,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:27.648746+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 131,
+      "total_tokens": 142
+    }
+  },
+  {
+    "attempt": "6c8e1cd31de345b9ad2add28fd0f3854",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:28.447394+00:00"
+  },
+  {
+    "attempt": "6c8e1cd31de345b9ad2add28fd0f3854",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 809.71,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:28.447394+00:00",
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 131,
+      "total_tokens": 143
+    }
+  },
+  {
+    "attempt": "0e3c4d6471664d7aa4804f32edbb7084",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:29.293192+00:00"
+  },
+  {
+    "attempt": "0e3c4d6471664d7aa4804f32edbb7084",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 580.189,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:29.293192+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 139,
+      "total_tokens": 150
+    }
+  },
+  {
+    "attempt": "d2400bde0f394130b4ba13e3111e121a",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:29.909169+00:00"
+  },
+  {
+    "attempt": "d2400bde0f394130b4ba13e3111e121a",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 558.056,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:29.909169+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 131,
+      "total_tokens": 142
+    }
+  },
+  {
+    "attempt": "ae5147a48b074322a11d93f34cff0c11",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:30.512988+00:00"
+  },
+  {
+    "attempt": "ae5147a48b074322a11d93f34cff0c11",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 587.443,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:30.512988+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 136,
+      "total_tokens": 147
+    }
+  },
+  {
+    "attempt": "c06fc6d993ee4a579ea56e7edaf6ca8d",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:32.463850+00:00"
+  },
+  {
+    "attempt": "c06fc6d993ee4a579ea56e7edaf6ca8d",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 1325.217,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:32.463850+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 132,
+      "total_tokens": 143
+    }
+  },
+  {
+    "attempt": "dcece2adecf64643a52f8dce0320722b",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:33.842074+00:00"
+  },
+  {
+    "attempt": "dcece2adecf64643a52f8dce0320722b",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 674.68,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:33.842074+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 131,
+      "total_tokens": 142
+    }
+  },
+  {
+    "attempt": "f5e73419b7b64e9689c14a9a80d90be5",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:34.551255+00:00"
+  },
+  {
+    "attempt": "f5e73419b7b64e9689c14a9a80d90be5",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 708.518,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:34.551255+00:00",
+    "usage": {
+      "completion_tokens": 12,
+      "prompt_tokens": 131,
+      "total_tokens": 143
+    }
+  },
+  {
+    "attempt": "c0176dbf9b4e4ae5a88dd90e60a87d9b",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:35.301021+00:00"
+  },
+  {
+    "attempt": "c0176dbf9b4e4ae5a88dd90e60a87d9b",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 612.916,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:35.301021+00:00",
+    "usage": {
+      "completion_tokens": 8,
+      "prompt_tokens": 139,
+      "total_tokens": 147
+    }
+  },
+  {
+    "attempt": "cc1a3fb3d4584bad864b5963bee8d029",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:35.945379+00:00"
+  },
+  {
+    "attempt": "cc1a3fb3d4584bad864b5963bee8d029",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 735.45,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:35.945379+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 131,
+      "total_tokens": 142
+    }
+  },
+  {
+    "attempt": "941b3b189e31408aa35f4c4977a05dfa",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:36.726464+00:00"
+  },
+  {
+    "attempt": "941b3b189e31408aa35f4c4977a05dfa",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 634.43,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:36.726464+00:00",
+    "usage": {
+      "completion_tokens": 11,
+      "prompt_tokens": 136,
+      "total_tokens": 147
+    }
+  },
+  {
+    "attempt": "341f7ed3eb134830b4f23871a0e53e4d",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:39.230622+00:00"
+  },
+  {
+    "attempt": "341f7ed3eb134830b4f23871a0e53e4d",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 604.083,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:39.230622+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 43,
+      "total_tokens": 50
+    }
+  },
+  {
+    "attempt": "8b200cb748b84ef8ba98fd21e165c922",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T20:41:39.989170+00:00"
+  },
+  {
+    "attempt": "8b200cb748b84ef8ba98fd21e165c922",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 3705.092,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T20:41:39.989170+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 43,
+      "total_tokens": 50
+    }
+  },
+  {
+    "attempt": "9af94f7688464784ae95f864c9189ba1",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:46.269826+00:00"
+  },
+  {
+    "attempt": "9af94f7688464784ae95f864c9189ba1",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 912.518,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:46.269826+00:00",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 181,
+      "total_tokens": 204
+    }
+  },
+  {
+    "attempt": "c3c205c0242c4c8d8e480ce514416350",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:47.226232+00:00"
+  },
+  {
+    "attempt": "c3c205c0242c4c8d8e480ce514416350",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 640.884,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:47.226232+00:00",
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 180,
+      "total_tokens": 198
+    }
+  },
+  {
+    "attempt": "db301bc178d64748a1d729386f473bda",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:47.906654+00:00"
+  },
+  {
+    "attempt": "db301bc178d64748a1d729386f473bda",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 739.098,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:47.906654+00:00",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 180,
+      "total_tokens": 203
+    }
+  },
+  {
+    "attempt": "5dee641e0a56415f93cf9ff483ead864",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:48.686494+00:00"
+  },
+  {
+    "attempt": "5dee641e0a56415f93cf9ff483ead864",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 497.696,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:48.686494+00:00",
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 188,
+      "total_tokens": 210
+    }
+  },
+  {
+    "attempt": "ee50692de8e14b5cae760a0b2b104635",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:49.225116+00:00"
+  },
+  {
+    "attempt": "ee50692de8e14b5cae760a0b2b104635",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 697.374,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:49.225116+00:00",
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 180,
+      "total_tokens": 198
+    }
+  },
+  {
+    "attempt": "745567f7f1bd447dae00cebc849845b1",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:49.967945+00:00"
+  },
+  {
+    "attempt": "745567f7f1bd447dae00cebc849845b1",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 3842.96,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:49.967945+00:00",
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 185,
+      "total_tokens": 207
+    }
+  },
+  {
+    "attempt": "4227db3a5a0b4440b6ea2546b8d32b92",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:17:55.139483+00:00"
+  },
+  {
+    "attempt": "4227db3a5a0b4440b6ea2546b8d32b92",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 11908.776,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:17:55.139483+00:00",
+    "usage": {
+      "completion_tokens": 22,
+      "prompt_tokens": 180,
+      "total_tokens": 202
+    }
+  },
+  {
+    "attempt": "0fd43090285b40789485d3e76f3302cd",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:18:07.162603+00:00"
+  },
+  {
+    "attempt": "0fd43090285b40789485d3e76f3302cd",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 17059.238,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:18:07.162603+00:00",
+    "usage": {
+      "completion_tokens": 18,
+      "prompt_tokens": 180,
+      "total_tokens": 198
+    }
+  },
+  {
+    "attempt": "35fd10f985b9453aa4871ef117dc16b6",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:18:26.256823+00:00"
+  },
+  {
+    "attempt": "35fd10f985b9453aa4871ef117dc16b6",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 425.574,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:18:26.256823+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 43,
+      "total_tokens": 50
+    }
+  },
+  {
+    "attempt": "4f80d52488a24cf786aa9b42b4ccd12f",
+    "endpoint": "/chat/completions",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "dispatch",
+    "started_at": "2026-09-08T21:18:26.929495+00:00"
+  },
+  {
+    "attempt": "4f80d52488a24cf786aa9b42b4ccd12f",
+    "category": "success",
+    "endpoint": "/chat/completions",
+    "latency_ms": 673.682,
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "phase": "returned",
+    "started_at": "2026-09-08T21:18:26.929495+00:00",
+    "usage": {
+      "completion_tokens": 7,
+      "prompt_tokens": 43,
+      "total_tokens": 50
+    }
+  }
+]

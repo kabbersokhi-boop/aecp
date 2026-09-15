@@ -1,0 +1,111 @@
+{
+  "source_manifest": [
+    {
+      "source": "var/nim-discovery.json",
+      "artifact": "nim-discovery.json.gz",
+      "uncompressed_sha256": "706e767bf73831e220a00b03d10ecb1253be12441653ca75f08e8892aa97e005"
+    },
+    {
+      "source": "var/nim-discovery-fallback.json",
+      "artifact": "nim-discovery-fallback.json.gz",
+      "uncompressed_sha256": "10baf1d2bf07d38013a63bfef8534bdbcd2c2b03dfc58f752fa5d40787f5c0e0"
+    },
+    {
+      "source": "var/nim-selected.json",
+      "artifact": "nim-selected.json.gz",
+      "uncompressed_sha256": "9e4f757eec1a21bee08814e660efdb5f9ec2cbef3036ecd4ea6ceec9a507cca1"
+    },
+    {
+      "source": "var/evidence-v2/live.json",
+      "artifact": "live.json.gz",
+      "uncompressed_sha256": "38541872f854a671dcfe14832b75efd69faf7928006d89ccf951558e49cf8643"
+    },
+    {
+      "source": "var/evidence-v2/live-final.json",
+      "artifact": "live-final.json.gz",
+      "uncompressed_sha256": "48bff87d84e6e6e99109430ea2a43e844e694b2bbfa698df021667142afe47a5"
+    },
+    {
+      "source": "var/evidence-v2/study-final.json",
+      "artifact": "study-final.json.gz",
+      "uncompressed_sha256": "ac0ad79bf1f9ef78d7c38b24a20e1b70483732c52dca58cc39b2bac25a0215ac"
+    },
+    {
+      "source": "var/evidence-v2/performance-final.json",
+      "artifact": "performance-final.json.gz",
+      "uncompressed_sha256": "f51c482039b3308749b9bfafea34f148194387938d9a6d7dea1b493bfa09b0d3"
+    },
+    {
+      "source": "var/evidence-v2/browser.json",
+      "artifact": "browser.json.gz",
+      "uncompressed_sha256": "7c2caff7c882b43a4beba7edc1bb55b1cf69302a55ae32e0a9f5122dc6312093"
+    },
+    {
+      "source": "var/benchmark-v2/benchmark.json",
+      "artifact": "benchmark.json.gz",
+      "uncompressed_sha256": "bd0bd2137e41f89c5f51e8766b21d28b3e37376d6ac0b8351cb689a1cafa2c05"
+    }
+  ],
+  "all_run_provider_requests": 35,
+  "chat_requests": 32,
+  "catalog_requests": 3,
+  "returned_categories": {
+    "success": 32,
+    "model_unavailable": 3
+  },
+  "provider_reported_usage": {
+    "prompt_tokens": 3487,
+    "completion_tokens": 442,
+    "total_tokens": 3929
+  },
+  "actual_cash_spend": 0,
+  "cash_basis": "operator-declared NVIDIA free prototype, no invoice",
+  "live_quality": {
+    "gateway/live-first": {
+      "cases": 6,
+      "verified": 0,
+      "verified_value": 0,
+      "total_value": 602,
+      "visible_deterministic_correct": 4,
+      "settled": 512,
+      "reserved": 0
+    },
+    "gateway/live-repeat": {
+      "cases": 6,
+      "verified": 4,
+      "verified_value": 487,
+      "total_value": 602,
+      "visible_deterministic_correct": 4,
+      "settled": 182,
+      "reserved": 0
+    }
+  },
+  "deterministic_trials": 5670,
+  "bid_perturbation_trials": 120,
+  "strategies": {
+    "hoard": {
+      "verified_value": 1011.0333333333333,
+      "modeled_cost": 179.03333333333333,
+      "market_revenue": 194.53333333333333,
+      "jain_access": 0.9647086887224162
+    },
+    "overstate": {
+      "verified_value": 997.3,
+      "modeled_cost": 179,
+      "market_revenue": 269.93333333333334,
+      "jain_access": 0.9699047900799249
+    },
+    "shade": {
+      "verified_value": 1035.8666666666666,
+      "modeled_cost": 178.9,
+      "market_revenue": 226.23333333333332,
+      "jain_access": 0.9665641223994759
+    },
+    "unshaded": {
+      "verified_value": 1013.3,
+      "modeled_cost": 178.9,
+      "market_revenue": 263.1,
+      "jain_access": 0.9687468694098091
+    }
+  }
+}

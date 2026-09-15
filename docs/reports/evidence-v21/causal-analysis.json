@@ -1,0 +1,4386 @@
+{
+  "version": "information-mechanism-controls.v2.1",
+  "code_revision": "40faec172a10096bce71d9e06d27fb1e23a56968",
+  "primary_trials": 8100,
+  "primary_cells": [
+    {
+      "budget": 90,
+      "signal_quality": 50,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 61.733333333333334,
+          "paired_difference_sd": 131.23154933258192,
+          "wins": 14,
+          "ties": 11,
+          "losses": 5
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -66.56666666666666,
+          "paired_difference_sd": 158.98767753884388,
+          "wins": 10,
+          "ties": 0,
+          "losses": 20
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 477.73333333333335,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 539.4666666666667,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 539.4666666666667,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 50,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -7.633333333333334,
+          "paired_difference_sd": 147.36735317433505,
+          "wins": 12,
+          "ties": 4,
+          "losses": 14
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -135.93333333333334,
+          "paired_difference_sd": 160.4564466276373,
+          "wins": 8,
+          "ties": 0,
+          "losses": 22
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 477.73333333333335,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 470.1,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 470.1,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 50,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -59.56666666666667,
+          "paired_difference_sd": 141.63544348281863,
+          "wins": 10,
+          "ties": 1,
+          "losses": 19
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -187.86666666666667,
+          "paired_difference_sd": 158.04402122091858,
+          "wins": 4,
+          "ties": 0,
+          "losses": 26
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 477.73333333333335,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 418.1666666666667,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 418.1666666666667,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 75,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": -18.633333333333333,
+          "paired_difference_sd": 108.49200934609895,
+          "wins": 10,
+          "ties": 8,
+          "losses": 12
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 112.7,
+          "paired_difference_sd": 151.52515439290303,
+          "wins": 21,
+          "ties": 1,
+          "losses": 8
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 229.7,
+          "paired_difference_sd": 200.6737187060387,
+          "wins": 25,
+          "ties": 1,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 41.166666666666664,
+          "paired_difference_sd": 99.73312088919533,
+          "wins": 11,
+          "ties": 12,
+          "losses": 7
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -197.9,
+          "paired_difference_sd": 190.77723966032687,
+          "wins": 4,
+          "ties": 1,
+          "losses": 25
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 489.03333333333336,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 718.7333333333333,
+          "cost_mean": 88.66666666666667
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 479.6666666666667,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 539.4666666666667,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 520.8333333333334,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 75,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": -5.033333333333333,
+          "paired_difference_sd": 90.5014701093525,
+          "wins": 10,
+          "ties": 12,
+          "losses": 8
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 112.7,
+          "paired_difference_sd": 151.52515439290303,
+          "wins": 21,
+          "ties": 1,
+          "losses": 8
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 229.7,
+          "paired_difference_sd": 200.6737187060387,
+          "wins": 25,
+          "ties": 1,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -14.6,
+          "paired_difference_sd": 117.55749877077761,
+          "wins": 8,
+          "ties": 6,
+          "losses": 16
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -253.66666666666666,
+          "paired_difference_sd": 196.37935373840256,
+          "wins": 5,
+          "ties": 0,
+          "losses": 25
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 489.03333333333336,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 718.7333333333333,
+          "cost_mean": 88.66666666666667
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 479.6666666666667,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 470.1,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 465.06666666666666,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 75,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": -10.566666666666666,
+          "paired_difference_sd": 95.16725144253373,
+          "wins": 5,
+          "ties": 17,
+          "losses": 8
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 112.7,
+          "paired_difference_sd": 151.52515439290303,
+          "wins": 21,
+          "ties": 1,
+          "losses": 8
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 229.7,
+          "paired_difference_sd": 200.6737187060387,
+          "wins": 25,
+          "ties": 1,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -72.06666666666666,
+          "paired_difference_sd": 102.58887932383091,
+          "wins": 3,
+          "ties": 7,
+          "losses": 20
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -311.1333333333333,
+          "paired_difference_sd": 186.71086504656546,
+          "wins": 2,
+          "ties": 0,
+          "losses": 28
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 489.03333333333336,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 718.7333333333333,
+          "cost_mean": 88.66666666666667
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 479.6666666666667,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 418.1666666666667,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 407.6,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 90,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 26.266666666666666,
+          "paired_difference_sd": 84.23486596224963,
+          "wins": 19,
+          "ties": 4,
+          "losses": 7
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 204.03333333333333,
+          "paired_difference_sd": 128.45728750305946,
+          "wins": 27,
+          "ties": 1,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 302.8333333333333,
+          "paired_difference_sd": 168.37050346418047,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 79.63333333333334,
+          "paired_difference_sd": 106.38851484983716,
+          "wins": 17,
+          "ties": 12,
+          "losses": 1
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -244.33333333333334,
+          "paired_difference_sd": 152.52683954507546,
+          "wins": 1,
+          "ties": 0,
+          "losses": 29
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 507.23333333333335,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 810.0666666666667,
+          "cost_mean": 88.63333333333334
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 486.1,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 539.4666666666667,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 565.7333333333333,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 90,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 41.266666666666666,
+          "paired_difference_sd": 113.37150810752547,
+          "wins": 17,
+          "ties": 6,
+          "losses": 7
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 204.03333333333333,
+          "paired_difference_sd": 128.45728750305946,
+          "wins": 27,
+          "ties": 1,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 302.8333333333333,
+          "paired_difference_sd": 168.37050346418047,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 25.266666666666666,
+          "paired_difference_sd": 121.01807597480501,
+          "wins": 12,
+          "ties": 6,
+          "losses": 12
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -298.7,
+          "paired_difference_sd": 145.6379900229711,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 507.23333333333335,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 810.0666666666667,
+          "cost_mean": 88.63333333333334
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 486.1,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 470.1,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 511.3666666666667,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 90,
+      "signal_quality": 90,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 11.933333333333334,
+          "paired_difference_sd": 87.00056810489637,
+          "wins": 7,
+          "ties": 15,
+          "losses": 8
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 204.03333333333333,
+          "paired_difference_sd": 128.45728750305946,
+          "wins": 27,
+          "ties": 1,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 133.7,
+          "paired_difference_sd": 177.72278878965525,
+          "wins": 23,
+          "ties": 0,
+          "losses": 7
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 302.8333333333333,
+          "paired_difference_sd": 168.37050346418047,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -56,
+          "paired_difference_sd": 100.09581616527788,
+          "wins": 3,
+          "ties": 9,
+          "losses": 18
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -379.96666666666664,
+          "paired_difference_sd": 167.31458772135744,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 472.3333333333333,
+          "cost_mean": 90
+        },
+        "central-shared": {
+          "value_mean": 507.23333333333335,
+          "cost_mean": 90
+        },
+        "central-paced-public": {
+          "value_mean": 606.0333333333333,
+          "cost_mean": 89.06666666666666
+        },
+        "central-paced-shared": {
+          "value_mean": 810.0666666666667,
+          "cost_mean": 88.63333333333334
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 486.1,
+          "cost_mean": 90
+        },
+        "market-public": {
+          "value_mean": 418.1666666666667,
+          "cost_mean": 90
+        },
+        "market-private": {
+          "value_mean": 430.1,
+          "cost_mean": 90
+        },
+        "priority": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "equal": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        },
+        "evcost": {
+          "value_mean": 535.2,
+          "cost_mean": 90
+        }
+      },
+      "oracle_mean": 992.8666666666667
+    },
+    {
+      "budget": 180,
+      "signal_quality": 50,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 50.03333333333333,
+          "paired_difference_sd": 197.7711117521418,
+          "wins": 17,
+          "ties": 1,
+          "losses": 12
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -71.53333333333333,
+          "paired_difference_sd": 137.04435056939963,
+          "wins": 9,
+          "ties": 0,
+          "losses": 21
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1029.6,
+          "cost_mean": 180
+        },
+        "market-public": {
+          "value_mean": 1079.6333333333334,
+          "cost_mean": 179.8
+        },
+        "market-private": {
+          "value_mean": 1079.6333333333334,
+          "cost_mean": 179.8
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 50,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -99.83333333333333,
+          "paired_difference_sd": 203.35480855125982,
+          "wins": 11,
+          "ties": 0,
+          "losses": 19
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -221.4,
+          "paired_difference_sd": 166.35786104369845,
+          "wins": 4,
+          "ties": 0,
+          "losses": 26
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1029.6,
+          "cost_mean": 180
+        },
+        "market-public": {
+          "value_mean": 929.7666666666667,
+          "cost_mean": 176.4
+        },
+        "market-private": {
+          "value_mean": 929.7666666666667,
+          "cost_mean": 176.4
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 50,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -194.33333333333334,
+          "paired_difference_sd": 213.13171147621748,
+          "wins": 6,
+          "ties": 0,
+          "losses": 24
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -315.9,
+          "paired_difference_sd": 181.6004234386678,
+          "wins": 2,
+          "ties": 0,
+          "losses": 28
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1029.6,
+          "cost_mean": 180
+        },
+        "market-public": {
+          "value_mean": 835.2666666666667,
+          "cost_mean": 180
+        },
+        "market-private": {
+          "value_mean": 835.2666666666667,
+          "cost_mean": 180
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 75,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": -56.46666666666667,
+          "paired_difference_sd": 154.93863820621183,
+          "wins": 13,
+          "ties": 0,
+          "losses": 17
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 54,
+          "paired_difference_sd": 142.48871703667845,
+          "wins": 18,
+          "ties": 1,
+          "losses": 11
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 237.6,
+          "paired_difference_sd": 209.39215807204664,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 63.233333333333334,
+          "paired_difference_sd": 163.90192259362016,
+          "wins": 18,
+          "ties": 5,
+          "losses": 7
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -182,
+          "paired_difference_sd": 170.85444500893252,
+          "wins": 4,
+          "ties": 0,
+          "losses": 26
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 967.5666666666667,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1205.1666666666667,
+          "cost_mean": 177.43333333333334
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 959.9333333333333,
+          "cost_mean": 176.53333333333333
+        },
+        "market-public": {
+          "value_mean": 1079.6333333333334,
+          "cost_mean": 179.8
+        },
+        "market-private": {
+          "value_mean": 1023.1666666666666,
+          "cost_mean": 177.16666666666666
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 75,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 14.566666666666666,
+          "paired_difference_sd": 149.99280059351202,
+          "wins": 19,
+          "ties": 1,
+          "losses": 10
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 54,
+          "paired_difference_sd": 142.48871703667845,
+          "wins": 18,
+          "ties": 1,
+          "losses": 11
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 237.6,
+          "paired_difference_sd": 209.39215807204664,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -15.6,
+          "paired_difference_sd": 202.7726091820164,
+          "wins": 17,
+          "ties": 0,
+          "losses": 13
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -260.8333333333333,
+          "paired_difference_sd": 183.96965329459456,
+          "wins": 2,
+          "ties": 0,
+          "losses": 28
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 967.5666666666667,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1205.1666666666667,
+          "cost_mean": 177.43333333333334
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 959.9333333333333,
+          "cost_mean": 176.53333333333333
+        },
+        "market-public": {
+          "value_mean": 929.7666666666667,
+          "cost_mean": 176.4
+        },
+        "market-private": {
+          "value_mean": 944.3333333333334,
+          "cost_mean": 178.83333333333334
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 75,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": -37.86666666666667,
+          "paired_difference_sd": 124.2657700623764,
+          "wins": 13,
+          "ties": 4,
+          "losses": 13
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 54,
+          "paired_difference_sd": 142.48871703667845,
+          "wins": 18,
+          "ties": 1,
+          "losses": 11
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 237.6,
+          "paired_difference_sd": 209.39215807204664,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -162.53333333333333,
+          "paired_difference_sd": 139.55192664340058,
+          "wins": 3,
+          "ties": 0,
+          "losses": 27
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -407.76666666666665,
+          "paired_difference_sd": 149.1876123482138,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 967.5666666666667,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1205.1666666666667,
+          "cost_mean": 177.43333333333334
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 959.9333333333333,
+          "cost_mean": 176.53333333333333
+        },
+        "market-public": {
+          "value_mean": 835.2666666666667,
+          "cost_mean": 180
+        },
+        "market-private": {
+          "value_mean": 797.4,
+          "cost_mean": 179.9
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 90,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 18.233333333333334,
+          "paired_difference_sd": 176.79945454224904,
+          "wins": 17,
+          "ties": 0,
+          "losses": 13
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 164.83333333333334,
+          "paired_difference_sd": 143.16353883085844,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 335.1666666666667,
+          "paired_difference_sd": 182.52521475946415,
+          "wins": 28,
+          "ties": 0,
+          "losses": 2
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 94.8,
+          "paired_difference_sd": 143.78081978459795,
+          "wins": 19,
+          "ties": 5,
+          "losses": 6
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -218.13333333333333,
+          "paired_difference_sd": 155.00249905289812,
+          "wins": 1,
+          "ties": 1,
+          "losses": 28
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 980.8333333333334,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1316,
+          "cost_mean": 178.9
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1003.0666666666667,
+          "cost_mean": 176.83333333333334
+        },
+        "market-public": {
+          "value_mean": 1079.6333333333334,
+          "cost_mean": 179.8
+        },
+        "market-private": {
+          "value_mean": 1097.8666666666666,
+          "cost_mean": 177.23333333333332
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 90,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 83.53333333333333,
+          "paired_difference_sd": 172.94243278464444,
+          "wins": 22,
+          "ties": 0,
+          "losses": 8
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 164.83333333333334,
+          "paired_difference_sd": 143.16353883085844,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 335.1666666666667,
+          "paired_difference_sd": 182.52521475946415,
+          "wins": 28,
+          "ties": 0,
+          "losses": 2
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 10.233333333333333,
+          "paired_difference_sd": 135.81013200060954,
+          "wins": 11,
+          "ties": 8,
+          "losses": 11
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -302.7,
+          "paired_difference_sd": 147.34410815128155,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 980.8333333333334,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1316,
+          "cost_mean": 178.9
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1003.0666666666667,
+          "cost_mean": 176.83333333333334
+        },
+        "market-public": {
+          "value_mean": 929.7666666666667,
+          "cost_mean": 176.4
+        },
+        "market-private": {
+          "value_mean": 1013.3,
+          "cost_mean": 178.9
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 180,
+      "signal_quality": 90,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 29.8,
+          "paired_difference_sd": 127.12806467332933,
+          "wins": 17,
+          "ties": 2,
+          "losses": 11
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 164.83333333333334,
+          "paired_difference_sd": 143.16353883085844,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "public_budget_pacing": {
+          "mean_difference": 203.96666666666667,
+          "paired_difference_sd": 194.56857373444836,
+          "wins": 26,
+          "ties": 0,
+          "losses": 4
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 335.1666666666667,
+          "paired_difference_sd": 182.52521475946415,
+          "wins": 28,
+          "ties": 0,
+          "losses": 2
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -138,
+          "paired_difference_sd": 132.0511917453959,
+          "wins": 5,
+          "ties": 1,
+          "losses": 24
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -450.93333333333334,
+          "paired_difference_sd": 133.5230661548869,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 947.2,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 980.8333333333334,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1151.1666666666667,
+          "cost_mean": 178.26666666666668
+        },
+        "central-paced-shared": {
+          "value_mean": 1316,
+          "cost_mean": 178.9
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1003.0666666666667,
+          "cost_mean": 176.83333333333334
+        },
+        "market-public": {
+          "value_mean": 835.2666666666667,
+          "cost_mean": 180
+        },
+        "market-private": {
+          "value_mean": 865.0666666666667,
+          "cost_mean": 179.86666666666667
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1493.4333333333334
+    },
+    {
+      "budget": 300,
+      "signal_quality": 50,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 42.666666666666664,
+          "paired_difference_sd": 197.95877894379814,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -349.3666666666667,
+          "paired_difference_sd": 183.4411459378416,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1125.3333333333333,
+          "cost_mean": 195
+        },
+        "market-public": {
+          "value_mean": 1168,
+          "cost_mean": 195
+        },
+        "market-private": {
+          "value_mean": 1168,
+          "cost_mean": 195
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 50,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 42.666666666666664,
+          "paired_difference_sd": 197.95877894379814,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -349.3666666666667,
+          "paired_difference_sd": 183.4411459378416,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1125.3333333333333,
+          "cost_mean": 195
+        },
+        "market-public": {
+          "value_mean": 1168,
+          "cost_mean": 221.66666666666666
+        },
+        "market-private": {
+          "value_mean": 1168,
+          "cost_mean": 221.66666666666666
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 50,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 30,
+          "losses": 0
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 42,
+          "paired_difference_sd": 200.42162454736987,
+          "wins": 18,
+          "ties": 0,
+          "losses": 12
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -350.03333333333336,
+          "paired_difference_sd": 180.43252312789636,
+          "wins": 0,
+          "ties": 0,
+          "losses": 30
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1125.3333333333333,
+          "cost_mean": 195
+        },
+        "market-public": {
+          "value_mean": 1167.3333333333333,
+          "cost_mean": 273.8
+        },
+        "market-private": {
+          "value_mean": 1167.3333333333333,
+          "cost_mean": 273.8
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 75,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 202.56666666666666,
+          "paired_difference_sd": 165.79062061847006,
+          "wins": 27,
+          "ties": 1,
+          "losses": 2
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 30.3,
+          "paired_difference_sd": 105.35004050536838,
+          "wins": 13,
+          "ties": 10,
+          "losses": 7
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 13.5,
+          "paired_difference_sd": 106.78329651117305,
+          "wins": 11,
+          "ties": 11,
+          "losses": 8
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -12.333333333333334,
+          "paired_difference_sd": 213.3176898000004,
+          "wins": 11,
+          "ties": 6,
+          "losses": 13
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -177.1,
+          "paired_difference_sd": 184.59692342488006,
+          "wins": 4,
+          "ties": 2,
+          "losses": 24
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1534.1666666666667,
+          "cost_mean": 295
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1547.6666666666667,
+          "cost_mean": 295.1
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1382.9,
+          "cost_mean": 244.33333333333334
+        },
+        "market-public": {
+          "value_mean": 1168,
+          "cost_mean": 195
+        },
+        "market-private": {
+          "value_mean": 1370.5666666666666,
+          "cost_mean": 236.66666666666666
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 75,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 196.36666666666667,
+          "paired_difference_sd": 162.07458549805955,
+          "wins": 27,
+          "ties": 1,
+          "losses": 2
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 30.3,
+          "paired_difference_sd": 105.35004050536838,
+          "wins": 13,
+          "ties": 10,
+          "losses": 7
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 13.5,
+          "paired_difference_sd": 106.78329651117305,
+          "wins": 11,
+          "ties": 11,
+          "losses": 8
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -18.533333333333335,
+          "paired_difference_sd": 214.237981328424,
+          "wins": 11,
+          "ties": 6,
+          "losses": 13
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -183.3,
+          "paired_difference_sd": 181.32389575677496,
+          "wins": 3,
+          "ties": 2,
+          "losses": 25
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1534.1666666666667,
+          "cost_mean": 295
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1547.6666666666667,
+          "cost_mean": 295.1
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1382.9,
+          "cost_mean": 244.33333333333334
+        },
+        "market-public": {
+          "value_mean": 1168,
+          "cost_mean": 221.66666666666666
+        },
+        "market-private": {
+          "value_mean": 1364.3666666666666,
+          "cost_mean": 258.6
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 75,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 129.03333333333333,
+          "paired_difference_sd": 155.61767547274388,
+          "wins": 23,
+          "ties": 1,
+          "losses": 6
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 30.3,
+          "paired_difference_sd": 105.35004050536838,
+          "wins": 13,
+          "ties": 10,
+          "losses": 7
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 13.5,
+          "paired_difference_sd": 106.78329651117305,
+          "wins": 11,
+          "ties": 11,
+          "losses": 8
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -86.53333333333333,
+          "paired_difference_sd": 169.90844052288733,
+          "wins": 7,
+          "ties": 2,
+          "losses": 21
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -251.3,
+          "paired_difference_sd": 163.82773753612938,
+          "wins": 1,
+          "ties": 0,
+          "losses": 29
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1534.1666666666667,
+          "cost_mean": 295
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1547.6666666666667,
+          "cost_mean": 295.1
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1382.9,
+          "cost_mean": 244.33333333333334
+        },
+        "market-public": {
+          "value_mean": 1167.3333333333333,
+          "cost_mean": 273.8
+        },
+        "market-private": {
+          "value_mean": 1296.3666666666666,
+          "cost_mean": 290.3333333333333
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 90,
+      "bid_cost": 0,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 361.73333333333335,
+          "paired_difference_sd": 151.68318465059707,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 50.766666666666666,
+          "paired_difference_sd": 83.6943055506717,
+          "wins": 16,
+          "ties": 10,
+          "losses": 4
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 26.133333333333333,
+          "paired_difference_sd": 83.36985866206884,
+          "wins": 13,
+          "ties": 10,
+          "losses": 7
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 5.366666666666666,
+          "paired_difference_sd": 107.02641740705192,
+          "wins": 10,
+          "ties": 12,
+          "losses": 8
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -38.4,
+          "paired_difference_sd": 111.81314462237805,
+          "wins": 6,
+          "ties": 14,
+          "losses": 10
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1542,
+          "cost_mean": 296.8666666666667
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1568.1333333333334,
+          "cost_mean": 295.1333333333333
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1524.3666666666666,
+          "cost_mean": 263
+        },
+        "market-public": {
+          "value_mean": 1168,
+          "cost_mean": 195
+        },
+        "market-private": {
+          "value_mean": 1529.7333333333333,
+          "cost_mean": 250.33333333333334
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 90,
+      "bid_cost": 2,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 350.26666666666665,
+          "paired_difference_sd": 153.86826728783592,
+          "wins": 30,
+          "ties": 0,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 50.766666666666666,
+          "paired_difference_sd": 83.6943055506717,
+          "wins": 16,
+          "ties": 10,
+          "losses": 4
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 26.133333333333333,
+          "paired_difference_sd": 83.36985866206884,
+          "wins": 13,
+          "ties": 10,
+          "losses": 7
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -6.1,
+          "paired_difference_sd": 119.48145145326663,
+          "wins": 10,
+          "ties": 10,
+          "losses": 10
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -49.86666666666667,
+          "paired_difference_sd": 119.51994014370165,
+          "wins": 6,
+          "ties": 12,
+          "losses": 12
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1542,
+          "cost_mean": 296.8666666666667
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1568.1333333333334,
+          "cost_mean": 295.1333333333333
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1524.3666666666666,
+          "cost_mean": 263
+        },
+        "market-public": {
+          "value_mean": 1168,
+          "cost_mean": 221.66666666666666
+        },
+        "market-private": {
+          "value_mean": 1518.2666666666667,
+          "cost_mean": 268.73333333333335
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    },
+    {
+      "budget": 300,
+      "signal_quality": 90,
+      "bid_cost": 6,
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 267.1666666666667,
+          "paired_difference_sd": 167.1916272720768,
+          "wins": 29,
+          "ties": 0,
+          "losses": 1
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 50.766666666666666,
+          "paired_difference_sd": 83.6943055506717,
+          "wins": 16,
+          "ties": 10,
+          "losses": 4
+        },
+        "public_budget_pacing": {
+          "mean_difference": 6.7,
+          "paired_difference_sd": 96.81413048759445,
+          "wins": 9,
+          "ties": 10,
+          "losses": 11
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 26.133333333333333,
+          "paired_difference_sd": 83.36985866206884,
+          "wins": 13,
+          "ties": 10,
+          "losses": 7
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -89.86666666666666,
+          "paired_difference_sd": 154.6240676571748,
+          "wins": 5,
+          "ties": 7,
+          "losses": 18
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -133.63333333333333,
+          "paired_difference_sd": 152.30968527931853,
+          "wins": 2,
+          "ties": 6,
+          "losses": 22
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 1510.6666666666667,
+          "cost_mean": 295
+        },
+        "central-shared": {
+          "value_mean": 1542,
+          "cost_mean": 296.8666666666667
+        },
+        "central-paced-public": {
+          "value_mean": 1517.3666666666666,
+          "cost_mean": 295
+        },
+        "central-paced-shared": {
+          "value_mean": 1568.1333333333334,
+          "cost_mean": 295.1333333333333
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1524.3666666666666,
+          "cost_mean": 263
+        },
+        "market-public": {
+          "value_mean": 1167.3333333333333,
+          "cost_mean": 273.8
+        },
+        "market-private": {
+          "value_mean": 1434.5,
+          "cost_mean": 292.6666666666667
+        },
+        "priority": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 788.1,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1657
+    }
+  ],
+  "extension_seeds": 20,
+  "extension_trials": 3600,
+  "extension_cells": [
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 0,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 0,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 220.55,
+          "paired_difference_sd": 133.50674140282206,
+          "wins": 18,
+          "ties": 2,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 40.5,
+          "paired_difference_sd": 65.94854453523436,
+          "wins": 7,
+          "ties": 12,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 571.75,
+          "cost_mean": 114
+        },
+        "central-shared": {
+          "value_mean": 612.25,
+          "cost_mean": 114
+        },
+        "central-paced-public": {
+          "value_mean": 571.75,
+          "cost_mean": 114
+        },
+        "central-paced-shared": {
+          "value_mean": 612.25,
+          "cost_mean": 114
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 612.25,
+          "cost_mean": 94
+        },
+        "market-public": {
+          "value_mean": 391.7,
+          "cost_mean": 66
+        },
+        "market-private": {
+          "value_mean": 612.25,
+          "cost_mean": 106
+        },
+        "priority": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "equal": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "evcost": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        }
+      },
+      "oracle_mean": 625.3
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 1,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 0,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 99.2,
+          "paired_difference_sd": 83.06408432808465,
+          "wins": 15,
+          "ties": 5,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 17.25,
+          "paired_difference_sd": 59.10372238700368,
+          "wins": 3,
+          "ties": 15,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -44.15,
+          "paired_difference_sd": 78.3811705369143,
+          "wins": 1,
+          "ties": 12,
+          "losses": 7
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -71.65,
+          "paired_difference_sd": 98.60622111259138,
+          "wins": 2,
+          "ties": 8,
+          "losses": 10
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 640.05,
+          "cost_mean": 144
+        },
+        "central-shared": {
+          "value_mean": 657.3,
+          "cost_mean": 144
+        },
+        "central-paced-public": {
+          "value_mean": 640.05,
+          "cost_mean": 144
+        },
+        "central-paced-shared": {
+          "value_mean": 657.3,
+          "cost_mean": 144
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 629.8,
+          "cost_mean": 111
+        },
+        "market-public": {
+          "value_mean": 486.45,
+          "cost_mean": 96
+        },
+        "market-private": {
+          "value_mean": 585.65,
+          "cost_mean": 109.8
+        },
+        "priority": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "equal": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "evcost": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        }
+      },
+      "oracle_mean": 676.25
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 2,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 0,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 17.25,
+          "paired_difference_sd": 59.10372238700368,
+          "wins": 3,
+          "ties": 15,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -84.05,
+          "paired_difference_sd": 98.97499684263698,
+          "wins": 0,
+          "ties": 10,
+          "losses": 10
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 640.05,
+          "cost_mean": 144
+        },
+        "central-shared": {
+          "value_mean": 657.3,
+          "cost_mean": 144
+        },
+        "central-paced-public": {
+          "value_mean": 640.05,
+          "cost_mean": 144
+        },
+        "central-paced-shared": {
+          "value_mean": 657.3,
+          "cost_mean": 144
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 573.25,
+          "cost_mean": 114
+        },
+        "market-public": {
+          "value_mean": 573.25,
+          "cost_mean": 126
+        },
+        "market-private": {
+          "value_mean": 573.25,
+          "cost_mean": 126.8
+        },
+        "priority": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "equal": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "evcost": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        }
+      },
+      "oracle_mean": 676.25
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 0,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 1,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 337.15,
+          "paired_difference_sd": 76.13511189430206,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 116.9,
+          "paired_difference_sd": 144.60505196095875,
+          "wins": 14,
+          "ties": 1,
+          "losses": 5
+        },
+        "public_budget_pacing": {
+          "mean_difference": 48.25,
+          "paired_difference_sd": 82.8676020751428,
+          "wins": 13,
+          "ties": 1,
+          "losses": 6
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 73.6,
+          "paired_difference_sd": 84.72270558773052,
+          "wins": 16,
+          "ties": 1,
+          "losses": 3
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -46.05,
+          "paired_difference_sd": 82.18238702326737,
+          "wins": 2,
+          "ties": 8,
+          "losses": 10
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -69.75,
+          "paired_difference_sd": 82.57237654579801,
+          "wins": 3,
+          "ties": 1,
+          "losses": 16
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 865.35,
+          "cost_mean": 178.85
+        },
+        "central-shared": {
+          "value_mean": 956.9,
+          "cost_mean": 178.25
+        },
+        "central-paced-public": {
+          "value_mean": 913.6,
+          "cost_mean": 179
+        },
+        "central-paced-shared": {
+          "value_mean": 1030.5,
+          "cost_mean": 178.15
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1006.8,
+          "cost_mean": 174.4
+        },
+        "market-public": {
+          "value_mean": 623.6,
+          "cost_mean": 132
+        },
+        "market-private": {
+          "value_mean": 960.75,
+          "cost_mean": 178.85
+        },
+        "priority": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "equal": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "evcost": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        }
+      },
+      "oracle_mean": 1137.95
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 1,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 1,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 64.2,
+          "paired_difference_sd": 90.7063509643242,
+          "wins": 14,
+          "ties": 4,
+          "losses": 2
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 142.05,
+          "paired_difference_sd": 168.67891485241856,
+          "wins": 16,
+          "ties": 1,
+          "losses": 3
+        },
+        "public_budget_pacing": {
+          "mean_difference": 146.2,
+          "paired_difference_sd": 104.17424674174768,
+          "wins": 18,
+          "ties": 0,
+          "losses": 2
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 233.4,
+          "paired_difference_sd": 89.87968566220535,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -53.55,
+          "paired_difference_sd": 101.23525233726379,
+          "wins": 5,
+          "ties": 5,
+          "losses": 10
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -266,
+          "paired_difference_sd": 219.9217564211609,
+          "wins": 2,
+          "ties": 0,
+          "losses": 18
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 777.85,
+          "cost_mean": 178
+        },
+        "central-shared": {
+          "value_mean": 832.7,
+          "cost_mean": 178
+        },
+        "central-paced-public": {
+          "value_mean": 924.05,
+          "cost_mean": 178.8
+        },
+        "central-paced-shared": {
+          "value_mean": 1066.1,
+          "cost_mean": 178.95
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 853.65,
+          "cost_mean": 175.7
+        },
+        "market-public": {
+          "value_mean": 735.9,
+          "cost_mean": 176
+        },
+        "market-private": {
+          "value_mean": 800.1,
+          "cost_mean": 177.35
+        },
+        "priority": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "equal": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "evcost": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        }
+      },
+      "oracle_mean": 1256.25
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 2,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 1,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 22.4,
+          "paired_difference_sd": 46.113589731170755,
+          "wins": 6,
+          "ties": 13,
+          "losses": 1
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 169.1,
+          "paired_difference_sd": 146.86760955650536,
+          "wins": 18,
+          "ties": 0,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 140.05,
+          "paired_difference_sd": 112.12984719323819,
+          "wins": 18,
+          "ties": 0,
+          "losses": 2
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 250.25,
+          "paired_difference_sd": 81.65903115039421,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -63.8,
+          "paired_difference_sd": 106.19326968464522,
+          "wins": 3,
+          "ties": 6,
+          "losses": 11
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -342.05,
+          "paired_difference_sd": 178.5746121520726,
+          "wins": 0,
+          "ties": 0,
+          "losses": 20
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 771.35,
+          "cost_mean": 178.2
+        },
+        "central-shared": {
+          "value_mean": 830.25,
+          "cost_mean": 178.1
+        },
+        "central-paced-public": {
+          "value_mean": 911.4,
+          "cost_mean": 178.8
+        },
+        "central-paced-shared": {
+          "value_mean": 1080.5,
+          "cost_mean": 178.9
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 802.25,
+          "cost_mean": 176.95
+        },
+        "market-public": {
+          "value_mean": 716.05,
+          "cost_mean": 175
+        },
+        "market-private": {
+          "value_mean": 738.45,
+          "cost_mean": 176.45
+        },
+        "priority": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "equal": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "evcost": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        }
+      },
+      "oracle_mean": 1277.8
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 0,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 2,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 131.45,
+          "paired_difference_sd": 120.76705502307891,
+          "wins": 18,
+          "ties": 0,
+          "losses": 2
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 173.9,
+          "paired_difference_sd": 180.73123401163514,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "public_budget_pacing": {
+          "mean_difference": 155.45,
+          "paired_difference_sd": 118.77997128702873,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 215.85,
+          "paired_difference_sd": 141.14243459039972,
+          "wins": 18,
+          "ties": 2,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -109.5,
+          "paired_difference_sd": 110.27453778733569,
+          "wins": 0,
+          "ties": 6,
+          "losses": 14
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -247.35,
+          "paired_difference_sd": 125.96752923294412,
+          "wins": 0,
+          "ties": 1,
+          "losses": 19
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 879.8,
+          "cost_mean": 176
+        },
+        "central-shared": {
+          "value_mean": 993.3,
+          "cost_mean": 176
+        },
+        "central-paced-public": {
+          "value_mean": 1035.25,
+          "cost_mean": 177.75
+        },
+        "central-paced-shared": {
+          "value_mean": 1209.15,
+          "cost_mean": 178.95
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1071.3,
+          "cost_mean": 177.75
+        },
+        "market-public": {
+          "value_mean": 830.35,
+          "cost_mean": 163
+        },
+        "market-private": {
+          "value_mean": 961.8,
+          "cost_mean": 178.5
+        },
+        "priority": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1370.65
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 1,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 2,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 100.5,
+          "paired_difference_sd": 94.01483645512664,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 186.5,
+          "paired_difference_sd": 118.39696831111495,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 134.9,
+          "paired_difference_sd": 166.79325368156893,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 288.9,
+          "paired_difference_sd": 188.2928570073756,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -30.25,
+          "paired_difference_sd": 143.05349569856358,
+          "wins": 7,
+          "ties": 3,
+          "losses": 10
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -341.95,
+          "paired_difference_sd": 194.89011073719954,
+          "wins": 2,
+          "ties": 0,
+          "losses": 18
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 925.25,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 957.75,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1060.15,
+          "cost_mean": 178.55
+        },
+        "central-paced-shared": {
+          "value_mean": 1246.65,
+          "cost_mean": 178.2
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 934.95,
+          "cost_mean": 176.95
+        },
+        "market-public": {
+          "value_mean": 804.2,
+          "cost_mean": 177
+        },
+        "market-private": {
+          "value_mean": 904.7,
+          "cost_mean": 178.5
+        },
+        "priority": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1483.2
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 2,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 2,
+        "bid_cost": 2,
+        "provider_reliability": 50,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 2.8,
+          "paired_difference_sd": 57.10617995868472,
+          "wins": 2,
+          "ties": 15,
+          "losses": 3
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 186.5,
+          "paired_difference_sd": 118.39696831111495,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 224.1,
+          "paired_difference_sd": 154.49575023962717,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 370,
+          "paired_difference_sd": 153.25692222710958,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -53.65,
+          "paired_difference_sd": 91.25053712891662,
+          "wins": 2,
+          "ties": 9,
+          "losses": 9
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -423.4,
+          "paired_difference_sd": 193.10793273247614,
+          "wins": 0,
+          "ties": 0,
+          "losses": 20
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 836.05,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 876.65,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1060.15,
+          "cost_mean": 178.55
+        },
+        "central-paced-shared": {
+          "value_mean": 1246.65,
+          "cost_mean": 178.2
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 876.9,
+          "cost_mean": 178.4
+        },
+        "market-public": {
+          "value_mean": 820.45,
+          "cost_mean": 180
+        },
+        "market-private": {
+          "value_mean": 823.25,
+          "cost_mean": 179.95
+        },
+        "priority": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1504
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 0,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 0,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 220.55,
+          "paired_difference_sd": 133.50674140282206,
+          "wins": 18,
+          "ties": 2,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 40.5,
+          "paired_difference_sd": 65.94854453523436,
+          "wins": 7,
+          "ties": 12,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 571.75,
+          "cost_mean": 114
+        },
+        "central-shared": {
+          "value_mean": 612.25,
+          "cost_mean": 114
+        },
+        "central-paced-public": {
+          "value_mean": 571.75,
+          "cost_mean": 114
+        },
+        "central-paced-shared": {
+          "value_mean": 612.25,
+          "cost_mean": 114
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 612.25,
+          "cost_mean": 94
+        },
+        "market-public": {
+          "value_mean": 391.7,
+          "cost_mean": 66
+        },
+        "market-private": {
+          "value_mean": 612.25,
+          "cost_mean": 106
+        },
+        "priority": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "equal": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "evcost": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        }
+      },
+      "oracle_mean": 625.3
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 1,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 0,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 117.8,
+          "paired_difference_sd": 93.71659404822606,
+          "wins": 17,
+          "ties": 3,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 3.7,
+          "paired_difference_sd": 28.277013167663423,
+          "wins": 2,
+          "ties": 17,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -9.25,
+          "paired_difference_sd": 55.934054216126974,
+          "wins": 2,
+          "ties": 16,
+          "losses": 2
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -23.9,
+          "paired_difference_sd": 63.52115271392092,
+          "wins": 1,
+          "ties": 15,
+          "losses": 4
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 673,
+          "cost_mean": 144
+        },
+        "central-shared": {
+          "value_mean": 676.7,
+          "cost_mean": 144
+        },
+        "central-paced-public": {
+          "value_mean": 673,
+          "cost_mean": 144
+        },
+        "central-paced-shared": {
+          "value_mean": 676.7,
+          "cost_mean": 144
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 662.05,
+          "cost_mean": 111
+        },
+        "market-public": {
+          "value_mean": 535,
+          "cost_mean": 95.8
+        },
+        "market-private": {
+          "value_mean": 652.8,
+          "cost_mean": 111.4
+        },
+        "priority": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "equal": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "evcost": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        }
+      },
+      "oracle_mean": 695.7
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 2,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 0,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 40.65,
+          "paired_difference_sd": 75.71016409550583,
+          "wins": 8,
+          "ties": 11,
+          "losses": 1
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 3.7,
+          "paired_difference_sd": 28.277013167663423,
+          "wins": 2,
+          "ties": 17,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 0,
+          "paired_difference_sd": 0.0,
+          "wins": 0,
+          "ties": 20,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -2.95,
+          "paired_difference_sd": 29.188092381005397,
+          "wins": 1,
+          "ties": 18,
+          "losses": 1
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -22.65,
+          "paired_difference_sd": 47.70222879047631,
+          "wins": 0,
+          "ties": 16,
+          "losses": 4
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 673,
+          "cost_mean": 144
+        },
+        "central-shared": {
+          "value_mean": 676.7,
+          "cost_mean": 144
+        },
+        "central-paced-public": {
+          "value_mean": 673,
+          "cost_mean": 144
+        },
+        "central-paced-shared": {
+          "value_mean": 676.7,
+          "cost_mean": 144
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 657,
+          "cost_mean": 114
+        },
+        "market-public": {
+          "value_mean": 613.4,
+          "cost_mean": 120.6
+        },
+        "market-private": {
+          "value_mean": 654.05,
+          "cost_mean": 123.6
+        },
+        "priority": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "equal": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        },
+        "evcost": {
+          "value_mean": 391.7,
+          "cost_mean": 54
+        }
+      },
+      "oracle_mean": 695.7
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 0,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 1,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 337.15,
+          "paired_difference_sd": 76.13511189430206,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 116.9,
+          "paired_difference_sd": 144.60505196095875,
+          "wins": 14,
+          "ties": 1,
+          "losses": 5
+        },
+        "public_budget_pacing": {
+          "mean_difference": 48.25,
+          "paired_difference_sd": 82.8676020751428,
+          "wins": 13,
+          "ties": 1,
+          "losses": 6
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 73.6,
+          "paired_difference_sd": 84.72270558773052,
+          "wins": 16,
+          "ties": 1,
+          "losses": 3
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -46.05,
+          "paired_difference_sd": 82.18238702326737,
+          "wins": 2,
+          "ties": 8,
+          "losses": 10
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -69.75,
+          "paired_difference_sd": 82.57237654579801,
+          "wins": 3,
+          "ties": 1,
+          "losses": 16
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 865.35,
+          "cost_mean": 178.85
+        },
+        "central-shared": {
+          "value_mean": 956.9,
+          "cost_mean": 178.25
+        },
+        "central-paced-public": {
+          "value_mean": 913.6,
+          "cost_mean": 179
+        },
+        "central-paced-shared": {
+          "value_mean": 1030.5,
+          "cost_mean": 178.15
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1006.8,
+          "cost_mean": 174.4
+        },
+        "market-public": {
+          "value_mean": 623.6,
+          "cost_mean": 132
+        },
+        "market-private": {
+          "value_mean": 960.75,
+          "cost_mean": 178.85
+        },
+        "priority": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "equal": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "evcost": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        }
+      },
+      "oracle_mean": 1137.95
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 1,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 1,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 79.9,
+          "paired_difference_sd": 134.15697796552405,
+          "wins": 14,
+          "ties": 3,
+          "losses": 3
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 85.7,
+          "paired_difference_sd": 89.87482523224351,
+          "wins": 15,
+          "ties": 2,
+          "losses": 3
+        },
+        "public_budget_pacing": {
+          "mean_difference": 212.6,
+          "paired_difference_sd": 100.59737361853622,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 270.85,
+          "paired_difference_sd": 114.70615777533021,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -23.4,
+          "paired_difference_sd": 122.10151083163721,
+          "wins": 5,
+          "ties": 4,
+          "losses": 11
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -171.85,
+          "paired_difference_sd": 134.8977292930502,
+          "wins": 0,
+          "ties": 2,
+          "losses": 18
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 841,
+          "cost_mean": 178
+        },
+        "central-shared": {
+          "value_mean": 868.45,
+          "cost_mean": 178
+        },
+        "central-paced-public": {
+          "value_mean": 1053.6,
+          "cost_mean": 178.6
+        },
+        "central-paced-shared": {
+          "value_mean": 1139.3,
+          "cost_mean": 178.75
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 990.85,
+          "cost_mean": 175.7
+        },
+        "market-public": {
+          "value_mean": 887.55,
+          "cost_mean": 177.15
+        },
+        "market-private": {
+          "value_mean": 967.45,
+          "cost_mean": 178.55
+        },
+        "priority": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "equal": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "evcost": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        }
+      },
+      "oracle_mean": 1291.3
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 2,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 1,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 47.9,
+          "paired_difference_sd": 108.83734846573869,
+          "wins": 11,
+          "ties": 6,
+          "losses": 3
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 79.6,
+          "paired_difference_sd": 68.95719496065733,
+          "wins": 17,
+          "ties": 2,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 234.85,
+          "paired_difference_sd": 109.66661200873165,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 300.5,
+          "paired_difference_sd": 107.92663199941357,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -49.75,
+          "paired_difference_sd": 107.33071125706458,
+          "wins": 2,
+          "ties": 8,
+          "losses": 10
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -236.45,
+          "paired_difference_sd": 161.71042182344274,
+          "wins": 1,
+          "ties": 0,
+          "losses": 19
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 857.3,
+          "cost_mean": 178
+        },
+        "central-shared": {
+          "value_mean": 871.25,
+          "cost_mean": 178
+        },
+        "central-paced-public": {
+          "value_mean": 1092.15,
+          "cost_mean": 179.1
+        },
+        "central-paced-shared": {
+          "value_mean": 1171.75,
+          "cost_mean": 178.95
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 985.05,
+          "cost_mean": 176.95
+        },
+        "market-public": {
+          "value_mean": 887.4,
+          "cost_mean": 176.6
+        },
+        "market-private": {
+          "value_mean": 935.3,
+          "cost_mean": 178.55
+        },
+        "priority": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "equal": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        },
+        "evcost": {
+          "value_mean": 623.6,
+          "cost_mean": 108
+        }
+      },
+      "oracle_mean": 1335.25
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 0,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 2,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 131.45,
+          "paired_difference_sd": 120.76705502307891,
+          "wins": 18,
+          "ties": 0,
+          "losses": 2
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 173.9,
+          "paired_difference_sd": 180.73123401163514,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "public_budget_pacing": {
+          "mean_difference": 155.45,
+          "paired_difference_sd": 118.77997128702873,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 215.85,
+          "paired_difference_sd": 141.14243459039972,
+          "wins": 18,
+          "ties": 2,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -109.5,
+          "paired_difference_sd": 110.27453778733569,
+          "wins": 0,
+          "ties": 6,
+          "losses": 14
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -247.35,
+          "paired_difference_sd": 125.96752923294412,
+          "wins": 0,
+          "ties": 1,
+          "losses": 19
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 879.8,
+          "cost_mean": 176
+        },
+        "central-shared": {
+          "value_mean": 993.3,
+          "cost_mean": 176
+        },
+        "central-paced-public": {
+          "value_mean": 1035.25,
+          "cost_mean": 177.75
+        },
+        "central-paced-shared": {
+          "value_mean": 1209.15,
+          "cost_mean": 178.95
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1071.3,
+          "cost_mean": 177.75
+        },
+        "market-public": {
+          "value_mean": 830.35,
+          "cost_mean": 163
+        },
+        "market-private": {
+          "value_mean": 961.8,
+          "cost_mean": 178.5
+        },
+        "priority": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1370.65
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 1,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 2,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": 90.7,
+          "paired_difference_sd": 185.14321625788992,
+          "wins": 15,
+          "ties": 0,
+          "losses": 5
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 195.05,
+          "paired_difference_sd": 151.77978334277245,
+          "wins": 18,
+          "ties": 0,
+          "losses": 2
+        },
+        "public_budget_pacing": {
+          "mean_difference": 187.55,
+          "paired_difference_sd": 199.97907127339207,
+          "wins": 17,
+          "ties": 0,
+          "losses": 3
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 347.7,
+          "paired_difference_sd": 190.94063558024905,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": 21.25,
+          "paired_difference_sd": 153.8395866513318,
+          "wins": 8,
+          "ties": 5,
+          "losses": 7
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -296.2,
+          "paired_difference_sd": 158.12406854312718,
+          "wins": 0,
+          "ties": 0,
+          "losses": 20
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 973.5,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 1008.4,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1161.05,
+          "cost_mean": 178.5
+        },
+        "central-paced-shared": {
+          "value_mean": 1356.1,
+          "cost_mean": 178.75
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1038.65,
+          "cost_mean": 176.95
+        },
+        "market-public": {
+          "value_mean": 969.2,
+          "cost_mean": 176.4
+        },
+        "market-private": {
+          "value_mean": 1059.9,
+          "cost_mean": 178.75
+        },
+        "priority": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1545.65
+    },
+    {
+      "config": {
+        "budget": 180,
+        "rounds": 6,
+        "signal_quality": 90,
+        "premium_capacity": 2,
+        "consultation_capacity": 1,
+        "mandatory_capacity": 2,
+        "bid_cost": 2,
+        "provider_reliability": 90,
+        "strategy": "unshaded",
+        "endowments": [
+          120,
+          120,
+          120
+        ]
+      },
+      "contrasts": {
+        "private_information_in_market": {
+          "mean_difference": -6.7,
+          "paired_difference_sd": 82.99086823576626,
+          "wins": 6,
+          "ties": 8,
+          "losses": 6
+        },
+        "sharing_with_paced_central": {
+          "mean_difference": 196.65,
+          "paired_difference_sd": 142.89277356410332,
+          "wins": 19,
+          "ties": 0,
+          "losses": 1
+        },
+        "public_budget_pacing": {
+          "mean_difference": 265.05,
+          "paired_difference_sd": 155.2947875900269,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "shared_budget_pacing": {
+          "mean_difference": 448.05,
+          "paired_difference_sd": 170.73848115573836,
+          "wins": 20,
+          "ties": 0,
+          "losses": 0
+        },
+        "auction_package_vs_rotating_private": {
+          "mean_difference": -62.95,
+          "paired_difference_sd": 81.06039009346836,
+          "wins": 3,
+          "ties": 6,
+          "losses": 11
+        },
+        "private_market_vs_paced_shared": {
+          "mean_difference": -372,
+          "paired_difference_sd": 139.51268570880646,
+          "wins": 0,
+          "ties": 0,
+          "losses": 20
+        }
+      },
+      "allocators": {
+        "central-public": {
+          "value_mean": 900.95,
+          "cost_mean": 180
+        },
+        "central-shared": {
+          "value_mean": 914.6,
+          "cost_mean": 180
+        },
+        "central-paced-public": {
+          "value_mean": 1166,
+          "cost_mean": 178.1
+        },
+        "central-paced-shared": {
+          "value_mean": 1362.65,
+          "cost_mean": 178.7
+        },
+        "decentralized-private-no-market": {
+          "value_mean": 1053.6,
+          "cost_mean": 178.4
+        },
+        "market-public": {
+          "value_mean": 997.35,
+          "cost_mean": 179.8
+        },
+        "market-private": {
+          "value_mean": 990.65,
+          "cost_mean": 179.5
+        },
+        "priority": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "equal": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        },
+        "evcost": {
+          "value_mean": 830.35,
+          "cost_mean": 135
+        }
+      },
+      "oracle_mean": 1586.8
+    }
+  ],
+  "interpretation": "Paired descriptive contrasts; cells reuse seeds and are not independent samples. Auction contrast includes ranking/payment/endowment constraints and tax; not a price-only treatment."
+}

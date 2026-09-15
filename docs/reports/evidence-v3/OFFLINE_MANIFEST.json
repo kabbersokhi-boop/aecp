@@ -1,0 +1,68 @@
+{
+  "version": "v3-evidence-checkpoint",
+  "files": [
+    {
+      "path": "overload-before.json.gz",
+      "sha256": "d59e8900857d05ebf262bd325990718e6efb9395f935ceb14d24f6c76d37f2d4",
+      "uncompressed_sha256": "50c6a7035fb61101f59b07854863a5f0abb17216a337a24a4d2608019c0f58d3"
+    },
+    {
+      "path": "overload-after.json.gz",
+      "sha256": "e097be3b1a396f7c1f487519bd37d857c56d5066668c68cd54cf6582503507e5",
+      "uncompressed_sha256": "93bfffdc172901a37663bcb99ddcea2c91f4600baa58c728c30454f413a68766"
+    },
+    {
+      "path": "fairness.json.gz",
+      "sha256": "dcf3aa27e5489e098777c47bbde4b8715b66ccb5f1df62038e1ce37f0fab1bbc",
+      "uncompressed_sha256": "ecc8720014bcb74f93ce837bb6fd082d7c798b44ef1d37153c63dc080b9663ae"
+    },
+    {
+      "path": "clean-install.json.gz",
+      "sha256": "ad5449768cae664914c5869cd6425332614a2170067078b1ecfad123eea1f766",
+      "uncompressed_sha256": "8573c5879276302eceefe7e402ebde941c66d11c504776700cf53e09adc6a990"
+    },
+    {
+      "path": "reporting-reviewed.json.gz",
+      "sha256": "7121b45324bb6fac99017eb5b990541549e14c94ecfebc9bfcf822315d442755",
+      "uncompressed_sha256": "336412ec572942dae6290d15197585cf6556af5dce0740b930480301a4c65c0c"
+    },
+    {
+      "path": "reporting-reviewed.trials.json.gz",
+      "sha256": "487aab11cd749669490414ae9e0522b082164f39dfa11ac940b10c882454181e",
+      "uncompressed_sha256": "eb0f424b5bbe44a0fd13fd9d807b888eaec18828a9b6c2b249e035dcd803903f"
+    },
+    {
+      "path": "model-selection-1.json.gz",
+      "sha256": "70185e492a6f285c33e6ceef2506cbf82e468d76095e8194baec9070e377efab",
+      "uncompressed_sha256": "918ed75b33994256c49fce2876cd2ccf36f4df0f455c745aa54e637f8085ea44"
+    },
+    {
+      "path": "final-semantic-live.json.gz",
+      "sha256": "d41b36451af2d5b21aab7aa89b6a3d7dcda0022fb8ba097720055d1f7a09a49e",
+      "uncompressed_sha256": "c98a7fc500a78dc1b0324510dc08d1d37b4243712bc364e5c8346d7539a4479c"
+    },
+    {
+      "path": "final-semantic-analysis.json.gz",
+      "sha256": "a1c9735c89efe2a8376a186cd8a41ca0f6dec7beddb24d93d852c818507bf9cf",
+      "uncompressed_sha256": "484eb15764ab7cf5c1570f498789e517994c9376015b3de60935b1d322802896"
+    },
+    {
+      "path": "final-semantic-live.provider-journal.jsonl.gz",
+      "sha256": "fefcbf5e85631d66aa673d9771ea61382a828277185275fecbc54d721ac8e4e8",
+      "uncompressed_sha256": "d5ec10dc64efa37e5aa9a38d7247856f6e1da3f27aaad7607f54217f8cd54918"
+    },
+    {
+      "path": "live-browser.json.gz",
+      "sha256": "263b9b314b77f8464e572f058dee3d2cc7228bb46489d8999f64626a338ff683",
+      "uncompressed_sha256": "3e37f44c30ba09be979f308f25255c3663e966eccfb306fb4d2f12dfd350431d"
+    },
+    {
+      "path": "clean-install-final.json.gz",
+      "sha256": "129f8db9932b707452121544c10d22f99f05745b37419b4863811575e0ec9e75",
+      "uncompressed_sha256": "b7c63b883292e3a33e78a928bebac2d62dd77dcb50d2fc45c36f268da251a566"
+    }
+  ],
+  "live_v3_chat_calls": 42,
+  "live_v3_catalog_calls": 1,
+  "scope": "offline controls, development model probe and single frozen live semantic evaluation"
+}
