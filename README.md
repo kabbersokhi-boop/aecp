@@ -1,5 +1,7 @@
 # Agent Economic Control Plane
 
+[![CI](https://github.com/kabbersokhi-boop/aecp/actions/workflows/ci.yml/badge.svg)](https://github.com/kabbersokhi-boop/aecp/actions/workflows/ci.yml)
+
 **How much useful autonomy can a fixed resource budget safely purchase?**
 
 AECP is an economic execution control plane for autonomous agents. Agents may
@@ -14,6 +16,8 @@ flowchart LR
     R -->|receipt or uncertainty| C
     C --> L[(Budget + liability + provenance ledger)]
 ```
+
+![AECP financial debugger dashboard](docs/reports/screenshots/financial-debugger.png)
 
 An existing agent can route OpenAI-compatible calls through AECP using a scoped
 AECP token instead of receiving provider credentials. The reference system also
@@ -131,6 +135,14 @@ runtime dependencies and the dashboard has no runtime CDN.
 For deeper review, start with [architecture](docs/ARCHITECTURE.md),
 [security](SECURITY.md), [experiment design](docs/EXPERIMENTS.md), and
 [publication provenance](PUBLIC_PROVENANCE.md).
+
+### Historical build artifacts
+
+`AGENTS.md`, `docs/BOOTSTRAP.md`, `docs/CODEX_FIRST_RUN.md`, and
+`scripts/publish_private_repo.sh` are retained as development provenance for the
+original private engineering workflow. They are **not** current setup or publication
+instructions for this public repository. For current usage, follow this README,
+[the demo guide](docs/DEMO.md), and [the integration guide](docs/INTEGRATION.md).
 
 ## Scope and license
 

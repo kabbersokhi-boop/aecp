@@ -11,6 +11,12 @@
   and this provenance notice; recorded by hash in `PUBLICATION_MANIFEST.json`
 - New provider/catalog/chat/model calls during publication: zero
 
+The base sanitizer archive hash identifies the exported source snapshot before
+public-copy-only presentation edits. The canonical published state is the Git tree
+plus the per-file SHA-256 values recorded in `PUBLICATION_MANIFEST.json`. A later
+local tarball/package hash is not part of committed provenance unless that exact
+artifact is retained and named separately.
+
 The private source repository remains separate and private. The public repository
 starts with a clean root commit and does not contain the source repository's `.git`
 directory or development history.
