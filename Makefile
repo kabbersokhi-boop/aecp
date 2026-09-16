@@ -1,4 +1,4 @@
-.PHONY: test demo compile serve benchmark stress lint check integration browser showcase property evidence live
+.PHONY: test demo compile serve benchmark stress lint check integration browser showcase property evidence live failure-conformance cost-of-safety outcome-fixture
 
 test:
 	PYTHONPATH=src python3 -m unittest discover -s tests -v
@@ -39,6 +39,15 @@ integration:
 
 isolation:
 	PYTHONPATH=src python3 scripts/isolation_validate.py
+
+failure-conformance:
+	PYTHONPATH=src python3 scripts/failure_conformance.py benchmark --output var/failure-conformance.json
+
+cost-of-safety:
+	PYTHONPATH=src python3 scripts/failure_conformance.py cost-study --output var/cost-of-safety.json
+
+outcome-fixture:
+	python3 scripts/validate_outcome_cases.py examples/outcome_study_cases.fixture.json
 
 browser:
 	npm run test:browser

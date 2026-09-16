@@ -1,0 +1,636 @@
+{
+  "controls": {
+    "naive-check-then-execute": {
+      "budget": 4,
+      "provider_journal": [
+        {
+          "attempt_id": "naive-1",
+          "charge": 4,
+          "correlation_id": "naive-1",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "9bb7da74a11b0d3583beeefa",
+          "seq": 1
+        },
+        {
+          "attempt_id": "naive-0",
+          "charge": 4,
+          "correlation_id": "naive-0",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "44d3a0bf0a6faa56772fc408",
+          "seq": 2
+        }
+      ],
+      "settled": 8,
+      "useful_work_completed": 2
+    },
+    "reject-all": {
+      "budget": 4,
+      "legitimate_work_denied": 1,
+      "provider_journal": [],
+      "settled": 0,
+      "useful_work_completed": 0
+    }
+  },
+  "provider_calls": 0,
+  "provider_ground_truth": "separate process and SQLite journal; exported only after execution",
+  "provider_modes": [
+    "idempotent",
+    "non-idempotent"
+  ],
+  "scenarios": {
+    "changed_parameters_conflict": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 9,
+        "funded": 12,
+        "headroom": 9,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 0,
+        "spent": 3,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 3,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 0,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "immutable",
+          "charge": 3,
+          "correlation_id": "same-correlation",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "df0262a18d0ed9c50766b0bb",
+          "seq": 1
+        }
+      ],
+      "rejected": true
+    },
+    "concurrent_parent_authority": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "outcomes": [
+        "DENIED",
+        "RESERVED"
+      ]
+    },
+    "duplicate_immutable_identity": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 9,
+        "funded": 12,
+        "headroom": 9,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 0,
+        "spent": 3,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "first": "SETTLED",
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 3,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 0,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "immutable",
+          "charge": 3,
+          "correlation_id": "same-correlation",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "df0262a18d0ed9c50766b0bb",
+          "seq": 1
+        }
+      ],
+      "repeat": "SETTLED"
+    },
+    "durable_receipt_before_worker_death": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 5,
+        "funded": 8,
+        "headroom": 5,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 0,
+        "spent": 3,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 3,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 0,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "receipt-death",
+          "charge": 3,
+          "correlation_id": "receipt-death",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "d0367677cf1051315b2f4159",
+          "seq": 1
+        }
+      ],
+      "state": "SETTLED",
+      "worker_exit": 74
+    },
+    "executed_response_lost": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 4,
+        "funded": 8,
+        "headroom": 4,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 4,
+        "spent": 0,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 0,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 4,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "lost",
+          "charge": 3,
+          "correlation_id": "lost",
+          "delivered": 0,
+          "executed": 1,
+          "fault": "drop_after_execute",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "be7ea1db4b046201c890e040",
+          "seq": 1
+        }
+      ],
+      "state": "UNRESOLVED"
+    },
+    "expiry_cannot_erase_uncertainty": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 0,
+        "funded": 8,
+        "headroom": 0,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 8,
+        "spent": 0,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "cancellation_denied": true,
+      "first_after_expiry": "UNRESOLVED",
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 0,
+        "independently_journaled_provider_charges": 6,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 8,
+        "provider_executions": 2,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "attempt-1",
+          "charge": 3,
+          "correlation_id": "operation",
+          "delivered": 0,
+          "executed": 1,
+          "fault": "drop_after_execute",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "dbcc88e482de643446f2b4b0",
+          "seq": 1
+        },
+        {
+          "attempt_id": "attempt-2",
+          "charge": 3,
+          "correlation_id": "operation",
+          "delivered": 0,
+          "executed": 1,
+          "fault": "drop_after_execute",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "673b46a8b7111b4f8c34227a",
+          "seq": 2
+        }
+      ]
+    },
+    "independently_funded_retry": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 0,
+        "funded": 8,
+        "headroom": 0,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 8,
+        "spent": 0,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "first": "UNRESOLVED",
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 0,
+        "independently_journaled_provider_charges": 6,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 8,
+        "provider_executions": 2,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "attempt-1",
+          "charge": 3,
+          "correlation_id": "operation",
+          "delivered": 0,
+          "executed": 1,
+          "fault": "drop_after_execute",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "dbcc88e482de643446f2b4b0",
+          "seq": 1
+        },
+        {
+          "attempt_id": "attempt-2",
+          "charge": 3,
+          "correlation_id": "operation",
+          "delivered": 0,
+          "executed": 1,
+          "fault": "drop_after_execute",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "673b46a8b7111b4f8c34227a",
+          "seq": 2
+        }
+      ],
+      "second": "UNRESOLVED",
+      "third_denied": true
+    },
+    "normal_settlement": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 9,
+        "funded": 12,
+        "headroom": 9,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 0,
+        "spent": 3,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 3,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 0,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "normal",
+          "charge": 3,
+          "correlation_id": "normal",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "0cf8c72fc2ad99ead44edf72",
+          "seq": 1
+        }
+      ],
+      "state": "SETTLED"
+    },
+    "provider_bound_breach": {
+      "actual": 7,
+      "audit": {
+        "bound_breach_count": 1,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 5,
+        "funded": 12,
+        "headroom": 5,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 0,
+        "spent": 7,
+        "spent_high": "0",
+        "status": "FROZEN",
+        "unit": "SIM_COST_MICRO"
+      },
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 7,
+        "independently_journaled_provider_charges": 7,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 0,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "overrun",
+          "charge": 7,
+          "correlation_id": "overrun",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "1ae60f4417a7004eb96c565a",
+          "seq": 1
+        }
+      ],
+      "state": "SETTLED",
+      "status": "FROZEN"
+    },
+    "provider_idempotency_modes": {
+      "idempotent_executions": 1,
+      "non_idempotent_executions": 2,
+      "provider_journal": [
+        {
+          "attempt_id": "idem-1",
+          "charge": 3,
+          "correlation_id": "idem",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "idempotent",
+          "received": 1,
+          "result_id": "63fb97e553aa0a0dc94a5b31",
+          "seq": 1
+        },
+        {
+          "attempt_id": "idem-2",
+          "charge": 0,
+          "correlation_id": "idem",
+          "delivered": 1,
+          "executed": 0,
+          "fault": "none",
+          "provider_mode": "idempotent",
+          "received": 1,
+          "result_id": "63fb97e553aa0a0dc94a5b31",
+          "seq": 2
+        },
+        {
+          "attempt_id": "nonidem-1",
+          "charge": 3,
+          "correlation_id": "nonidem",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "5c62de20b60ac37406b6249d",
+          "seq": 3
+        },
+        {
+          "attempt_id": "nonidem-2",
+          "charge": 3,
+          "correlation_id": "nonidem",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "cce5b2d0e8da067912b6b5f7",
+          "seq": 4
+        }
+      ]
+    },
+    "trusted_reconciliation": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 5,
+        "funded": 8,
+        "headroom": 5,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 0,
+        "spent": 3,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "charged": "SETTLED",
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 3,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 0,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "no_charge": "RELEASED",
+      "provider_journal": [
+        {
+          "attempt_id": "charged",
+          "charge": 3,
+          "correlation_id": "charged",
+          "delivered": 0,
+          "executed": 1,
+          "fault": "drop_after_execute",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "06dfbd2c7aa77f2d1e7fdc48",
+          "seq": 1
+        },
+        {
+          "attempt_id": "no-charge",
+          "charge": 0,
+          "correlation_id": "no-charge",
+          "delivered": 0,
+          "executed": 0,
+          "fault": "no_execute_drop",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": null,
+          "seq": 2
+        }
+      ]
+    },
+    "worker_dies_after_provider_execution": {
+      "audit": {
+        "bound_breach_count": 0,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      },
+      "budget": {
+        "effective_headroom": 4,
+        "funded": 8,
+        "headroom": 4,
+        "id": "agent",
+        "lifecycle": "ACTIVE",
+        "parent_id": "root",
+        "reserved": 4,
+        "spent": 0,
+        "spent_high": "0",
+        "status": "ACTIVE",
+        "unit": "SIM_COST_MICRO"
+      },
+      "metrics": {
+        "duplicate_provider_executions": 0,
+        "gateway_settled_cost": 0,
+        "independently_journaled_provider_charges": 3,
+        "observed_funding_violation": false,
+        "outstanding_reserved_liability": 4,
+        "provider_executions": 1,
+        "unaccounted_or_prematurely_released_exposure": 0
+      },
+      "provider_journal": [
+        {
+          "attempt_id": "worker-death",
+          "charge": 3,
+          "correlation_id": "worker-death",
+          "delivered": 1,
+          "executed": 1,
+          "fault": "none",
+          "provider_mode": "non-idempotent",
+          "received": 1,
+          "result_id": "3b043258f7d9474671448fb7",
+          "seq": 1
+        }
+      ],
+      "state": "UNRESOLVED",
+      "worker_exit": 73
+    }
+  },
+  "scope": "project-defined offline conformance evidence; not industry certification",
+  "simulated_cost_unit": "SIM_COST_MICRO",
+  "trust_assumptions": [
+    "trusted AECP process and storage",
+    "complete mediation",
+    "provider journal is authoritative only when explicitly exposed for reconciliation",
+    "declared bounds are valid except in the deliberate breach scenario"
+  ],
+  "unsupported": [
+    "host compromise",
+    "malicious same-process code",
+    "out-of-band provider access"
+  ],
+  "version": "failure-conformance.v1"
+}

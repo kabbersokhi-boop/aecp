@@ -41,10 +41,15 @@ class ExternalChallengeTests(unittest.TestCase):
                         consumer.execute("second", "challenge-invoice", "cheap",
                                          {"invoice_cents": 12500, "payments": [5000, 7500]})
                     self.assertEqual(denied.exception.status, 409)
+                    self.assertEqual(denied.exception.code, "BUDGET_EXHAUSTED_OR_INACTIVE")
+                    self.assertIn("insufficient", denied.exception.detail)
+                    self.assertIn(denied.exception.code, str(denied.exception))
                     with self.assertRaises(ControlPlaneError) as unknown:
                         consumer.execute("unknown", "not-registered", "cheap",
                                          {"invoice_cents": 12500, "payments": []})
                     self.assertEqual(unknown.exception.status, 403)
+                    self.assertEqual(unknown.exception.code, "UNKNOWN_TASK")
+                    self.assertIsNone(unknown.exception.detail)
                     self.assertTrue(server.engine.ledger.audit()["consistent"])
                 finally:
                     server.shutdown()
