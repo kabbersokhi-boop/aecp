@@ -10,7 +10,11 @@ from urllib.request import Request, urlopen
 class ControlPlaneError(Exception):
     def __init__(self, status: int, payload: dict):
         self.status, self.payload = status, payload
-        super().__init__(payload.get("error", "REQUEST_FAILED"))
+        self.code = payload.get("error", "REQUEST_FAILED")
+        self.detail = payload.get("detail")
+        self.retry_same_idempotency_key = payload.get("retry_same_idempotency_key")
+        message = self.code if self.detail is None else f"{self.code}: {self.detail}"
+        super().__init__(message)
 
 
 class Client:

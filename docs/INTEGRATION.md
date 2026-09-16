@@ -25,6 +25,12 @@ Adapters return a typed `Receipt` containing payload, actual integer units, acco
 
 Responses distinguish unauthenticated (401), permission/policy denial (403), accounting/lifecycle conflict (409) and malformed input (400). The SDK raises `ControlPlaneError` with the status and payload. A capacity denial can leave a funded request pending; cancel it explicitly if abandoning it. Agents cannot settle or reconcile. No live adapter is configured by default.
 
+`ControlPlaneError` also exposes `code`, optional `detail`, and optional
+`retry_same_idempotency_key` attributes so consumers do not need to parse the raw
+payload for ordinary denial handling. A transport ambiguity is not a typed denial:
+inspect the original request ID before deciding whether a separately funded retry is
+appropriate.
+
 ## V2: independent OpenAI-compatible consumer
 
 Only `POST /v1/chat/completions` is supported: non-streaming `model`, `messages`,

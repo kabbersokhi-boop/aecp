@@ -134,7 +134,9 @@ runtime dependencies and the dashboard has no runtime CDN.
 
 For deeper review, start with [architecture](docs/ARCHITECTURE.md),
 [security](SECURITY.md), [experiment design](docs/EXPERIMENTS.md), and
-[publication provenance](PUBLIC_PROVENANCE.md).
+[publication provenance](PUBLIC_PROVENANCE.md). Reliability work is documented in
+the [failure-conformance contract](docs/FAILURE_CONFORMANCE.md); the stronger
+[outcome-study protocol](docs/OUTCOME_STUDY_PROTOCOL.md) remains explicitly unrun.
 
 ### Historical build artifacts
 

@@ -98,16 +98,32 @@ Bubblewrap without source-tree PYTHONPATH, database mounts, provider environment
 external networking. Linux/Bubblewrap/user namespaces are required for this security
 proof, not ordinary SDK use. It is fake-provider recovery, not fresh NIM evidence.
 
-## Feedback—please leave unanswered until tried
+## Invitation the owner may send
 
+> Would you be willing to spend 15–30 minutes integrating a local, offline AECP
+> endpoint into a small agent or client you already wrote? You will receive only a
+> loopback URL, your scoped AECP capability, one registered task, and the supported
+> API contract—no provider, database, operator, reviewer, or other-agent credentials.
+> Please attempt one useful request, one denial, provenance inspection, and recovery
+> inspection, then return the blank feedback fields below. This is source-available
+> under PolyForm Noncommercial 1.0.0; no public endorsement is requested.
+
+Do not send this invitation without separate authorization and an identified human
+participant.
+
+## Feedback—leave unanswered until a human participant tries it
+
+- Existing application/client used:
+- Exact setup steps taken:
 - Setup time:
 - Time to first governed request:
-- Confusing step/documentation issue:
-- API friction:
-- Unexpected denial:
-- Bug found:
-- Security concern:
-- Could you integrate this into an existing agent? Why/why not?
+- Confusing instruction:
+- Unexpected behavior:
+- Denial code and interpretation:
+- Recovery/unresolved-liability interpretation:
+- Provenance fields inspected:
+- Defect or security concern found:
+- Could this fit the existing application? Why or why not?
 
 Include sanitized request IDs/error codes, never capabilities or private records.
 An outside engineer's actual report remains the non-automatable validation step.

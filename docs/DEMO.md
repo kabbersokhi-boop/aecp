@@ -107,3 +107,52 @@ scoped API, budget denial, and fake-provider ambiguity without source-tree impor
 or provider access. The frozen V3 recomputation is covered by
 `tests/test_semantic_evidence.py`; it decompresses the committed artifacts into a
 temporary directory and performs no provider calls.
+
+## Owner practice exercises
+
+Codex executed these exercises during the failure-conformance build. That verifies
+the path, not the owner's mastery; the owner should answer aloud without reading a
+script.
+
+### 1. Explain a successful transaction
+
+Run `make demo`, open the `ordinary` run, and select a verified case. Explain the
+actual task, principal, operation class, quote, `SIM_COST_MICRO` upper bound,
+reservation, dispatch, receipt actual, released headroom, settlement, and verified
+outcome. Then locate the implementation: authorization/quote binding in
+`src/aecp/control.py:175`, dispatch and receipt handling in
+`src/aecp/control.py:227`, reservation in `src/aecp/ledger.py:213`, and settlement
+in `src/aecp/ledger.py:298`.
+
+Questions: Which value is authority rather than money? Why is reservation visible
+before the adapter runs? Which stored identity makes a duplicate immutable? Answers:
+the integer `SIM_COST_MICRO` balance is modeled authority; pre-dispatch reservation
+prevents overlapping commitments; request ID plus the request/quote fingerprint
+binds the attempt.
+
+### 2. Diagnose uncertain execution
+
+Open an `UNRESOLVED` case in the `outage` run. AECP knows dispatch was durably
+claimed and the upper bound remains outstanding. It does not know whether the
+external effect occurred or its final charge. A valid durable receipt permits
+settlement; independently validated provider evidence of no execution permits
+`reconcile_no_charge` at `src/aecp/ledger.py:332`. A timeout or lease expiry is not
+that evidence. A fresh possibly billable retry needs a distinct ID and reservation.
+
+Questions: Why not refund after 300 seconds? Can the agent reconcile itself? Why
+does a retry consume more headroom? Answers: elapsed time says nothing about provider
+billing; reconciliation is trusted authority, not an agent API; both attempts may
+have external charges.
+
+### 3. Make a disposable defect
+
+In a detached temporary worktree, change `ControlPlaneError.code` in
+`src/aecp/client.py:10` to a wrong constant. Run:
+
+```bash
+PYTHONPATH=src python3 -m unittest tests/test_external_challenge.py -v
+```
+
+The typed-denial regression must fail. Discard the temporary worktree, then run the
+same test on the research branch and confirm it passes. Never commit the defect or
+weaken the assertion.

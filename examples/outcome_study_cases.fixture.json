@@ -1,0 +1,29 @@
+{
+  "version": "aecp.outcome-cases.v1",
+  "fixture": true,
+  "contributor": {
+    "contributor_id": "offline-fixture",
+    "independently_authored": false,
+    "permission_to_use": true,
+    "provenance_statement": "Project-authored synthetic fixture for ingestion tests only; not eligible for the final study."
+  },
+  "cases": [
+    {
+      "case_id": "fixture-invoice-001",
+      "observation": {
+        "invoice_cents": 12500,
+        "visible_payments": [5000, 7500],
+        "review_required": false
+      },
+      "acceptable_outcomes": [
+        {
+          "classification": "correct_resolution",
+          "action": "reconcile_matched",
+          "reason": "Visible payments exactly match the invoice."
+        }
+      ],
+      "provenance": "Synthetic ingestion fixture created within the AECP project.",
+      "confidential_material": "none"
+    }
+  ]
+}
