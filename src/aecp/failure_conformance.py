@@ -461,11 +461,17 @@ def run_conformance(output: Path) -> dict:
         location = _fresh(root, "bound-breach")
         with ProviderProcess(location) as provider:
             gateway = AecpGateway(location, provider, 12, upper_bound=4)
+            gateway.ledger.create_account("unaffected", 4, unit=UNIT)
             result = gateway.attempt(Attempt("overrun", "overrun", charge=7))
             account = gateway.ledger.account("agent")
+            gateway.ledger.reserve("unaffected", "unaffected-work", 4, task_id="unaffected",
+                                   operation_id="reconcile", request_hash="unaffected")
+            gateway.ledger.mark_dispatched("unaffected-work")
+            gateway.ledger.settle("unaffected-work", 3)
             scenarios["provider_bound_breach"] = {
                 "state": result["reservation"]["state"], "actual": result["reservation"]["actual"],
-                "status": account["status"], **gateway.snapshot()
+                "status": account["status"], "unaffected_agent_progress": 1,
+                "unaffected_audit": gateway.ledger.audit(), **gateway.snapshot()
             }
 
         controls = {}
@@ -512,7 +518,12 @@ def run_conformance(output: Path) -> dict:
                 "declared bounds are valid except in the deliberate breach scenario",
             ],
             "unsupported": ["host compromise", "malicious same-process code", "out-of-band provider access"],
-            "provider_calls": 0,
+            "external_provider_calls": 0,
+            "simulated_provider_executions": sum(
+                row["executed"] for scenario in scenarios.values()
+                for row in scenario.get("provider_journal", [])
+            ) + sum(row["executed"] for control in controls.values()
+                    for row in control.get("provider_journal", [])),
         }
         output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
         return result
@@ -620,7 +631,10 @@ def run_cost_of_safety(output: Path, *, seeds: tuple[int, ...] = (1, 2, 3, 4, 5)
                 "finite seeds are evidence for this bounded question, not proof for all histories",
                 "provider truth is used only after its strategy-specific reconciliation delay",
             ],
-            "provider_calls": 0,
+            "external_provider_calls": 0,
+            "simulated_provider_executions": sum(
+                row["safety"]["provider_executions"] for row in rows
+            ),
         }
         output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n")
         return result
