@@ -73,6 +73,8 @@ class GatewayTests(unittest.TestCase):
             with self.assertRaises(ControlPlaneError) as raised:
                 self.clients["passive"].call("/api/v1/resource-requests", self.body)
             self.assertEqual(raised.exception.status, 503)
+            self.assertEqual(raised.exception.code, "GATEWAY_SATURATED")
+            self.assertTrue(raised.exception.retry_same_idempotency_key)
             self.assertEqual(self.engine.ledger.account("gateway/passive")["spent"], 0)
             self.assertEqual(self.engine.ledger.account("gateway/passive")["reserved"], 0)
         finally:
