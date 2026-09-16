@@ -4,7 +4,7 @@ Date: 2026-09-16
 
 Starting public SHA: `50e1fe7a4480ec1615336ac4ba199e3a3da40dfe`
 
-Implementation SHA: `f171c7715da8b1cced44d092827d91a850c40897`
+Implementation SHA: `50b70a450aefb543723c5b7a88d1c3d85412243a`
 
 ## Status boundaries
 
@@ -74,6 +74,8 @@ A clean-wheel, public-interface-only rehearsal completed with source-tree `PYTHO
 Observed friction: callers had to parse the raw JSON payload to explain a denial programmatically. The single justified improvement adds `code`, optional `detail`, and optional `retry_same_idempotency_key` attributes to `ControlPlaneError`; the regression test asserts the typed contract. Documentation also states that a transport timeout is not a denial and must not trigger a fresh billable retry without new authority.
 
 Classification: **self-conducted integration rehearsal**. No external participant results are claimed or fabricated.
+
+The first GitHub Actions run independently exposed a separate reliability defect in the pre-existing connection-overload path: closing a saturated socket with unread request bytes could reset the client before it received the intended typed 503. The server now half-closes its response and drains a bounded request body before teardown. The overload regression passed 20 consecutive local repetitions. This CI-discovered reliability repair is distinct from the one friction-selected integration improvement.
 
 ## Owner exercises executed
 
