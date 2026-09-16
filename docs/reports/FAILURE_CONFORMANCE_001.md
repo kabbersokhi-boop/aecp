@@ -100,6 +100,8 @@ Commands were run with `NVIDIA_API_KEY`, `AECP_ENABLE_LIVE_NIM`, and `AECP_NIM_M
 - `make serve` plus `make integration`: passed against the live local server; passive `SETTLED`, native `BID -> ALLOCATED -> SETTLED`, real provider spend zero.
 - Clean-wheel validation: passed all 12 isolation/security checks, with 8/12 development cases verified and provider calls zero.
 - `npm run test:browser` against `make serve`: passed in Chromium; 36 cases, 28 unresolved exposure, five views, no console errors or mobile overflow, and zero live provider calls.
+- Fresh public HTTPS clone at `c0d221a44d76be8e084d47dacf669c95f51122d2`: `uv sync --frozen`, 186 tests, property testing, Ruff, benchmark, cost study, outcome fixture, package build, evidence recomputation, `make demo`, isolation, `make serve`, and integration all passed with provider execution disabled. The ordinary demo verified 36 tasks; the outage demo verified 34 and retained two unresolved attempts/28 simulated liability units.
+- GitHub Actions for that branch state passed both push and pull-request matrices: Python 3.11, 3.12, 3.13, 3.14, and Chromium in each trigger (10 successful jobs).
 
 The benchmark initially could not create a Unix socket inside the restricted command sandbox. The same command passed when granted local IPC permission. This was an execution-environment restriction, not a benchmark failure.
 
