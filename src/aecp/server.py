@@ -6,6 +6,7 @@ import json
 import os
 import re
 import secrets
+import socket
 import threading
 import time
 from contextlib import nullcontext
@@ -112,6 +113,13 @@ class Application(ThreadingHTTPServer):
                 request.sendall(b"HTTP/1.1 503 Service Unavailable\r\nContent-Type: application/json\r\n"
                                 b"Connection: close\r\nRetry-After: 1\r\nContent-Length: "
                                 + str(len(payload)).encode() + b"\r\n\r\n" + payload)
+                request.shutdown(socket.SHUT_WR)
+                remaining = 64 * 1024
+                while remaining:
+                    chunk = request.recv(min(remaining, 8192))
+                    if not chunk:
+                        break
+                    remaining -= len(chunk)
             except OSError:
                 pass
             finally:
