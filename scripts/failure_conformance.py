@@ -15,9 +15,11 @@ if __name__ == "__main__":
     if arguments.command == "benchmark":
         result = run_conformance(arguments.output)
         summary = {"scenarios": len(result["scenarios"]), "controls": list(result["controls"]),
-                   "provider_calls": result["provider_calls"]}
+                   "external_provider_calls": result["external_provider_calls"],
+                   "simulated_provider_executions": result["simulated_provider_executions"]}
     else:
         result = run_cost_of_safety(arguments.output, seeds=tuple(arguments.seeds))
         summary = {"trials": result["trials"], "aggregates": result["aggregates"],
-                   "provider_calls": result["provider_calls"]}
+                   "external_provider_calls": result["external_provider_calls"],
+                   "simulated_provider_executions": result["simulated_provider_executions"]}
     print(json.dumps(summary, sort_keys=True))

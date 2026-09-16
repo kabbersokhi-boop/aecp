@@ -12,7 +12,8 @@ make cost-of-safety
 ```
 
 Both targets use simulated `SIM_COST_MICRO` units, standard-library local processes,
-Unix sockets, and SQLite. They make no hosted-provider calls. Generated evidence is
+Unix sockets, and SQLite. They report fake-provider executions separately and make
+zero hosted/external provider calls. Generated evidence is
 written under `var/`; reviewed release evidence is under
 `docs/reports/failure-conformance-v1/`.
 

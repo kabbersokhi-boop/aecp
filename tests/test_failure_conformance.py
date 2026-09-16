@@ -34,6 +34,8 @@ class FailureConformanceTests(unittest.TestCase):
             breach = scenarios["provider_bound_breach"]
             self.assertEqual(breach["actual"], 7)
             self.assertEqual(breach["status"], "FROZEN")
+            self.assertEqual(breach["unaffected_agent_progress"], 1)
+            self.assertTrue(breach["unaffected_audit"]["consistent"])
             self.assertEqual(breach["audit"]["bound_breach_count"], 1)
             modes = scenarios["provider_idempotency_modes"]
             self.assertEqual(modes["idempotent_executions"], 1)
@@ -42,7 +44,8 @@ class FailureConformanceTests(unittest.TestCase):
             self.assertGreater(naive["settled"], naive["budget"])
             reject = result["controls"]["reject-all"]
             self.assertEqual(reject["useful_work_completed"], 0)
-            self.assertEqual(result["provider_calls"], 0)
+            self.assertEqual(result["external_provider_calls"], 0)
+            self.assertGreater(result["simulated_provider_executions"], 0)
 
     def test_cost_study_is_paired_safe_and_reproducible(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -58,4 +61,5 @@ class FailureConformanceTests(unittest.TestCase):
                                  first["aggregates"]["retain"]["authority_time_held"])
             self.assertGreaterEqual(first["aggregates"]["reconcile-1"]["useful_work_completed"],
                                     first["aggregates"]["retain"]["useful_work_completed"])
-            self.assertEqual(first["provider_calls"], 0)
+            self.assertEqual(first["external_provider_calls"], 0)
+            self.assertGreater(first["simulated_provider_executions"], 0)

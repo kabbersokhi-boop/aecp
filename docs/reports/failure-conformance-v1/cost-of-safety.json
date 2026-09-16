@@ -22,6 +22,7 @@
       "useful_work_completed": 3.65
     }
   },
+  "external_provider_calls": 0,
   "factors": {
     "budgets": [
       16,
@@ -406,7 +407,6 @@
       "useful_work_difference": 2
     }
   ],
-  "provider_calls": 0,
   "rows": [
     {
       "authority_time_held": 132,
@@ -1856,6 +1856,7 @@
     4,
     5
   ],
+  "simulated_provider_executions": 399,
   "strategy_semantics": {
     "reconcile-1": "query authoritative provider evidence one logical tick after loss",
     "reconcile-4": "query authoritative provider evidence four logical ticks after loss",

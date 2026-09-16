@@ -39,7 +39,7 @@
       "useful_work_completed": 0
     }
   },
-  "provider_calls": 0,
+  "external_provider_calls": 0,
   "provider_ground_truth": "separate process and SQLite journal; exported only after execution",
   "provider_modes": [
     "idempotent",
@@ -456,7 +456,15 @@
         }
       ],
       "state": "SETTLED",
-      "status": "FROZEN"
+      "status": "FROZEN",
+      "unaffected_agent_progress": 1,
+      "unaffected_audit": {
+        "bound_breach_count": 1,
+        "consistency_errors": [],
+        "consistent": true,
+        "funding_breaches": [],
+        "within_funding": true
+      }
     },
     "provider_idempotency_modes": {
       "idempotent_executions": 1,
@@ -621,6 +629,7 @@
   },
   "scope": "project-defined offline conformance evidence; not industry certification",
   "simulated_cost_unit": "SIM_COST_MICRO",
+  "simulated_provider_executions": 17,
   "trust_assumptions": [
     "trusted AECP process and storage",
     "complete mediation",
