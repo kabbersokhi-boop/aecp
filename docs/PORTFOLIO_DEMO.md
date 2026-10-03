@@ -1,5 +1,10 @@
 # Portfolio demo: useful autonomy, bounded liability
 
+[Watch / download the recorded demo — 3:09, silent 1080p MP4](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)
+
+The [README's timed pointers](../README.md#watch-the-end-to-end-demo) summarize
+the recording. This guide explains its evidence and how to reproduce the path.
+
 ## The business problem
 
 An invoice agent can be useful and still make unsafe spending decisions. Parallel
@@ -49,9 +54,24 @@ identity through `/api/v1/admin/agents` and register the two tasks through
    next to AECP accounting. Response loss retains liability; a potentially
    chargeable retry needs its own reservation; worker death cannot erase exposure.
 6. **End with an honest boundary.** A durable receipt can settle without
-   redispatch. Trusted charged/no-charge evidence can reconcile. A quote breach
-   records the full charge and freezes affected authority—even if headroom is
-   negative. Do not finish by pretending every scenario is a happy-path success.
+   redispatch. Trusted charged/no-charge evidence can reconcile. The recorded
+   quote-breach fixture settles an actual 7-unit charge and freezes the scope;
+   it still has positive headroom of 5. A quote breach and a funding breach are
+   different facts—do not relabel this fixture as overspending.
+
+## Two frames from the published recording
+
+**Useful work completes under authority.** This is the real local invoice request,
+its deterministic result and the persisted reserve → dispatch → receipt → settle
+sequence. It does not transmit a payment.
+
+![Recorded agent console: invoice-001 is matched and settled for 4 modeled units](reports/screenshots/agent-request-console.png)
+
+**Failure does not become free.** This is a separate controlled response-loss
+fixture. The exported provider journal records execution and a charge of 3; AECP
+retains an unresolved liability of 4 because no definitive receipt was delivered.
+
+![Recorded failure evidence: provider execution and charge coexist with retained unresolved liability](reports/screenshots/failure-retained-liability.png)
 
 ## What the video does—and does not—prove
 
@@ -68,10 +88,19 @@ support can add a separately labelled, bounded live-model chapter after confirmi
 account allowance and authorizing calls; a valid model response still cannot grant
 itself funding, approval or settlement.
 
-The silent edited MP4 is delivered separately from source. Large video artifacts
-are intentionally not committed to Git. Authentication, terminals, account pages,
-the operating-system desktop and personal tabs are excluded from the selected
-footage. Chapter headings and short captions leave room for the owner's voiceover.
+At the owner's explicit request, the edited MP4 is published in
+`docs/assets/portfolio/AECP-Portfolio-Demo.mp4`, with a small nine-second animated
+preview. Raw recordings, capabilities and local databases remain outside Git.
+The download link is pinned to the media commit so it remains valid after branch
+cleanup. Authentication, terminals, account pages, the operating-system desktop
+and personal tabs are excluded from the selected footage. Chapter headings and
+short captions leave room for the owner's voiceover.
+
+Published video SHA-256:
+
+```text
+024ac20400b1d3254a515accc496c2b49a8790fa96ff62f3a30da3f2e247c899
+```
 
 ## Recheck the presentation
 
