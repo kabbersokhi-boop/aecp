@@ -5,10 +5,10 @@
 Base revision: `5779f01ca0e40bc01667d2fa6174679cc9b8b9d8`.
 Branch: `docs/public-demo-copy`.
 
-The README and demonstration guides now focus on the business problem, observed
-behavior and reproduction steps. Voiceover preparation, personal coaching and
-publication-process commentary were removed. ADR 0007 describes the asset
-storage decision without personal instructions.
+The README and demonstration guides focus on the business problem, observed
+behavior and reproduction steps. ADR 0007 describes the demonstration asset
+storage decision. The offline walkthrough includes verification exercises for
+execution and failure boundaries.
 
 No application code, media, experimental results or security boundaries changed.
 The synthetic scenarios, modeled costs, absence of hosted calls and limits of
