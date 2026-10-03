@@ -7,7 +7,7 @@ const {chromium} = require(process.env.AECP_PLAYWRIGHT_MODULE || "@playwright/te
   const base = process.env.AECP_URL || "http://127.0.0.1:8765";
   const capabilities = JSON.parse(fs.readFileSync(process.env.AECP_TOKENS || "var/local-capabilities.json", "utf8"));
   const screenshots = process.env.AECP_SCREENSHOT_DIR || "docs/reports/screenshots";
-  const browser = await chromium.launch({headless:true});
+  const browser = await chromium.launch({headless:true,...(process.env.AECP_CHROME?{executablePath:process.env.AECP_CHROME}:{})});
   try {
     const page = await browser.newPage({viewport:{width:1512,height:1050}});
     const errors = [];
@@ -76,6 +76,7 @@ const {chromium} = require(process.env.AECP_PLAYWRIGHT_MODULE || "@playwright/te
       cases:snapshot.traces.length,unresolved_exposure:snapshot.metrics.unresolved_exposure,
       console_errors:errors,mobile_overflow:overflow,views_checked:5,semantic_cases:36,
       semantic_workload:"semantic-finops.v3.frozen-1",live_provider_calls:0,refresh_preserved_state:true};
+    fs.mkdirSync("var",{recursive:true});
     fs.writeFileSync("var/browser-smoke.json",JSON.stringify(evidence,null,2)+"\n");
     console.log(JSON.stringify(evidence));
   } finally { await browser.close(); }

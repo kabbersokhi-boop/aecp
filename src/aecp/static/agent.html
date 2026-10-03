@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AECP · Agent request console</title><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/style.css"><script src="/presentation.js" defer></script><script src="/agent.js" defer></script></head>
+<body>
+<header><div class="brand"><span class="mark">Æ</span><div><strong>Agent Economic Control Plane</strong><small>SCOPED CONSUMER / NATIVE HTTP API</small></div></div><span class="mode">DETERMINISTIC ADAPTER · MODELED UNITS</span></header>
+<main>
+<section id="agent-login" class="panel"><p class="eyebrow">INDEPENDENT AGENT CONSOLE</p><h1>Permission to work. Not a blank cheque.</h1><p>Connect with one agent capability. This client uses the public HTTP API; it has no database, operator, reviewer or provider credentials.</p><form id="agent-connect"><label>Scoped agent capability<input id="agent-token" type="password" autocomplete="off" required></label><button>Connect agent</button></form></section>
+<div id="agent-workspace" hidden>
+<section class="heading"><div><p class="eyebrow">AGENT REQUEST CONSOLE</p><h1>Every attempt needs authority.</h1><p id="agent-identity" class="muted"></p></div><a class="text-link" href="/">Operator observatory</a><button id="agent-disconnect" class="secondary">Disconnect</button></section>
+<p class="story-note">An invoice agent requests work. AECP checks its registered task, reserves liability through the shared budget hierarchy, and settles a trusted receipt. A denied request is not permission to execute elsewhere.</p>
+<section id="agent-budget" class="numbers" aria-label="Agent budget"></section>
+<p class="muted">SIM_COST_MICRO is modeled execution authority, not cash or provider billing. Child caps share parent funding.</p>
+<div class="split request-layout">
+<section class="panel"><p class="eyebrow">1 / REQUEST WORK</p><h2>Invoice reconciliation</h2><p class="muted">Use a task registered by the operator. The default example reconciles synthetic invoice amounts; no payments are transmitted.</p>
+<form id="agent-request" class="request-form">
+<label>Attempt / idempotency key<input id="request-id" required maxlength="200"></label>
+<label>Registered task<input id="request-task" value="external-invoice-1" required maxlength="200"></label>
+<label>Operation<select id="request-operation"><option value="reconcile">Reconcile invoice</option><option value="release_payment">Protected payment operation</option></select></label>
+<label>Resource<select id="request-resource"><option value="cheap">Deterministic cheap resource</option><option value="premium">Premium scarce resource</option></select></label>
+<label>Invoice amount (synthetic cents)<input id="request-invoice" type="number" min="1" max="9007199254740991" step="1" value="12500" required></label>
+<label>Payment amounts (comma-separated cents)<input id="request-payments" value="12500" required></label>
+<div class="form-actions"><button id="submit-request">Submit governed request</button><button id="new-attempt" type="button" class="secondary">New attempt ID</button></div>
+</form>
+<p class="muted">A new ID means a new potentially chargeable attempt. Reuse the original ID to inspect or replay an ambiguous transport result.</p>
+<div class="form-actions"><button id="replay-request" class="secondary" disabled>Replay identical request</button><button id="request-approval" class="secondary" disabled>Request reviewer approval</button><button id="cancel-request" class="secondary" disabled>Cancel undispatched reservation</button></div>
+<p id="approval-status" class="muted"></p>
+</section>
+<section class="panel"><p class="eyebrow">2 / INSPECT THE ACTUAL RESPONSE</p><h2>Authorization and execution</h2><div id="agent-response" aria-live="polite"><p class="muted">Submit a request to see its result or a structured denial.</p></div><div id="agent-timeline"></div><details id="agent-raw" hidden><summary>Inspect original HTTP response</summary><pre></pre></details><details id="agent-trace-raw" hidden><summary>Inspect persisted request and events</summary><pre></pre></details></section>
+</div>
+<section class="panel inspect-request"><h2>Inspect an existing attempt</h2><form id="inspect-attempt"><label>Original request ID<input id="inspect-id" required maxlength="200"></label><button class="secondary">Read persisted trace</button></form><p class="muted">Owner-scoped SQLite reads. No replay, settlement or reconciliation is performed by inspecting a request.</p></section>
+<footer><span>Agent proposes. AECP authorizes. Trusted evidence settles.</span><span>Local reference implementation · no hosted inference</span></footer>
+</div><div id="agent-error" role="alert" hidden></div>
+</main></body></html>

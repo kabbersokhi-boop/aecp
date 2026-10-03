@@ -88,6 +88,36 @@ class GatewayTests(unittest.TestCase):
         self.assertLessEqual(self.server.admission_snapshot()["peak"], 2)
         self.assertGreaterEqual(self.server.admission_snapshot()["rejected"], 1)
 
+    def test_owner_trace_is_durable_ordered_and_read_only(self):
+        client = self.clients["passive"]
+        client.call("/api/v1/resource-requests", self.body)
+        trace = client.call("/api/v1/me/trace/request")
+        kinds = [event["kind"] for event in trace["events"]]
+        self.assertEqual(kinds, ["reserved", "dispatched", "adapter_receipt", "settled"])
+        self.assertEqual(trace["request"]["reservation"]["actual"], 4)
+        client.call("/api/v1/resource-requests", self.body)
+        self.assertEqual(client.call("/api/v1/me/trace/request"), trace)
+        for name in ("native", "operator", "viewer", "reviewer"):
+            self.denied(self.clients[name], "/api/v1/me/trace/request")
+        self.denied(client, "/api/v1/me/trace/missing")
+
+    def test_budget_denial_trace_has_no_request_or_dispatch(self):
+        client = self.clients["passive"]
+        self.engine.ledger.reserve("gateway/passive", "existing-liability", 1000,
+                                   task_id="case", operation_id="reconcile", request_hash="existing")
+        self.denied(client, "/api/v1/resource-requests", self.body)
+        trace = client.call("/api/v1/me/trace/request")
+        self.assertIsNone(trace["request"])
+        self.assertEqual([e["kind"] for e in trace["events"]], ["reservation_denied"])
+        self.denied(self.clients["native"], "/api/v1/me/trace/request")
+
+    def test_agent_presentation_assets_are_public_but_contain_no_capability(self):
+        for asset in ("agent.html", "agent.js", "presentation.js", "failure-view.js"):
+            with urlopen(self.url + "/" + asset, timeout=10) as response:
+                text = response.read().decode()
+            for principal in self.principals.values():
+                self.assertNotIn(principal["token"], text)
+
     def test_separate_semantic_consumer_uses_only_public_scoped_contract(self):
         self.clients["operator"].call("/api/v1/admin/semantic-cases",
                                       {"agent_id": "gateway/passive", "split": "development"})

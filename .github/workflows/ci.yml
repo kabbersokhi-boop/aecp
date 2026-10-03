@@ -53,3 +53,5 @@ jobs:
           for attempt in 1 2 3 4 5; do curl -fsS http://127.0.0.1:8765/health && break || sleep 1; done
           PYTHONPATH=src python scripts/integration_smoke.py
           npm run test:browser
+          PYTHONPATH=src python scripts/failure_conformance.py benchmark --output var/failure-conformance.json
+          AECP_URL=http://127.0.0.1:8765 AECP_TOKENS=var/local-capabilities.json AECP_FAILURE_REPORT=var/failure-conformance.json node scripts/portfolio_browser.cjs

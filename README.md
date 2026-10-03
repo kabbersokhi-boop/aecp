@@ -2,12 +2,42 @@
 
 [![CI](https://github.com/kabbersokhi-boop/aecp/actions/workflows/ci.yml/badge.svg)](https://github.com/kabbersokhi-boop/aecp/actions/workflows/ci.yml)
 
-**How much useful autonomy can a fixed resource budget safely purchase?**
+**Useful autonomy. Bounded liability.**
 
 AECP is an economic execution control plane for autonomous agents. Agents may
 propose expensive or sensitive actions, but deterministic infrastructure owns
 authority, budget reservation, approval, execution mediation, settlement, and
 provenance.
+
+## The business problem
+
+An AI worker checking invoices may need to call models or tools. Giving it access
+does not answer three important questions: **may it do this work, can it afford
+another attempt, and what happens if the provider executes but its response is lost?**
+
+Parallel work and retries can overcommit shared funding. A timeout can hide a
+real charge. Sensitive actions still need separate approval. AECP puts a budget
+controller, permissions gatekeeper and durable audit trail between the agent's
+proposal and execution. The agent is never its own funding or approval authority.
+
+## Watch the end-to-end demo
+
+[![AECP demo preview: governed invoice settlement, retained uncertainty and trusted reconciliation](docs/assets/portfolio/demo-preview.gif)](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)
+
+**[Watch / download the full demo — 3:09, 1080p MP4](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)** · One edited recording, silent and ready for voiceover. The looping preview is a short sample, not the full video.
+
+- **0:08 — Give the agent a bounded mandate.** Inspect its 8-unit cap and enter a synthetic invoice through an agent-scoped HTTP client.
+- **0:26 — Complete useful work.** Follow reservation → dispatch → trusted receipt → settlement. Replay the same attempt without another dispatch or charge.
+- **0:49 — Challenge its authority.** A protected action requires separate approval; another request is denied once the disposable budget is exhausted.
+- **1:12 — Inspect the operator's view.** Review the separate 36-case reference run and delegated scopes: child caps share parent funding, rather than creating money.
+- **1:30 — Challenge the happy path.** Switch explicitly to independent fault fixtures: a lost response retains liability, another retry needs funding, and worker death does not erase exposure.
+- **2:23 — Recover from evidence, not optimism.** A durable receipt settles without redispatch; trusted charged/no-charge evidence permits reconciliation. A quote breach records the full charge and freezes the affected scope.
+
+**Recording scope:** real local HTTP requests and SQLite state, followed by a freshly generated offline report of **12 separate controlled fault scenarios / 17 simulated provider executions / 0 hosted calls**. Costs are modeled units, not cash. No real payments, human reviewer approval or fresh NVIDIA inference are claimed; credentials and personal screens are excluded.
+
+[Screenshot walkthrough and reproduction steps](docs/PORTFOLIO_DEMO.md) · [Integration contract](docs/INTEGRATION.md) · [Build and failure evidence](docs/reports/BUILD_REPORT_004.md)
+
+## How the boundary works
 
 ```mermaid
 flowchart LR
@@ -16,8 +46,6 @@ flowchart LR
     R -->|receipt or uncertainty| C
     C --> L[(Budget + liability + provenance ledger)]
 ```
-
-![AECP financial debugger dashboard](docs/reports/screenshots/financial-debugger.png)
 
 An existing agent can route OpenAI-compatible calls through AECP using a scoped
 AECP token instead of receiving provider credentials. The reference system also
@@ -49,6 +77,29 @@ share it or project it during a demo. Follow the [5–7 minute interview path](d
 inspect budget, reservation before execution, successful settlement, an ambiguous
 external operation whose liability remains unresolved, and the full task-to-outcome
 trace. Agents cannot fund, approve, or settle their own work.
+
+## Two moments worth inspecting
+
+Open `/agent.html` to enter a registered invoice task using an agent-scoped
+capability. Follow the actual API response and persisted execution timeline;
+replay the same attempt without another dispatch, or inspect an approval denial.
+The recorded invoice settles for 4 modeled units, with each execution phase
+visible in the owner-scoped event journal.
+
+![Agent request console: a synthetic invoice settles with an owner-scoped durable execution timeline](docs/reports/screenshots/agent-request-console.png)
+
+Run `make failure-conformance`, then load `var/failure-conformance.json` in the
+dashboard's **Failure evidence** view. Compare the independent fake-provider
+journal with AECP's retained liability, retry admission, restart recovery, trusted
+reconciliation and honest bound-breach reporting. These are separate controlled
+scenarios, not invented stages of one live request.
+In the frame below, the provider fixture records execution and a 3-unit charge,
+but no delivered response. AECP correctly keeps the 4-unit ceiling reserved as
+`UNRESOLVED` instead of treating the missing response as a refund.
+
+![Controlled response-loss fixture: provider execution is recorded while AECP retains unresolved liability](docs/reports/screenshots/failure-retained-liability.png)
+
+See the [six-step portfolio story and recording boundaries](docs/PORTFOLIO_DEMO.md).
 
 ## Evidence, including negative results
 
@@ -86,7 +137,8 @@ and the [frozen machine-readable evidence](docs/reports/evidence-v3/OFFLINE_MANI
 | Operations | SQLite ledger, authenticated loopback API, dashboard, provenance traces, restart recovery |
 | Integration | OpenAI-compatible gateway, native HTTP API, Python client, standalone agent examples |
 
-The key invariant is:
+With valid declared liability bounds and trusted execution mediation, the key
+invariant is:
 
 ```text
 settled spend + upper bounds on outstanding attempts <= funded authority
@@ -95,6 +147,8 @@ settled spend + upper bounds on outstanding attempts <= funded authority
 A timeout does not erase a possibly billable external effect. A retry that may also
 be billable needs a new funded reservation. Parent balances aggregate descendant
 charges; internal market credits never mint new operating authority.
+If a provider exceeds its declared bound, AECP records the full charge and freezes
+affected authority. It does not clip the cost or pretend the guarantee survived.
 
 ## Integrate an agent
 
@@ -124,7 +178,7 @@ make check              # compile, deterministic tests, Ruff
 make property           # Hypothesis state-machine suite
 uv build                # wheel and source distribution
 npm ci
-npm run check           # JavaScript syntax
+npm run check           # JavaScript syntax and presentation tests
 make isolation          # Linux namespace isolation when Bubblewrap is available
 ```
 
