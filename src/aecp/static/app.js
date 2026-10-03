@@ -70,11 +70,12 @@ function inspect(taskId) {
     ["05 · Verified outcome",`${escapeHTML(trace.proposed_resolution||"No resolution")} · ${escapeHTML(trace.status)} · utility ${trace.verified_value}`,trace.verification],
     ["06 · Durable event history",`${events.length} ledger events · includes attempt identifiers`,events.map(event=>({...event,payload:JSON.parse(event.payload)}))]
   ];
-  element("inspector").innerHTML=steps.map(([title,detail,data])=>`<div class="trace-step"><h3>${title}</h3><p>${detail}</p><details><summary>Inspect structured evidence</summary>${json(data)}</details></div>`).join("");
+  element("inspector").innerHTML='<h3>Durable execution timeline</h3>'+window.AECPPresentation.timeline(events)+steps.map(([title,detail,data])=>`<div class="trace-step"><h3>${title}</h3><p>${detail}</p><details><summary>Inspect structured evidence</summary>${json(data)}</details></div>`).join("");
 }
 function renderComparison(){element("comparison").innerHTML=table(["Run / configuration","Verified utility / all value","Modeled cost","Coordination","Unresolved","Coverage / fairness"],runs.map(run=>[`${escapeHTML(run.id)}<small>${escapeHTML(run.config.scheduler)} / ${escapeHTML(run.config.style)} · seed ${run.config.seed} · budget ${run.config.budget}</small><small>corpus ${run.config.corpus_hash.slice(0,12)}</small>`,`${number(run.metrics.verified_value)} / ${number(run.metrics.total_task_value)}<span class="bar"><progress value="${run.metrics.verified_value}" max="${run.metrics.total_task_value}"></progress></span>`,number(run.metrics.modeled_cost),number(run.metrics.coordination_cost),number(run.metrics.unresolved_exposure),`${run.metrics.verified_tasks}/${run.config.count} verified<small>Jain access ${run.metrics.jain_access_index.toFixed(3)}</small>`]));}
 function renderProvider(){
   const requests=providerSnapshot.requests;
+  document.querySelector('[data-tab="provider"]').hidden=requests.length===0;
   const tokens=requests.reduce((total,request)=>total+(request.result?.provider_usage?.total_tokens||0),0);
   const modeled=requests.reduce((total,request)=>total+(request.reservation.actual||0),0);
   const exposure=requests.filter(request=>["DISPATCHED","UNRESOLVED"].includes(request.reservation.state)).reduce((total,request)=>total+request.reservation.upper_bound,0);
@@ -92,6 +93,7 @@ function inspectProvider(identity){
 element("provider-table").addEventListener("click",event=>{const button=event.target.closest("[data-provider]");if(button)inspectProvider(button.dataset.provider);});
 function renderSemantic(){
   const cases=semanticSnapshot.cases;
+  document.querySelector('[data-tab="semantic"]').hidden=cases.length===0;
   const rows=Object.entries(semanticSnapshot.authorities).sort(([left],[right])=>left.localeCompare(right)).map(([agent,authority])=>{
     const owned=cases.filter(item=>item.agent===agent);
     const actions=owned.flatMap(item=>item.actions);

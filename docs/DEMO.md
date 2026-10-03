@@ -36,7 +36,7 @@ tasks fail closed.
 
 ## 2:00–4:00 — successful and uncertain execution
 
-In **Overview**, select the `ordinary` run created by `make demo`:
+In **Execution & provenance**, select the `ordinary` run created by `make demo`:
 
 1. Show funded authority and the trace for a verified case.
 2. Follow task → proposal → authorization → reservation → dispatch → receipt →

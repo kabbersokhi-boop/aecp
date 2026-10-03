@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.2.0",
   "scripts": {
-    "check": "node --check src/aecp/static/app.js && node --check scripts/browser_smoke.cjs && node --check scripts/provider_browser.cjs && node --check scripts/semantic_browser.cjs",
+    "check": "node --check src/aecp/static/app.js && node --check src/aecp/static/agent.js && node --check src/aecp/static/presentation.js && node --check src/aecp/static/failure-view.js && node --check scripts/browser_smoke.cjs && node --check scripts/portfolio_browser.cjs && node --check scripts/provider_browser.cjs && node --check scripts/semantic_browser.cjs && node --test tests/presentation.test.cjs",
     "test:browser": "node scripts/browser_smoke.cjs"
   },
   "devDependencies": {

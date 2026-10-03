@@ -9,6 +9,11 @@ propose expensive or sensitive actions, but deterministic infrastructure owns
 authority, budget reservation, approval, execution mediation, settlement, and
 provenance.
 
+The business problem: giving an agent a provider key is not the same as giving it
+a safe spending mandate. Parallel work and retries can overcommit a shared
+budget; a lost response can hide a real charge; sensitive work still needs
+separate approval. AECP makes those boundaries explicit and inspectable.
+
 ```mermaid
 flowchart LR
     A[Existing agent] -->|scoped AECP credential| C[AECP control plane]
@@ -49,6 +54,24 @@ share it or project it during a demo. Follow the [5–7 minute interview path](d
 inspect budget, reservation before execution, successful settlement, an ambiguous
 external operation whose liability remains unresolved, and the full task-to-outcome
 trace. Agents cannot fund, approve, or settle their own work.
+
+## A demo that starts with the agent—and challenges the happy path
+
+Open `/agent.html` to enter a registered invoice task using an agent-scoped
+capability. Follow the actual API response and persisted execution timeline;
+replay the same attempt without another dispatch, or inspect an approval denial.
+
+![Agent request console: a synthetic invoice settles with an owner-scoped durable execution timeline](docs/reports/screenshots/agent-request-console.png)
+
+Run `make failure-conformance`, then load `var/failure-conformance.json` in the
+dashboard's **Failure evidence** view. Compare the independent fake-provider
+journal with AECP's retained liability, retry admission, restart recovery, trusted
+reconciliation and honest bound-breach reporting. These are separate controlled
+scenarios, not invented stages of one live request.
+
+![Controlled response-loss fixture: provider execution is recorded while AECP retains unresolved liability](docs/reports/screenshots/failure-retained-liability.png)
+
+See the [six-step portfolio story and recording boundaries](docs/PORTFOLIO_DEMO.md).
 
 ## Evidence, including negative results
 

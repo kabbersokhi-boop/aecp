@@ -16,6 +16,7 @@ from urllib.parse import unquote, urlsplit
 
 from aecp.control import Denied
 from aecp.engine import Engine
+from aecp.inspection import request_trace
 from aecp.ledger import BudgetRejected, IdempotencyConflict, InvalidTransition, _amount, _identifier
 from aecp.live import LiveTasks, chat_completion
 from aecp.semantic import SemanticTasks
@@ -344,11 +345,15 @@ class Handler(BaseHTTPRequestHandler):
         if method == "GET" and path == "/health":
             return {"status": "ok", "mode": "live-provider-enabled" if "nim_chat" in engine.control.adapters
                     else "simulated", "actual_cash_spend": 0}
-        if method == "GET" and path in {"/", "/app.js", "/style.css", "/favicon.svg"}:
+        if method == "GET" and path in {"/", "/app.js", "/style.css", "/favicon.svg",
+                                        "/agent.html", "/agent.js", "/presentation.js", "/failure-view.js"}:
             name = {"/": "index.html", "/app.js": "app.js", "/style.css": "style.css",
-                    "/favicon.svg": "favicon.svg"}[path]
+                    "/favicon.svg": "favicon.svg", "/agent.html": "agent.html", "/agent.js": "agent.js",
+                    "/presentation.js": "presentation.js", "/failure-view.js": "failure-view.js"}[path]
             content_type = {"/": "text/html; charset=utf-8", "/app.js": "text/javascript",
-                            "/style.css": "text/css", "/favicon.svg": "image/svg+xml"}[path]
+                            "/style.css": "text/css", "/favicon.svg": "image/svg+xml",
+                            "/agent.html": "text/html; charset=utf-8", "/agent.js": "text/javascript",
+                            "/presentation.js": "text/javascript", "/failure-view.js": "text/javascript"}[path]
             self._send(200, (Path(__file__).parent / "static" / name).read_bytes(), content_type=content_type)
             return None
         if method == "GET" and path == "/api/v1/me/budget":
@@ -357,6 +362,9 @@ class Handler(BaseHTTPRequestHandler):
             wallet = next((wallet for wallet in engine.market.snapshot()["wallets"]
                            if wallet["id"] == principal["agent_id"]), {"balance": 0})
             return {"budget": budget, "market_credit": wallet["balance"], "unit": "SIM_COST_MICRO"}
+        if method == "GET" and path.startswith("/api/v1/me/trace/"):
+            principal = self._principal({"agent"})
+            return request_trace(engine.control, principal["agent_id"], path.removeprefix("/api/v1/me/trace/"))
         if method == "GET" and path.startswith("/api/v1/requests/"):
             principal = self._principal({"agent"})
             return engine.control.request(path.removeprefix("/api/v1/requests/"), principal["agent_id"])
