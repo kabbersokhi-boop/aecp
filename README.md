@@ -24,7 +24,7 @@ proposal and execution. The agent is never its own funding or approval authority
 
 [![AECP demo preview: governed invoice settlement, retained uncertainty and trusted reconciliation](docs/assets/portfolio/demo-preview.gif)](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)
 
-**[Watch / download the full demo — 3:09, 1080p MP4](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)** · One edited recording, silent and ready for voiceover. The looping preview is a short sample, not the full video.
+**[Watch / download the full demo — 3:09, 1080p MP4](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)** · Useful agent work, enforced spending authority and retained liability under failure.
 
 - **0:08 — Give the agent a bounded mandate.** Inspect its 8-unit cap and enter a synthetic invoice through an agent-scoped HTTP client.
 - **0:26 — Complete useful work.** Follow reservation → dispatch → trusted receipt → settlement. Replay the same attempt without another dispatch or charge.
@@ -33,7 +33,7 @@ proposal and execution. The agent is never its own funding or approval authority
 - **1:30 — Challenge the happy path.** Switch explicitly to independent fault fixtures: a lost response retains liability, another retry needs funding, and worker death does not erase exposure.
 - **2:23 — Recover from evidence, not optimism.** A durable receipt settles without redispatch; trusted charged/no-charge evidence permits reconciliation. A quote breach records the full charge and freezes the affected scope.
 
-**Recording scope:** real local HTTP requests and SQLite state, followed by a freshly generated offline report of **12 separate controlled fault scenarios / 17 simulated provider executions / 0 hosted calls**. Costs are modeled units, not cash. No real payments, human reviewer approval or fresh NVIDIA inference are claimed; credentials and personal screens are excluded.
+**Recording scope:** real local HTTP requests and SQLite state, followed by a freshly generated offline report of **12 separate controlled fault scenarios / 17 simulated provider executions / 0 hosted calls**. Costs are modeled units, not cash. No real payments, human reviewer approval or fresh NVIDIA inference are claimed.
 
 [Screenshot walkthrough and reproduction steps](docs/PORTFOLIO_DEMO.md) · [Integration contract](docs/INTEGRATION.md) · [Build and failure evidence](docs/reports/BUILD_REPORT_004.md)
 
@@ -71,7 +71,7 @@ make serve
 
 Open `http://127.0.0.1:8765`, then paste `operator.token` from the locally generated
 `var/local-capabilities.json`. The file is ignored by Git and mode `0600`; do not
-share it or project it during a demo. Follow the [5–7 minute interview path](docs/DEMO.md).
+share it. Follow the [5–7 minute walkthrough](docs/DEMO.md).
 
 `make demo` creates both a normal run and an outage run. In the dashboard you can
 inspect budget, reservation before execution, successful settlement, an ambiguous
@@ -191,14 +191,6 @@ For deeper review, start with [architecture](docs/ARCHITECTURE.md),
 [publication provenance](PUBLIC_PROVENANCE.md). Reliability work is documented in
 the [failure-conformance contract](docs/FAILURE_CONFORMANCE.md); the stronger
 [outcome-study protocol](docs/OUTCOME_STUDY_PROTOCOL.md) remains explicitly unrun.
-
-### Historical build artifacts
-
-`AGENTS.md`, `docs/BOOTSTRAP.md`, `docs/CODEX_FIRST_RUN.md`, and
-`scripts/publish_private_repo.sh` are retained as development provenance for the
-original private engineering workflow. They are **not** current setup or publication
-instructions for this public repository. For current usage, follow this README,
-[the demo guide](docs/DEMO.md), and [the integration guide](docs/INTEGRATION.md).
 
 ## Scope and license
 

@@ -1,4 +1,4 @@
-# 5–7 minute offline interview demonstration
+# 5–7 minute offline walkthrough
 
 This path runs entirely from the public repository. It requires no provider
 credentials and makes no NVIDIA, hosted-model, or other external inference calls.
@@ -93,7 +93,7 @@ result, not a claim that markets or central allocation are universally superior.
 Finish with the limitations: synthetic tasks, one live replication, modeled—not
 commercial—inference costs, and no outside-human adoption validation.
 
-## Optional verification before an interview
+## Verification
 
 ```bash
 make check
@@ -108,11 +108,7 @@ or provider access. The frozen V3 recomputation is covered by
 `tests/test_semantic_evidence.py`; it decompresses the committed artifacts into a
 temporary directory and performs no provider calls.
 
-## Owner practice exercises
-
-Codex executed these exercises during the failure-conformance build. That verifies
-the path, not the owner's mastery; the owner should answer aloud without reading a
-script.
+## Inspect the execution and failure boundaries
 
 ### 1. Explain a successful transaction
 
@@ -154,5 +150,5 @@ PYTHONPATH=src python3 -m unittest tests/test_external_challenge.py -v
 ```
 
 The typed-denial regression must fail. Discard the temporary worktree, then run the
-same test on the research branch and confirm it passes. Never commit the defect or
+same test on the unchanged source and confirm it passes. Never commit the defect or
 weaken the assertion.
