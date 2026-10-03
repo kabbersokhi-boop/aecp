@@ -1,6 +1,6 @@
 # Portfolio demo: useful autonomy, bounded liability
 
-[Watch / download the recorded demo — 3:09, silent 1080p MP4](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)
+[Watch / download the recorded demo — 3:09, 1080p MP4](https://github.com/kabbersokhi-boop/aecp/raw/393dd3ee463b5cfe84f83b71253f7d4d4f1b8527/docs/assets/portfolio/AECP-Portfolio-Demo.mp4)
 
 The [README's timed pointers](../README.md#watch-the-end-to-end-demo) summarize
 the recording. This guide explains its evidence and how to reproduce the path.
@@ -88,13 +88,9 @@ support can add a separately labelled, bounded live-model chapter after confirmi
 account allowance and authorizing calls; a valid model response still cannot grant
 itself funding, approval or settlement.
 
-At the owner's explicit request, the edited MP4 is published in
-`docs/assets/portfolio/AECP-Portfolio-Demo.mp4`, with a small nine-second animated
-preview. Raw recordings, capabilities and local databases remain outside Git.
-The download link is pinned to the media commit so it remains valid after branch
-cleanup. Authentication, terminals, account pages, the operating-system desktop
-and personal tabs are excluded from the selected footage. Chapter headings and
-short captions leave room for the owner's voiceover.
+The complete MP4 is available in `docs/assets/portfolio/AECP-Portfolio-Demo.mp4`.
+The nine-second animated preview samples settlement, response loss and trusted
+reconciliation. Chapter headings identify each stage of the demonstration.
 
 Published video SHA-256:
 
